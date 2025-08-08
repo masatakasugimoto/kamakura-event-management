@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "title": "開会式・お祓い儀式",
+    "description": "4日間のイベントの開会式と安全祈願のお祓い儀式",
+    "date": "2025-03-15",
+    "startTime": "09:00",
+    "endTime": "10:00",
+    "locationId": "1",
+    "status": "ongoing"
+  },
+  {
+    "id": "2",
+    "title": "伝統芸能パフォーマンス",
+    "description": "地元の伝統芸能団体による舞踊と音楽の披露",
+    "date": "2025-03-15",
+    "startTime": "10:30",
+    "endTime": "12:00",
+    "locationId": "1",
+    "status": "scheduled"
+  },
+  {
+    "id": "3",
+    "title": "観音様特別拝観",
+    "description": "長谷観音の特別拝観と解説ツアー",
+    "date": "2025-03-15",
+    "startTime": "14:00",
+    "endTime": "15:30",
+    "locationId": "2",
+    "status": "scheduled"
+  },
+  {
+    "id": "4",
+    "title": "大仏前での瞑想会",
+    "description": "鎌倉大仏を前にした静寂な瞑想体験",
+    "date": "2025-03-16",
+    "startTime": "08:00",
+    "endTime": "09:00",
+    "locationId": "3",
+    "status": "scheduled"
+  },
+  {
+    "id": "5",
+    "title": "写経体験",
+    "description": "建長寺での本格的な写経体験",
+    "date": "2025-03-16",
+    "startTime": "10:00",
+    "endTime": "12:00",
+    "locationId": "4",
+    "status": "scheduled"
+  },
+  {
+    "id": "6",
+    "title": "座禅体験",
+    "description": "円覚寺での本格的な座禅体験",
+    "date": "2025-03-17",
+    "startTime": "06:00",
+    "endTime": "07:30",
+    "locationId": "5",
+    "status": "scheduled"
+  },
+  {
+    "id": "7",
+    "title": "閉会式・感謝の儀",
+    "description": "4日間のイベント総括と感謝の儀式",
+    "date": "2025-03-18",
+    "startTime": "16:00",
+    "endTime": "17:00",
+    "locationId": "1",
+    "status": "scheduled"
+  }
+]

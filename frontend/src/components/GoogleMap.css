@@ -1,0 +1,38 @@
+.google-map {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.map-header {
+  padding: 20px;
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+}
+
+.map-header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.map-container {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.api-key-warning {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(231, 76, 60, 0.9);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  z-index: 1000;
+}
