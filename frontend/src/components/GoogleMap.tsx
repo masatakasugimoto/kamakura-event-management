@@ -33,9 +33,11 @@ const GoogleMap: React.FC<GoogleMapProps> = ({ locations, selectedLocationId, on
         const mapInstance = new google.maps.Map(mapRef.current, {
           center: { lat: 35.3189, lng: 139.5477 }, // 鎌倉の中心座標
           zoom: 14,
-          mapTypeControl: true,
+          mapTypeControl: false,
           streetViewControl: true,
           fullscreenControl: true,
+          gestureHandling: 'auto',
+          clickableIcons: true,
         });
 
         const infoWindowInstance = new google.maps.InfoWindow();
@@ -94,10 +96,43 @@ const GoogleMap: React.FC<GoogleMapProps> = ({ locations, selectedLocationId, on
 
     const selectedLocation = locations.find(loc => loc.id === selectedLocationId);
     if (selectedLocation) {
-      map.panTo({ lat: selectedLocation.lat, lng: selectedLocation.lng });
-      map.setZoom(16);
+      const targetPosition = { lat: selectedLocation.lat, lng: selectedLocation.lng };
+      
+      // 現在のズームレベルを取得
+      const currentZoom = map.getZoom() || 14;
+      
+      // まずズームアウトしてから移動、その後ズームイン
+      if (currentZoom > 14) {
+        map.setZoom(14);
+        setTimeout(() => {
+          map.panTo(targetPosition);
+          setTimeout(() => {
+            map.setZoom(16);
+          }, 800);
+        }, 300);
+      } else {
+        // 通常の滑らかな移動
+        map.panTo(targetPosition);
+        setTimeout(() => {
+          map.setZoom(16);
+        }, 800);
+      }
     }
   }, [map, selectedLocationId, locations]);
+
+  const openInGoogleMaps = () => {
+    if (!map) return;
+    
+    const center = map.getCenter();
+    const zoom = map.getZoom();
+    
+    if (center) {
+      const lat = center.lat();
+      const lng = center.lng();
+      const url = `https://www.google.com/maps/@${lat},${lng},${zoom}z`;
+      window.location.href = url;
+    }
+  };
 
   return (
     <div className="google-map">
@@ -105,6 +140,9 @@ const GoogleMap: React.FC<GoogleMapProps> = ({ locations, selectedLocationId, on
         <h2>鎌倉イベント会場マップ</h2>
       </div>
       <div className="map-container" ref={mapRef} />
+      <button className="open-in-google-maps-btn" onClick={openInGoogleMaps}>
+        📍 GoogleMapで開く
+      </button>
       {GOOGLE_MAPS_API_KEY === 'YOUR_API_KEY_HERE' && (
         <div className="api-key-warning">
           ⚠️ Google Maps APIキーが設定されていません。

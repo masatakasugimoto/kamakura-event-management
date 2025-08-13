@@ -2,6 +2,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .map-header {
@@ -23,6 +24,37 @@
   position: relative;
 }
 
+.open-in-google-maps-btn {
+  position: absolute;
+  top: 80px;
+  left: 16px;
+  background: #4285f4;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+  transition: all 0.3s ease;
+  display: none;
+  align-items: center;
+  gap: 6px;
+}
+
+.open-in-google-maps-btn:hover {
+  background: #3367d6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.open-in-google-maps-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
 .api-key-warning {
   position: absolute;
   top: 50%;
@@ -35,4 +67,14 @@
   text-align: center;
   font-weight: bold;
   z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  .open-in-google-maps-btn {
+    display: flex;
+    top: 70px;
+    left: 12px;
+    padding: 8px 14px;
+    font-size: 13px;
+  }
 }

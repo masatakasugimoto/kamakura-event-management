@@ -118,12 +118,12 @@ class ApplicationPortal {
 function openApp(appName) {
     switch (appName) {
         case 'voice-recognition':
-            // Navigate to the voice recognition app (in parent webapp directory)
-            window.location.href = '../webapp/index.html';
+            // Navigate to the voice recognition app
+            window.location.href = 'index.html';
             break;
         case 'kamakura-event':
-            // Navigate to the Kamakura event management app
-            window.location.href = 'frontend/index.html';
+            // Navigate to the kamakura event management app
+            window.open('https://sugi.masadon-room.click/kamakura/', '_blank');
             break;
         case 'memo':
             // Future: Navigate to memo app

@@ -179,21 +179,46 @@
 }
 
 @media (max-width: 768px) {
-  .app-main {
-    flex-direction: column;
-  }
-  
-  .event-section, .map-section {
-    flex: none;
-    height: 50vh;
-  }
-  
-  .app-header h1 {
-    font-size: 20px;
+  .app {
+    height: 100vh;
   }
   
   .app-header {
+    flex-shrink: 0;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
+    padding: 10px 15px;
+  }
+  
+  .app-header h1 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .header-controls {
+    gap: 8px;
+  }
+  
+  .portal-button, .mode-toggle {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+  
+  .app-main {
+    flex: 1;
+    flex-direction: column;
+    min-height: 0;
+  }
+  
+  .event-section {
+    flex: 0 0 35vh;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    overflow-y: auto;
+  }
+  
+  .map-section {
+    flex: 1;
+    min-height: 0;
   }
 }
