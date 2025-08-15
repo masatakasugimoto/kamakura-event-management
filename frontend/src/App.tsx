@@ -79,7 +79,7 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>🏮 zen2.0進行管理</h1>
+        <h1>zen2.0進行管理</h1>
         <div className="header-controls">
           <button
             className={`mode-toggle ${isAdmin ? 'admin' : 'participant'}`}

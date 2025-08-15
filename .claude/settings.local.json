@@ -6,9 +6,11 @@
       "Bash(pkill:*)",
       "Bash(npm install)",
       "Bash(pm2 restart:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(npm run build:*)"
     ],
     "deny": [],
-    "ask": []
+    "ask": [],
+    "defaultMode": "acceptEdits"
   }
 }
