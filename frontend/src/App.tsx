@@ -79,14 +79,8 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>🏮 鎌倉4日間イベント進行管理</h1>
+        <h1>🏮 zen2.0進行管理</h1>
         <div className="header-controls">
-          <button
-            className="portal-button"
-            onClick={() => window.location.href = '../main-menu.html'}
-          >
-            🚀 ポータルに戻る
-          </button>
           <button
             className={`mode-toggle ${isAdmin ? 'admin' : 'participant'}`}
             onClick={() => setIsAdmin(!isAdmin)}
