@@ -85,31 +85,60 @@ const LocationForm: React.FC<LocationFormProps> = ({
     }
   };
 
-  const handleAddressToCoords = () => {
+  const handleAddressToCoords = async () => {
     if (!formData.address.trim()) {
       alert('住所を入力してから座標を取得してください');
       return;
     }
     
-    // 簡単なジオコーディング（実際のアプリではGoogle Geocoding APIなどを使用）
-    const kamakuraLocations: Record<string, { lat: number; lng: number }> = {
-      '鶴岡八幡宮': { lat: 35.3258, lng: 139.5556 },
-      '長谷寺': { lat: 35.3128, lng: 139.5358 },
-      '高徳院': { lat: 35.3167, lng: 139.5357 },
-      '建長寺': { lat: 35.3378, lng: 139.5498 },
-      '円覚寺': { lat: 35.3379, lng: 139.5481 }
-    };
-
-    for (const [name, coords] of Object.entries(kamakuraLocations)) {
-      if (formData.address.includes(name) || formData.name.includes(name)) {
-        setFormData(prev => ({ ...prev, lat: coords.lat, lng: coords.lng }));
+    try {
+      // OpenStreetMap Nominatim APIを使用（無料でAPIキー不要）
+      const encodedAddress = encodeURIComponent(formData.address + ', Japan');
+      const response = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodedAddress}&limit=1`);
+      
+      if (!response.ok) {
+        throw new Error('ジオコーディングサービスに接続できませんでした');
+      }
+      
+      const data = await response.json();
+      
+      if (data && data.length > 0) {
+        const location = data[0];
+        const lat = parseFloat(location.lat);
+        const lng = parseFloat(location.lon);
+        
+        setFormData(prev => ({ ...prev, lat, lng }));
+        alert(`座標を取得しました: ${lat}, ${lng}`);
         return;
       }
+      
+      // フォールバック: 固定の場所リスト
+      const kamakuraLocations: Record<string, { lat: number; lng: number }> = {
+        '鶴岡八幡宮': { lat: 35.3258, lng: 139.5556 },
+        '長谷寺': { lat: 35.3128, lng: 139.5358 },
+        '高徳院': { lat: 35.3167, lng: 139.5357 },
+        '建長寺': { lat: 35.3378, lng: 139.5498 },
+        '円覚寺': { lat: 35.3379, lng: 139.5481 },
+        '小町': { lat: 35.3194, lng: 139.5519 }, // 鎌倉市小町エリア
+        '小町1': { lat: 35.3194, lng: 139.5519 }
+      };
+
+      for (const [name, coords] of Object.entries(kamakuraLocations)) {
+        if (formData.address.includes(name) || formData.name.includes(name)) {
+          setFormData(prev => ({ ...prev, lat: coords.lat, lng: coords.lng }));
+          alert(`近似座標を設定しました: ${coords.lat}, ${coords.lng}`);
+          return;
+        }
+      }
+      
+      // 最終フォールバック
+      alert('該当する場所が見つかりませんでした。鎌倉中心部の座標を設定します。手動で調整してください。');
+      setFormData(prev => ({ ...prev, lat: 35.3189, lng: 139.5477 }));
+      
+    } catch (error) {
+      console.error('Geocoding error:', error);
+      alert('座標の取得に失敗しました。手動で入力してください。');
     }
-    
-    // デフォルトは鎌倉の中心部
-    alert('該当する場所が見つかりませんでした。鎌倉中心部の座標を設定します。手動で調整してください。');
-    setFormData(prev => ({ ...prev, lat: 35.3189, lng: 139.5477 }));
   };
 
   return (
@@ -173,11 +202,11 @@ const LocationForm: React.FC<LocationFormProps> = ({
                   name="lat"
                   value={formData.lat}
                   onChange={handleInputChange}
-                  step="0.000001"
+                  step="0.000000000000001"
                   min="-90"
                   max="90"
                   className={errors.lat ? 'error' : ''}
-                  placeholder="例: 35.325800"
+                  placeholder="例: 35.31116399779152"
                 />
                 {errors.lat && <span className="error-message">{errors.lat}</span>}
               </div>
@@ -190,11 +219,11 @@ const LocationForm: React.FC<LocationFormProps> = ({
                   name="lng"
                   value={formData.lng}
                   onChange={handleInputChange}
-                  step="0.000001"
+                  step="0.000000000000001"
                   min="-180"
                   max="180"
                   className={errors.lng ? 'error' : ''}
-                  placeholder="例: 139.555600"
+                  placeholder="例: 139.54373530850168"
                 />
                 {errors.lng && <span className="error-message">{errors.lng}</span>}
               </div>

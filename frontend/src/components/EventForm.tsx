@@ -20,9 +20,9 @@ const EventForm: React.FC<EventFormProps> = ({
   const [formData, setFormData] = useState<Omit<Event, 'id'>>({
     title: '',
     description: '',
-    date: '',
-    startTime: '',
-    endTime: '',
+    date: '2025-11-16',
+    startTime: '10:00',
+    endTime: '17:30',
     locationId: '',
     status: 'scheduled'
   });
@@ -126,7 +126,7 @@ const EventForm: React.FC<EventFormProps> = ({
               value={formData.title}
               onChange={handleInputChange}
               className={errors.title ? 'error' : ''}
-              placeholder="例: 開会式・お祓い儀式"
+              placeholder="例: AIといきがい"
             />
             {errors.title && <span className="error-message">{errors.title}</span>}
           </div>
@@ -139,7 +139,7 @@ const EventForm: React.FC<EventFormProps> = ({
               value={formData.description}
               onChange={handleInputChange}
               className={errors.description ? 'error' : ''}
-              placeholder="例: 4日間のイベントの開会式と安全祈願のお祓い儀式"
+              placeholder="例: ランチしながらトークセッション聴講"
               rows={3}
             />
             {errors.description && <span className="error-message">{errors.description}</span>}

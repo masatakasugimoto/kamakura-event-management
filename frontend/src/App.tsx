@@ -53,6 +53,19 @@ function App() {
     }
   };
 
+  const handleModeToggle = () => {
+    if (!isAdmin) {
+      const password = prompt('管理者パスワードを入力してください:');
+      if (password === 'zen20') {
+        setIsAdmin(true);
+      } else if (password !== null) {
+        alert('パスワードが間違っています。');
+      }
+    } else {
+      setIsAdmin(false);
+    }
+  };
+
   if (isLoading) {
     return (
       <div className="loading-container">
@@ -83,9 +96,9 @@ function App() {
         <div className="header-controls">
           <button
             className={`mode-toggle ${isAdmin ? 'admin' : 'participant'}`}
-            onClick={() => setIsAdmin(!isAdmin)}
+            onClick={handleModeToggle}
           >
-            {isAdmin ? '👤 参加者モード' : '⚙️ 管理者モード'}
+{isAdmin ? '👤' : '⚙️'}
           </button>
         </div>
       </header>
