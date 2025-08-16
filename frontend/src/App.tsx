@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import EventList from './components/EventList';
+import EventTabs from './components/EventTabs';
 import GoogleMap from './components/GoogleMap';
 import AdminPanel from './components/AdminPanel';
 import type { EventWithLocation, Location } from './types';
@@ -107,10 +107,13 @@ function App() {
         {!isAdmin ? (
           <>
             <div className="event-section">
-              <EventList
+              <EventTabs
                 events={events}
+                locations={locations}
                 selectedEventId={selectedEventId}
+                selectedLocationId={selectedLocationId}
                 onEventSelect={handleEventSelect}
+                onLocationSelect={handleLocationSelect}
               />
             </div>
             <div className="map-section">

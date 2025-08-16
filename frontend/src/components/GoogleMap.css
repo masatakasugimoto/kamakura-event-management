@@ -70,9 +70,19 @@
 }
 
 @media (max-width: 768px) {
+  .map-header {
+    height: 12px; /* 1/5 of original height */
+    padding: 0;
+    min-height: 12px;
+  }
+  
+  .map-header h2 {
+    display: none; /* Hide text on mobile */
+  }
+  
   .open-in-google-maps-btn {
     display: flex;
-    top: 70px;
+    top: 24px; /* Adjusted for smaller header */
     left: 12px;
     padding: 8px 14px;
     font-size: 13px;
