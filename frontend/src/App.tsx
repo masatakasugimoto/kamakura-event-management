@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import EventTabs from './components/EventTabs';
 import GoogleMap from './components/GoogleMap';
 import AdminPanel from './components/AdminPanel';
+import ResizableSplitter from './components/ResizableSplitter';
 import type { EventWithLocation, Location } from './types';
 import { eventApi, locationApi } from './services/api';
 import './App.css'
@@ -121,6 +122,30 @@ function App() {
                 locations={locations}
                 selectedLocationId={selectedLocationId}
                 onLocationSelect={handleLocationSelect}
+              />
+            </div>
+            <div className="app-main-mobile">
+              <ResizableSplitter
+                topContent={
+                  <EventTabs
+                    events={events}
+                    locations={locations}
+                    selectedEventId={selectedEventId}
+                    selectedLocationId={selectedLocationId}
+                    onEventSelect={handleEventSelect}
+                    onLocationSelect={handleLocationSelect}
+                  />
+                }
+                bottomContent={
+                  <GoogleMap
+                    locations={locations}
+                    selectedLocationId={selectedLocationId}
+                    onLocationSelect={handleLocationSelect}
+                  />
+                }
+                defaultTopHeight={35}
+                minTopHeight={15}
+                maxTopHeight={85}
               />
             </div>
           </>

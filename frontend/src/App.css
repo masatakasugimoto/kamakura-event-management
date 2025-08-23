@@ -84,6 +84,10 @@
   overflow: hidden;
 }
 
+.app-main-mobile {
+  display: none;
+}
+
 .event-section {
   flex: 1;
   display: flex;
@@ -228,14 +232,17 @@
   }
   
   .event-section {
-    flex: 0 0 35vh;
-    border-right: none;
-    border-bottom: 1px solid #ddd;
-    overflow-y: auto;
+    display: none;
   }
   
   .map-section {
+    display: none;
+  }
+  
+  .app-main-mobile {
+    display: flex;
     flex: 1;
-    min-height: 0;
+    flex-direction: column;
+    height: 100%;
   }
 }

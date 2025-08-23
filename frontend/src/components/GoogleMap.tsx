@@ -136,9 +136,6 @@ const GoogleMap: React.FC<GoogleMapProps> = ({ locations, selectedLocationId, on
 
   return (
     <div className="google-map">
-      <div className="map-header">
-        <h2>zen2.0会場マップ</h2>
-      </div>
       <div className="map-container" ref={mapRef} />
       <button className="open-in-google-maps-btn" onClick={openInGoogleMaps}>
         📍 GoogleMapで開く
