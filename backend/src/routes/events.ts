@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import fs from 'fs';
 import path from 'path';
+import { generateEventId } from '../utils/idGenerator';
 import { Event, Location, EventWithLocation } from '../types';
 
 const router = Router();
@@ -71,7 +72,7 @@ router.post('/', (req, res) => {
   try {
     const events = readEvents();
     const newEvent: Event = {
-      id: Date.now().toString(),
+      id: generateEventId(),
       ...req.body
     };
     

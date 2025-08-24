@@ -4,6 +4,7 @@ import bodyParser from 'body-parser';
 import fetch from 'node-fetch';
 import eventRoutes from './routes/events';
 import locationRoutes from './routes/locations';
+import dataManagementRoutes from './routes/dataManagement';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -13,6 +14,7 @@ app.use(bodyParser.json());
 
 app.use('/api/events', eventRoutes);
 app.use('/api/locations', locationRoutes);
+app.use('/api/data', dataManagementRoutes);
 
 app.get('/api', (req, res) => {
   res.json({ 
@@ -34,6 +36,18 @@ app.get('/api', (req, res) => {
         create: 'POST /api/locations',
         update: 'PUT /api/locations/:id',
         delete: 'DELETE /api/locations/:id'
+      },
+      dataManagement: {
+        exportEvents: 'GET /api/data/export/events',
+        exportLocations: 'GET /api/data/export/locations',
+        exportAll: 'GET /api/data/export/all',
+        exportEventsCSV: 'GET /api/data/export/events/csv',
+        exportLocationsCSV: 'GET /api/data/export/locations/csv',
+        importEvents: 'POST /api/data/import/events',
+        importLocations: 'POST /api/data/import/locations',
+        importAll: 'POST /api/data/import/all',
+        importEventsCSV: 'POST /api/data/import/events/csv',
+        importLocationsCSV: 'POST /api/data/import/locations/csv'
       }
     }
   });
@@ -67,7 +81,7 @@ app.post('/api/translate', async (req, res) => {
     console.error('Translation proxy error:', error);
     res.status(500).json({
       error: 'Translation proxy failed',
-      details: error.message
+      details: error instanceof Error ? error.message : 'Unknown error'
     });
   }
 });

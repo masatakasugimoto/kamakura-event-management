@@ -111,3 +111,71 @@ export const locationApi = {
     }
   },
 };
+
+export const dataManagementApi = {
+  // CSV エクスポート
+  exportEventsCSV: async (): Promise<void> => {
+    const response = await fetch(`${API_BASE_URL}/data/export/events/csv`);
+    if (!response.ok) {
+      throw new Error('Failed to export events CSV');
+    }
+    
+    const blob = await response.blob();
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'events_export.csv';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    window.URL.revokeObjectURL(url);
+  },
+
+  exportLocationsCSV: async (): Promise<void> => {
+    const response = await fetch(`${API_BASE_URL}/data/export/locations/csv`);
+    if (!response.ok) {
+      throw new Error('Failed to export locations CSV');
+    }
+    
+    const blob = await response.blob();
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'locations_export.csv';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    window.URL.revokeObjectURL(url);
+  },
+
+  // CSV インポート
+  importEventsCSV: async (csvData: string): Promise<{ success: boolean; message: string; count: number }> => {
+    const response = await fetch(`${API_BASE_URL}/data/import/events/csv`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ csvData }),
+    });
+    if (!response.ok) {
+      const errorData = await response.json();
+      throw new Error(errorData.error || 'Failed to import events CSV');
+    }
+    return response.json();
+  },
+
+  importLocationsCSV: async (csvData: string): Promise<{ success: boolean; message: string; count: number }> => {
+    const response = await fetch(`${API_BASE_URL}/data/import/locations/csv`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ csvData }),
+    });
+    if (!response.ok) {
+      const errorData = await response.json();
+      throw new Error(errorData.error || 'Failed to import locations CSV');
+    }
+    return response.json();
+  },
+};

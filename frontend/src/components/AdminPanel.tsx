@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import EventManager from './EventManager';
 import LocationManager from './LocationManager';
+import DataManagement from './DataManagement';
 import type { EventWithLocation, Location } from '../types';
 import { eventApi, locationApi } from '../services/api';
 import './AdminPanel.css';
@@ -18,7 +19,7 @@ const AdminPanel: React.FC<AdminPanelProps> = ({
   onEventsUpdate,
   onLocationsUpdate
 }) => {
-  const [activeTab, setActiveTab] = useState<'events' | 'locations'>('events');
+  const [activeTab, setActiveTab] = useState<'events' | 'locations' | 'data'>('events');
   const [isLoading, setIsLoading] = useState(false);
 
   const refreshData = async () => {
@@ -63,6 +64,12 @@ const AdminPanel: React.FC<AdminPanelProps> = ({
         >
           📍 場所管理
         </button>
+        <button
+          className={`tab-button ${activeTab === 'data' ? 'active' : ''}`}
+          onClick={() => setActiveTab('data')}
+        >
+          📊 データ管理
+        </button>
       </div>
 
       <div className="admin-content">
@@ -72,11 +79,15 @@ const AdminPanel: React.FC<AdminPanelProps> = ({
             locations={locations}
             onEventsUpdate={onEventsUpdate}
           />
-        ) : (
+        ) : activeTab === 'locations' ? (
           <LocationManager
             locations={locations}
             events={events}
             onLocationsUpdate={onLocationsUpdate}
+          />
+        ) : (
+          <DataManagement
+            onDataUpdate={refreshData}
           />
         )}
       </div>

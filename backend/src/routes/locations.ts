@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import fs from 'fs';
 import path from 'path';
+import { generateLocationId } from '../utils/idGenerator';
 import { Location } from '../types';
 
 const router = Router();
@@ -43,7 +44,7 @@ router.post('/', (req, res) => {
   try {
     const locations = readLocations();
     const newLocation: Location = {
-      id: Date.now().toString(),
+      id: generateLocationId(),
       ...req.body
     };
     
