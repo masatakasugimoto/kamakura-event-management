@@ -8,6 +8,9 @@ export default defineConfig({
     host: '0.0.0.0', // Allow external connections
     port: 5173,
     allowedHosts: ['map.zen20.com', '162.43.6.225', 'localhost', '127.0.0.1'],
+    fs: {
+      allow: ['..', '.env']
+    },
     proxy: {
       '/api': {
         target: 'http://localhost:3001',

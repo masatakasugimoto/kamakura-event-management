@@ -184,4 +184,17 @@
     margin: 10px 0;
     padding: 15px;
   }
+  
+  .data-management-header h3 {
+    font-size: 1.3em;
+  }
+  
+  .data-management-section h4 {
+    font-size: 1.1em;
+  }
+  
+  .loading-overlay {
+    position: fixed;
+    z-index: 9999;
+  }
 }

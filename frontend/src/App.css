@@ -107,8 +107,10 @@
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background: #fafafa;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .admin-placeholder {
@@ -199,7 +201,8 @@
 
 @media (max-width: 768px) {
   .app {
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
   }
   
   .app-header {
@@ -229,6 +232,7 @@
     flex: 1;
     flex-direction: column;
     min-height: 0;
+    overflow-y: auto;
   }
   
   .event-section {
@@ -243,6 +247,17 @@
     display: flex;
     flex: 1;
     flex-direction: column;
-    height: 100%;
+    min-height: 0;
+    overflow-y: auto;
+  }
+  
+  .admin-section {
+    flex: 1;
+    justify-content: flex-start;
+    align-items: stretch;
+    background: #fafafa;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 0;
   }
 }
