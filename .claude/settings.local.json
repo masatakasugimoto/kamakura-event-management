@@ -10,7 +10,8 @@
       "Bash(npm run build:*)",
       "WebFetch(domain:www.mindful-kamakura.city)",
       "Bash(cp:*)",
-      "Bash(md5sum:*)"
+      "Bash(md5sum:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": [],
