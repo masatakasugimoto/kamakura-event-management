@@ -3,6 +3,7 @@ import EventTabs from './components/EventTabs';
 import GoogleMap from './components/GoogleMap';
 import AdminPanel from './components/AdminPanel';
 import ResizableSplitter from './components/ResizableSplitter';
+import SettingsIcon from './components/SettingsIcon';
 import type { EventWithLocation, Location } from './types';
 import { eventApi, locationApi } from './services/api';
 import './App.css'
@@ -98,8 +99,9 @@ function App() {
           <button
             className={`mode-toggle ${isAdmin ? 'admin' : 'participant'}`}
             onClick={handleModeToggle}
+            title={isAdmin ? '参加者モードに戻る' : '管理者モードに切り替え'}
           >
-{isAdmin ? '👤' : '⚙️'}
+            {isAdmin ? '👤' : <SettingsIcon size={18} color="currentColor" />}
           </button>
         </div>
       </header>
