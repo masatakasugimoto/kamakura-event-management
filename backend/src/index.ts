@@ -2,6 +2,9 @@ import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import fetch from 'node-fetch';
+import https from 'https';
+import fs from 'fs';
+import path from 'path';
 import eventRoutes from './routes/events';
 import locationRoutes from './routes/locations';
 import dataManagementRoutes from './routes/dataManagement';
@@ -86,6 +89,6 @@ app.post('/api/translate', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server is running on port ${PORT}`);
 });

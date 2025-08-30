@@ -91,4 +91,10 @@ coverage/
 .dynamodb/
 
 # TernJS port file
-.tern-port
+.tern-portnode_modules/
+dist/
+.env
+*.log
+.DS_Store
+.vscode/
+*.tmp

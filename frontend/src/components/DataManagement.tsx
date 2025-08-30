@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react';
 import { dataManagementApi } from '../services/api';
-import type { Event, Location } from '../types';
 import './DataManagement.css';
 
 interface DataManagementProps {
@@ -43,17 +42,6 @@ const DataManagement: React.FC<DataManagementProps> = ({ onDataUpdate }) => {
     }
   };
 
-  const handleExportAll = async () => {
-    try {
-      setIsLoading(true);
-      await dataManagementApi.exportAll();
-      showMessage('success', '全データをエクスポートしました');
-    } catch (error) {
-      showMessage('error', `エクスポートエラー: ${error instanceof Error ? error.message : 'Unknown error'}`);
-    } finally {
-      setIsLoading(false);
-    }
-  };
 
   const handleFileRead = (file: File): Promise<string> => {
     return new Promise((resolve, reject) => {
