@@ -7,9 +7,11 @@
 }
 
 .resizable-top-panel {
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
+  -webkit-overflow-scrolling: touch;
 }
 
 .resizable-bottom-panel {
@@ -74,9 +76,38 @@
 
 /* Mobile optimizations */
 @media (max-width: 768px) {
+  .resizable-splitter-container {
+    position: fixed;
+    top: 60px; /* Account for header height */
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .resizable-top-panel {
+    position: fixed;
+    top: 60px; /* Account for header height */
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
   .resizable-splitter {
-    height: 12px; /* Larger touch target on mobile */
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 12px;
     background: #ddd;
+    z-index: 1000;
+  }
+  
+  .resizable-bottom-panel {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
   }
   
   .splitter-grip {

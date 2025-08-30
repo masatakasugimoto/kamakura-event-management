@@ -16,34 +16,53 @@ const ResizableSplitter: React.FC<ResizableSplitterProps> = ({
   minTopHeight = 15,
   maxTopHeight = 85
 }) => {
-  const [topHeight, setTopHeight] = useState(defaultTopHeight);
+  // Use 50% for mobile devices, default for desktop
+  const getMobileDefaultHeight = () => {
+    if (window.innerWidth <= 768) {
+      return 50; // Center split on mobile
+    }
+    return defaultTopHeight;
+  };
+
+  const [topHeight, setTopHeight] = useState(getMobileDefaultHeight());
   const [isDragging, setIsDragging] = useState(false);
+  const [dragOffset, setDragOffset] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
   const splitterRef = useRef<HTMLDivElement>(null);
 
-  const handleStart = useCallback((_clientY: number) => {
+  const handleStart = useCallback((clientY: number) => {
+    const headerHeight = window.innerWidth <= 768 ? 60 : 0;
+    const availableHeight = window.innerHeight - headerHeight;
+    const currentSplitterPosition = headerHeight + (availableHeight * topHeight / 100);
+    const offset = clientY - currentSplitterPosition;
+    
+    setDragOffset(offset);
     setIsDragging(true);
     document.body.style.userSelect = 'none';
-  }, []);
+  }, [topHeight]);
 
   const handleMove = useCallback((clientY: number) => {
     if (!isDragging || !containerRef.current) return;
 
-    const container = containerRef.current;
-    const containerRect = container.getBoundingClientRect();
-    const containerHeight = containerRect.height;
+    // For mobile, calculate relative to the available height (excluding header)
+    const headerHeight = window.innerWidth <= 768 ? 60 : 0;
+    const availableHeight = window.innerHeight - headerHeight;
     
-    // Calculate new height percentage
-    const relativeY = clientY - containerRect.top;
-    const newTopHeight = (relativeY / containerHeight) * 100;
+    // Adjust for the initial touch offset to prevent jumping
+    const adjustedClientY = clientY - dragOffset;
+    
+    // Calculate new height percentage based on viewport
+    const relativeY = adjustedClientY - headerHeight;
+    const newTopHeight = (relativeY / availableHeight) * 100;
     
     // Clamp between min and max
     const clampedHeight = Math.max(minTopHeight, Math.min(maxTopHeight, newTopHeight));
     setTopHeight(clampedHeight);
-  }, [isDragging, minTopHeight, maxTopHeight]);
+  }, [isDragging, dragOffset, minTopHeight, maxTopHeight]);
 
   const handleEnd = useCallback(() => {
     setIsDragging(false);
+    setDragOffset(0);
     document.body.style.userSelect = '';
   }, []);
 
@@ -95,11 +114,36 @@ const ResizableSplitter: React.FC<ResizableSplitterProps> = ({
     }
   }, [isDragging, handleMouseMove, handleMouseUp, handleTouchMove, handleTouchEnd]);
 
+  // Calculate mobile-specific positioning
+  const isMobile = window.innerWidth <= 768;
+  // const headerHeight = isMobile ? 60 : 0;
+  // const availableHeight = isMobile ? window.innerHeight - headerHeight : '100%';
+  
+  const topPanelStyle = isMobile 
+    ? { 
+        height: `calc((100vh - 60px) * ${topHeight / 100})`,
+        top: '60px'
+      }
+    : { height: `${topHeight}%` };
+    
+  const splitterStyle = isMobile
+    ? {
+        top: `calc(60px + (100vh - 60px) * ${topHeight / 100})`
+      }
+    : {};
+    
+  const bottomPanelStyle = isMobile
+    ? {
+        top: `calc(60px + (100vh - 60px) * ${topHeight / 100} + 12px)`,
+        height: `calc((100vh - 60px) * ${(100 - topHeight) / 100} - 12px)`
+      }
+    : { height: `${100 - topHeight}%` };
+
   return (
     <div className="resizable-splitter-container" ref={containerRef}>
       <div 
         className="resizable-top-panel"
-        style={{ height: `${topHeight}%` }}
+        style={topPanelStyle}
       >
         {topContent}
       </div>
@@ -107,6 +151,7 @@ const ResizableSplitter: React.FC<ResizableSplitterProps> = ({
       <div
         className={`resizable-splitter ${isDragging ? 'dragging' : ''}`}
         ref={splitterRef}
+        style={splitterStyle}
         onMouseDown={handleMouseDown}
         onTouchStart={handleTouchStart}
       >
@@ -119,7 +164,7 @@ const ResizableSplitter: React.FC<ResizableSplitterProps> = ({
       
       <div 
         className="resizable-bottom-panel"
-        style={{ height: `${100 - topHeight}%` }}
+        style={bottomPanelStyle}
       >
         {bottomContent}
       </div>
