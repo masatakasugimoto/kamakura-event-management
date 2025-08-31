@@ -18,11 +18,38 @@
   border-bottom: 1px solid #e0e0e0;
 }
 
+.header-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .app-header h1 {
   margin: 0;
   font-size: 24px;
   font-weight: 300;
   letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.zen-link {
+  color: #27ae60 !important;
+  text-decoration: none !important;
+  font-size: 18px !important;
+  font-weight: normal !important;
+  padding: 4px 12px !important;
+  border: 1px solid #27ae60 !important;
+  border-radius: 15px !important;
+  display: inline !important;
+  margin-left: 15px !important;
+  vertical-align: middle !important;
+}
+
+.zen-link:hover {
+  background-color: #229954 !important;
+  color: white !important;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(39, 174, 96, 0.3);
 }
 
 .header-controls {
@@ -212,9 +239,18 @@
     padding: 16px 20px;
   }
   
+  .header-title {
+    gap: 12px;
+  }
+  
   .app-header h1 {
     font-size: 18px;
     margin: 0;
+  }
+  
+  .zen-link {
+    font-size: 12px;
+    padding: 4px 8px;
   }
   
   .header-controls {

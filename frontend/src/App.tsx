@@ -94,7 +94,18 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>zen2.0進行管理</h1>
+        <div className="header-title">
+          <h1>
+            zen2.0進行管理 <a 
+              href="https://zen20.com/mindful-city-kamakura/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="zen-link"
+            >
+              zen2.0はこちら
+            </a>
+          </h1>
+        </div>
         <div className="header-controls">
           <button
             className={`mode-toggle ${isAdmin ? 'admin' : 'participant'}`}
