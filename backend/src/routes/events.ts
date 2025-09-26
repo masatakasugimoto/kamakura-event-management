@@ -27,13 +27,16 @@ router.get('/', (req, res) => {
     const events = readEvents();
     const locations = readLocations();
     
-    const eventsWithLocation: EventWithLocation[] = events.map(event => {
-      const location = locations.find(loc => loc.id === event.locationId);
-      if (!location) {
-        throw new Error(`Location not found for event ${event.id}`);
-      }
-      return { ...event, location };
-    });
+    const eventsWithLocation: EventWithLocation[] = events
+      .map(event => {
+        const location = locations.find(loc => loc.id === event.locationId);
+        if (!location) {
+          console.warn(`Warning: Location not found for event ${event.id} (locationId: ${event.locationId})`);
+          return null;
+        }
+        return { ...event, location };
+      })
+      .filter((event): event is EventWithLocation => event !== null);
 
     const sortedEvents = eventsWithLocation.sort((a, b) => {
       const dateA = new Date(`${a.date} ${a.startTime}`);
@@ -43,6 +46,7 @@ router.get('/', (req, res) => {
 
     res.json(sortedEvents);
   } catch (error) {
+    console.error('Error fetching events:', error);
     res.status(500).json({ error: 'Failed to fetch events' });
   }
 });

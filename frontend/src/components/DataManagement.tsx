@@ -71,7 +71,7 @@ const DataManagement: React.FC<DataManagementProps> = ({ onDataUpdate }) => {
       return;
     }
 
-    const confirmed = window.confirm(`${file.name}をインポートしますか？\n\n注意：既存のイベントデータは上書きされます。`);
+    const confirmed = window.confirm(`${file.name}をインポートしますか？\n\n差分インポート：\n・同じIDのデータは更新されます\n・新しいIDのデータは追加されます\n・既存データは削除されません`);
     if (!confirmed) {
       if (eventsFileRef.current) {
         eventsFileRef.current.value = '';
@@ -85,7 +85,13 @@ const DataManagement: React.FC<DataManagementProps> = ({ onDataUpdate }) => {
       const result = await dataManagementApi.importEventsCSV(csvData);
 
       showMessage('success', result.message);
-      alert(`✅ インポート完了\n\n${result.message}`);
+      
+      // 詳細なインポート結果を表示
+      const detailMessage = result.added !== undefined && result.updated !== undefined && result.unchanged !== undefined 
+        ? `✅ インポート完了\n\n${result.message}\n\n詳細：\n・追加: ${result.added}件\n・更新: ${result.updated}件\n・保持: ${result.unchanged}件\n・合計: ${result.total}件`
+        : `✅ インポート完了\n\n${result.message}`;
+      
+      alert(detailMessage);
       onDataUpdate();
     } catch (error) {
       const errorMessage = `インポートエラー: ${error instanceof Error ? error.message : 'Unknown error'}`;
@@ -111,7 +117,7 @@ const DataManagement: React.FC<DataManagementProps> = ({ onDataUpdate }) => {
       return;
     }
 
-    const confirmed = window.confirm(`${file.name}をインポートしますか？\n\n注意：既存の場所データは上書きされます。`);
+    const confirmed = window.confirm(`${file.name}をインポートしますか？\n\n差分インポート：\n・同じIDのデータは更新されます\n・新しいIDのデータは追加されます\n・既存データは削除されません`);
     if (!confirmed) {
       if (locationsFileRef.current) {
         locationsFileRef.current.value = '';
@@ -125,7 +131,13 @@ const DataManagement: React.FC<DataManagementProps> = ({ onDataUpdate }) => {
       const result = await dataManagementApi.importLocationsCSV(csvData);
 
       showMessage('success', result.message);
-      alert(`✅ インポート完了\n\n${result.message}`);
+      
+      // 詳細なインポート結果を表示
+      const detailMessage = result.added !== undefined && result.updated !== undefined && result.unchanged !== undefined 
+        ? `✅ インポート完了\n\n${result.message}\n\n詳細：\n・追加: ${result.added}件\n・更新: ${result.updated}件\n・保持: ${result.unchanged}件\n・合計: ${result.total}件`
+        : `✅ インポート完了\n\n${result.message}`;
+      
+      alert(detailMessage);
       onDataUpdate();
     } catch (error) {
       const errorMessage = `インポートエラー: ${error instanceof Error ? error.message : 'Unknown error'}`;

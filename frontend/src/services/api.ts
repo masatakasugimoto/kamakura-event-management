@@ -149,7 +149,7 @@ export const dataManagementApi = {
   },
 
   // CSV インポート
-  importEventsCSV: async (csvData: string): Promise<{ success: boolean; message: string; count: number }> => {
+  importEventsCSV: async (csvData: string): Promise<{ success: boolean; message: string; count?: number; total?: number; added?: number; updated?: number; unchanged?: number }> => {
     const response = await fetch(`${API_BASE_URL}/data/import/events/csv`, {
       method: 'POST',
       headers: {
@@ -164,7 +164,7 @@ export const dataManagementApi = {
     return response.json();
   },
 
-  importLocationsCSV: async (csvData: string): Promise<{ success: boolean; message: string; count: number }> => {
+  importLocationsCSV: async (csvData: string): Promise<{ success: boolean; message: string; count?: number; total?: number; added?: number; updated?: number; unchanged?: number }> => {
     const response = await fetch(`${API_BASE_URL}/data/import/locations/csv`, {
       method: 'POST',
       headers: {

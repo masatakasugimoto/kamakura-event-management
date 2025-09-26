@@ -97,7 +97,7 @@ function App() {
         <div className="header-title">
           <h1>
             zen2.0進行管理 <a 
-              href="https://zen20.com/mindful-city-kamakura/" 
+              href="https://www.mindful-kamakura.city/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="zen-link"

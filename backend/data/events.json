@@ -4,59 +4,9 @@
     "title": "開会式",
     "description": "Day1　森と呼吸　開会式ー",
     "date": "2025/11/16",
-    "startTime": "10:21",
+    "startTime": "10:00",
     "endTime": "11:00",
     "locationId": "6",
-    "status": "scheduled"
-  },
-  {
-    "id": "2",
-    "title": "気づく",
-    "description": "終日：初日の出　ワーケーション　（イベント協賛・参画者より講義募集 or理事によるセッション）",
-    "date": "2025/11/17",
-    "startTime": "10:00",
-    "endTime": "15:00",
-    "locationId": "7",
-    "status": "scheduled"
-  },
-  {
-    "id": "3",
-    "title": "繋がる",
-    "description": "終日：NIHO ワーケーション　& トークセッション　（イベント協賛・参画者より講義募集 or理事によるセッション）",
-    "date": "2025/11/18",
-    "startTime": "10:00",
-    "endTime": "15:00",
-    "locationId": "8",
-    "status": "scheduled"
-  },
-  {
-    "id": "4",
-    "title": "支えあう",
-    "description": "終日：NIHO ワーケーション　& トークセッション　（イベント協賛・参画者より講義募集 or理事によるセッション）",
-    "date": "2025/11/19",
-    "startTime": "10:00",
-    "endTime": "15:00",
-    "locationId": "8",
-    "status": "scheduled"
-  },
-  {
-    "id": "5",
-    "title": "堪能する",
-    "description": "終日：NIHO ワーケーション　& トークセッション　（イベント協賛・参画者より講義募集 or理事によるセッション）",
-    "date": "2025/11/21",
-    "startTime": "10:00",
-    "endTime": "15:00",
-    "locationId": "8",
-    "status": "scheduled"
-  },
-  {
-    "id": "6",
-    "title": "発展していく",
-    "description": "終日：NIHO ワーケーション　& トークセッション　（イベント協賛・参画者より講義募集 or理事によるセッション）",
-    "date": "2025/11/22",
-    "startTime": "10:00",
-    "endTime": "15:00",
-    "locationId": "8",
     "status": "scheduled"
   },
   {
@@ -67,6 +17,406 @@
     "startTime": "6:10",
     "endTime": "7:00",
     "locationId": "9",
+    "status": "scheduled"
+  },
+  {
+    "id": "8",
+    "title": "Spiritual Lunch with Sacred Ecology 　〜五感を超え、第六感で味わう食の瞑想体験〜",
+    "description": "食（マインドフルイーティング・自然食の提供・料理体験・食べる瞑想など）",
+    "date": "未定",
+    "startTime": "",
+    "endTime": "",
+    "locationId": "19",
+    "status": "scheduled"
+  },
+  {
+    "id": "9",
+    "title": "『自然に還る　自分に還る』②New Moon Meditations & Sound Bath　イベントカテゴリー：ワークショップ",
+    "description": "ワークショップ",
+    "date": "2025/11/20",
+    "startTime": "14:00",
+    "endTime": "16:00",
+    "locationId": "13",
+    "status": "scheduled"
+  },
+  {
+    "id": "10",
+    "title": "Balance Within – Yin-Yang Lunch & Dessert by Rutileq 　陰陽のリチュアルと、ルチルクのランチ＆デザート",
+    "description": "食（マインドフルイーティング・自然食の提供・料理体験・食べる瞑想など）",
+    "date": "未定",
+    "startTime": "",
+    "endTime": "",
+    "locationId": "19",
+    "status": "scheduled"
+  },
+  {
+    "id": "11",
+    "title": "つながりを取り戻すワーク体験会～Web Of Life（生命の織物）とのつながりを思い出す～",
+    "description": "",
+    "date": "2025/11/17",
+    "startTime": "17:15",
+    "endTime": "19:45",
+    "locationId": "7",
+    "status": "scheduled"
+  },
+  {
+    "id": "12",
+    "title": "生命の輝きと繋がりに目覚めるクンダリーニヨガ",
+    "description": "",
+    "date": "2025/11/22",
+    "startTime": "10:00",
+    "endTime": "13:00",
+    "locationId": "15",
+    "status": "scheduled"
+  },
+  {
+    "id": "13",
+    "title": "「IDGsで始める、私から世界へ広がる変化の旅」 ～古都鎌倉で内なる成長と未来共創への５つの道を辿る～",
+    "description": "",
+    "date": "2025/11/21",
+    "startTime": "14:00",
+    "endTime": "17:00",
+    "locationId": "8",
+    "status": "scheduled"
+  },
+  {
+    "id": "16",
+    "title": "The Dao of Flow ~ Taichi Experience 流の道：太極拳の体験",
+    "description": "ワークショップ",
+    "date": "2025/11/20",
+    "startTime": "10:00",
+    "endTime": "12:00",
+    "locationId": "7",
+    "status": "scheduled"
+  },
+  {
+    "id": "17",
+    "title": "本来の自分につながる手のひらレター",
+    "description": "ワークショップ",
+    "date": "2025/11/22",
+    "startTime": "10:00",
+    "endTime": "12:00",
+    "locationId": "16",
+    "status": "scheduled"
+  },
+  {
+    "id": "18",
+    "title": "ライフフォース・アントレプレナーシップ",
+    "description": "",
+    "date": "2025/11/16",
+    "startTime": "13:30",
+    "endTime": "16:00",
+    "locationId": "17",
+    "status": "scheduled"
+  },
+  {
+    "id": "19",
+    "title": "『自然に還る　自分に還る』　①あるがままであることを愉しむ時間についてのトークセッション　イベントカテゴリー：対話会",
+    "description": "ワークショップ",
+    "date": "2025/11/19",
+    "startTime": "11:00",
+    "endTime": "12:30",
+    "locationId": "13",
+    "status": "scheduled"
+  },
+  {
+    "id": "20",
+    "title": "①書く時間②床の間展示　内省の時間",
+    "description": "伝統（禅体験・武道・茶道・華道・香道など）",
+    "date": "未定",
+    "startTime": "",
+    "endTime": "",
+    "locationId": "18",
+    "status": "scheduled"
+  },
+  {
+    "id": "21",
+    "title": "ディープタイムウォーク in 鎌倉 〜46億年を歩く旅〜",
+    "description": "自然体験（森林浴・トレイルランニング・ネイチャーウォーク・セーリング・サーフィンなど）",
+    "date": "2025/11/22",
+    "startTime": "10:00",
+    "endTime": "13:00",
+    "locationId": "",
+    "status": "scheduled"
+  },
+  {
+    "id": "22",
+    "title": "恐れとシャーマニズムについて",
+    "description": "講演・対話",
+    "date": "2025/11/18",
+    "startTime": "0:00",
+    "endTime": "0:00",
+    "locationId": "10",
+    "status": "scheduled"
+  },
+  {
+    "id": "23",
+    "title": "巡りと変容のジュエリー展 ーあなた本来の美しさに鎌倉で出逢うー",
+    "description": "",
+    "date": "2025/11/16",
+    "startTime": "",
+    "endTime": "",
+    "locationId": "19",
+    "status": "scheduled"
+  },
+  {
+    "id": "24",
+    "title": "ビオダンサ　～生命を踊る～",
+    "description": "ワークショップ",
+    "date": "2025/11/21",
+    "startTime": "17:00",
+    "endTime": "19:00",
+    "locationId": "7",
+    "status": "scheduled"
+  },
+  {
+    "id": "26",
+    "title": "シンギング・リン音浴体験会　by 和真音",
+    "description": "ワークショップ",
+    "date": "2025/11/22",
+    "startTime": "9:15",
+    "endTime": "10:45",
+    "locationId": "9",
+    "status": "scheduled"
+  },
+  {
+    "id": "27",
+    "title": "ナラティブから始める宇宙思考",
+    "description": "講演・対話",
+    "date": "2025/11/17",
+    "startTime": "13:00",
+    "endTime": "16:00",
+    "locationId": "12",
+    "status": "scheduled"
+  },
+  {
+    "id": "28",
+    "title": "仏教と心理療法による心身と精神へのアプローチ",
+    "description": "",
+    "date": "2025/11/18",
+    "startTime": "13:00",
+    "endTime": "16:00",
+    "locationId": "7",
+    "status": "scheduled"
+  },
+  {
+    "id": "30",
+    "title": "ZEN NIGHT WALK KAMAKURA",
+    "description": "展示",
+    "date": "2025/11/16",
+    "startTime": "17:00",
+    "endTime": "19:30",
+    "locationId": "4",
+    "status": "scheduled"
+  },
+  {
+    "id": "31",
+    "title": "Regenerative Wisdom:Soil Soul Society Spirituality in Natureとは何かをみんなで考えるワークショップ",
+    "description": "講演・対話（講演会、対話会、パネルディスカッション、哲学カフェなど",
+    "date": "2025/11/16",
+    "startTime": "",
+    "endTime": "",
+    "locationId": "19",
+    "status": "scheduled"
+  },
+  {
+    "id": "33",
+    "title": "インナーパーマカルチャー：パーマカルチャーという生態系のデザイン原則が持つ代表的な12の知恵を、毎日の生活で活かす方法をお伝えします",
+    "description": "ワークショップ（マインドフルネス、瞑想、ヨガ、ウェルビーングなど）",
+    "date": "2025/11/16",
+    "startTime": "",
+    "endTime": "",
+    "locationId": "19",
+    "status": "scheduled"
+  },
+  {
+    "id": "34",
+    "title": "Healing Body and Mind  ~Integrating Body-Oriented and Mindful Centered Approach",
+    "description": "ワークショップ",
+    "date": "2025/11/18",
+    "startTime": "",
+    "endTime": "",
+    "locationId": "",
+    "status": "scheduled"
+  },
+  {
+    "id": "35",
+    "title": "曼荼羅から読み解く宇宙の本質ー絵写経で精神世界に触れる体験",
+    "description": "ワークショップ",
+    "date": "2025/11/21",
+    "startTime": "13:00",
+    "endTime": "15:30",
+    "locationId": "10",
+    "status": "scheduled"
+  },
+  {
+    "id": "36",
+    "title": "AI (人工知能)とAI (祖先の知恵)の統合",
+    "description": "",
+    "date": "2025/11/16",
+    "startTime": "9:00",
+    "endTime": "12:00",
+    "locationId": "20",
+    "status": "scheduled"
+  },
+  {
+    "id": "37",
+    "title": "「自然を感じ香りとタッチと食で整える鎌倉の癒し体験」（仮）",
+    "description": "ワークショップ",
+    "date": "2025/11/22",
+    "startTime": "10:00",
+    "endTime": "18:00",
+    "locationId": "14",
+    "status": "scheduled"
+  },
+  {
+    "id": "38",
+    "title": "リジェネレーション ワークショップ in Kamakura",
+    "description": "",
+    "date": "2025/11/21",
+    "startTime": "14:00",
+    "endTime": "16:00",
+    "locationId": "7",
+    "status": "scheduled"
+  },
+  {
+    "id": "39",
+    "title": "新月の会（石笛演奏）",
+    "description": "",
+    "date": "2025/11/21",
+    "startTime": "16:30",
+    "endTime": "18:30",
+    "locationId": "7",
+    "status": "scheduled"
+  },
+  {
+    "id": "40",
+    "title": "鎌倉最古の厄除け神社で、日本の神話にふれる",
+    "description": "伝統",
+    "date": "2025/11/18",
+    "startTime": "14:00",
+    "endTime": "15:00",
+    "locationId": "11",
+    "status": "scheduled"
+  },
+  {
+    "id": "41",
+    "title": "＜仮＞小泉八雲（ラフカディオ・ハーン）が見た日本の美と霊性",
+    "description": "講演・対話",
+    "date": "2025/11/18",
+    "startTime": "15:00",
+    "endTime": "17:00",
+    "locationId": "7",
+    "status": "scheduled"
+  },
+  {
+    "id": "43",
+    "title": "【晩秋の美しさに時めく】　Aroma Scent ワークショップ",
+    "description": "ワークショップ",
+    "date": "2025/11/22",
+    "startTime": "10:30",
+    "endTime": "12:30",
+    "locationId": "22",
+    "status": "scheduled"
+  },
+  {
+    "id": "44",
+    "title": "草から紐へ -植物との呼応を探る-",
+    "description": "ワークショップ",
+    "date": "2025/11/16",
+    "startTime": "13:30",
+    "endTime": "16:30",
+    "locationId": "23",
+    "status": "scheduled"
+  },
+  {
+    "id": "46",
+    "title": "北欧の呼吸と氷の瞑想で真なる自分と繋がる",
+    "description": "ワークショップ",
+    "date": "2025/11/22",
+    "startTime": "17:00",
+    "endTime": "18:30",
+    "locationId": "7",
+    "status": "scheduled"
+  },
+  {
+    "id": "47",
+    "title": "Exploring Plant Wisdom〜植物の叡智を探究するお食事会〜",
+    "description": "講演・対話（講演会、対話会、パネルディスカッション、哲学カフェなど",
+    "date": "2025/11/16",
+    "startTime": "",
+    "endTime": "",
+    "locationId": "19",
+    "status": "scheduled"
+  },
+  {
+    "id": "48",
+    "title": "世界中の音楽と動く瞑想を通して文化や心を結び平和を祈る輪 DUP(Dances of Universal Peace)",
+    "description": "",
+    "date": "2025/11/19",
+    "startTime": "10:00",
+    "endTime": "15:00",
+    "locationId": "12",
+    "status": "scheduled"
+  },
+  {
+    "id": "50",
+    "title": "ZEN NIGHT WALK KAMAKURA",
+    "description": "展示",
+    "date": "2025/11/17",
+    "startTime": "17:00",
+    "endTime": "19:30",
+    "locationId": "4",
+    "status": "scheduled"
+  },
+  {
+    "id": "51",
+    "title": "ZEN NIGHT WALK KAMAKURA",
+    "description": "展示",
+    "date": "2025/11/18",
+    "startTime": "17:00",
+    "endTime": "19:30",
+    "locationId": "4",
+    "status": "scheduled"
+  },
+  {
+    "id": "52",
+    "title": "ZEN NIGHT WALK KAMAKURA",
+    "description": "展示",
+    "date": "2025/11/19",
+    "startTime": "17:00",
+    "endTime": "19:30",
+    "locationId": "4",
+    "status": "scheduled"
+  },
+  {
+    "id": "53",
+    "title": "ZEN NIGHT WALK KAMAKURA",
+    "description": "展示",
+    "date": "2025/11/20",
+    "startTime": "17:00",
+    "endTime": "19:30",
+    "locationId": "4",
+    "status": "scheduled"
+  },
+  {
+    "id": "54",
+    "title": "ZEN NIGHT WALK KAMAKURA",
+    "description": "展示",
+    "date": "2025/11/21",
+    "startTime": "17:00",
+    "endTime": "19:30",
+    "locationId": "4",
+    "status": "scheduled"
+  },
+  {
+    "id": "55",
+    "title": "ZEN NIGHT WALK KAMAKURA",
+    "description": "展示",
+    "date": "2025/11/22",
+    "startTime": "17:00",
+    "endTime": "19:30",
+    "locationId": "4",
     "status": "scheduled"
   }
 ]

@@ -227,7 +227,7 @@ router.get('/export/locations/csv', async (req, res) => {
   }
 });
 
-// CSV インポート機能
+// CSV インポート機能（差分インポート対応）
 router.post('/import/events/csv', async (req, res) => {
   try {
     const { csvData } = req.body;
@@ -236,7 +236,7 @@ router.post('/import/events/csv', async (req, res) => {
       return res.status(400).json({ error: 'CSVデータが必要です' });
     }
 
-    const events: Event[] = [];
+    const newEvents: Event[] = [];
     const csvLines = csvData.trim().split('\n');
     
     if (csvLines.length < 2) {
@@ -295,21 +295,70 @@ router.post('/import/events/csv', async (req, res) => {
       });
       
       if (event.id && event.title && event.date) {
-        events.push(event);
+        newEvents.push(event);
       }
     }
     
-    if (events.length === 0) {
+    if (newEvents.length === 0) {
       return res.status(400).json({ error: '有効なイベントデータが見つかりませんでした' });
     }
 
+    // 既存データを読み込み
     const eventsPath = path.join(__dirname, '../../data/events.json');
-    fs.writeFileSync(eventsPath, JSON.stringify(events, null, 2));
+    let existingEvents: Event[] = [];
+    
+    try {
+      if (fs.existsSync(eventsPath)) {
+        existingEvents = JSON.parse(fs.readFileSync(eventsPath, 'utf8'));
+      }
+    } catch (error) {
+      console.warn('既存イベントデータの読み込みに失敗:', error);
+    }
+
+    // 差分インポートロジック
+    const existingEventsMap = new Map(existingEvents.map(event => [event.id, event]));
+    const newEventsMap = new Map(newEvents.map(event => [event.id, event]));
+    
+    let addedCount = 0;
+    let updatedCount = 0;
+    let unchangedCount = 0;
+    
+    const finalEvents: Event[] = [];
+    
+    // 既存データをベースに処理
+    existingEvents.forEach(existingEvent => {
+      const newEvent = newEventsMap.get(existingEvent.id);
+      if (newEvent) {
+        // 更新対象：新しいデータで置き換え
+        finalEvents.push(newEvent);
+        updatedCount++;
+      } else {
+        // 保持：既存データをそのまま維持
+        finalEvents.push(existingEvent);
+        unchangedCount++;
+      }
+    });
+    
+    // 新規追加データを処理
+    newEvents.forEach(newEvent => {
+      if (!existingEventsMap.has(newEvent.id)) {
+        finalEvents.push(newEvent);
+        addedCount++;
+      }
+    });
+
+    // ファイルに保存
+    fs.writeFileSync(eventsPath, JSON.stringify(finalEvents, null, 2));
+    
+    const message = `差分インポート完了: 追加${addedCount}件、更新${updatedCount}件、保持${unchangedCount}件`;
     
     res.json({ 
       success: true, 
-      message: `${events.length}件のイベントをインポートしました`,
-      count: events.length
+      message: message,
+      total: finalEvents.length,
+      added: addedCount,
+      updated: updatedCount,
+      unchanged: unchangedCount
     });
   } catch (error) {
     console.error('イベントCSVインポートエラー:', error);
@@ -325,7 +374,7 @@ router.post('/import/locations/csv', async (req, res) => {
       return res.status(400).json({ error: 'CSVデータが必要です' });
     }
 
-    const locations: Location[] = [];
+    const newLocations: Location[] = [];
     const csvLines = csvData.trim().split('\n');
     
     if (csvLines.length < 2) {
@@ -372,21 +421,70 @@ router.post('/import/locations/csv', async (req, res) => {
       });
       
       if (location.id && location.name && !isNaN(location.lat) && !isNaN(location.lng)) {
-        locations.push(location);
+        newLocations.push(location);
       }
     }
     
-    if (locations.length === 0) {
+    if (newLocations.length === 0) {
       return res.status(400).json({ error: '有効な場所データが見つかりませんでした' });
     }
 
+    // 既存データを読み込み
     const locationsPath = path.join(__dirname, '../../data/locations.json');
-    fs.writeFileSync(locationsPath, JSON.stringify(locations, null, 2));
+    let existingLocations: Location[] = [];
+    
+    try {
+      if (fs.existsSync(locationsPath)) {
+        existingLocations = JSON.parse(fs.readFileSync(locationsPath, 'utf8'));
+      }
+    } catch (error) {
+      console.warn('既存場所データの読み込みに失敗:', error);
+    }
+
+    // 差分インポートロジック
+    const existingLocationsMap = new Map(existingLocations.map(location => [location.id, location]));
+    const newLocationsMap = new Map(newLocations.map(location => [location.id, location]));
+    
+    let addedCount = 0;
+    let updatedCount = 0;
+    let unchangedCount = 0;
+    
+    const finalLocations: Location[] = [];
+    
+    // 既存データをベースに処理
+    existingLocations.forEach(existingLocation => {
+      const newLocation = newLocationsMap.get(existingLocation.id);
+      if (newLocation) {
+        // 更新対象：新しいデータで置き換え
+        finalLocations.push(newLocation);
+        updatedCount++;
+      } else {
+        // 保持：既存データをそのまま維持
+        finalLocations.push(existingLocation);
+        unchangedCount++;
+      }
+    });
+    
+    // 新規追加データを処理
+    newLocations.forEach(newLocation => {
+      if (!existingLocationsMap.has(newLocation.id)) {
+        finalLocations.push(newLocation);
+        addedCount++;
+      }
+    });
+
+    // ファイルに保存
+    fs.writeFileSync(locationsPath, JSON.stringify(finalLocations, null, 2));
+    
+    const message = `差分インポート完了: 追加${addedCount}件、更新${updatedCount}件、保持${unchangedCount}件`;
     
     res.json({ 
       success: true, 
-      message: `${locations.length}件の場所をインポートしました`,
-      count: locations.length
+      message: message,
+      total: finalLocations.length,
+      added: addedCount,
+      updated: updatedCount,
+      unchanged: unchangedCount
     });
   } catch (error) {
     console.error('場所CSVインポートエラー:', error);

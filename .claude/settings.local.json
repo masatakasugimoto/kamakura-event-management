@@ -11,7 +11,16 @@
       "WebFetch(domain:www.mindful-kamakura.city)",
       "Bash(cp:*)",
       "Bash(md5sum:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "WebFetch(domain:localhost)",
+      "WebFetch(domain:210.131.209.181)",
+      "Bash(kill:*)",
+      "Bash(pm2 list:*)",
+      "Bash(pm2 stop:*)",
+      "Bash(pm2 start:*)",
+      "Bash(git commit:*)",
+      "Bash(journalctl:*)",
+      "Bash(pm2 logs:*)"
     ],
     "deny": [],
     "ask": [],
