@@ -96,7 +96,7 @@ function App() {
       <header className="app-header">
         <div className="header-title">
           <h1>
-            zen2.0進行管理 <a 
+            zen2.0-map <a 
               href="https://www.mindful-kamakura.city/" 
               target="_blank" 
               rel="noopener noreferrer"
