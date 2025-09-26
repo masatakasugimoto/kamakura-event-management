@@ -39,9 +39,50 @@ router.get('/', (req, res) => {
       .filter((event): event is EventWithLocation => event !== null);
 
     const sortedEvents = eventsWithLocation.sort((a, b) => {
-      const dateA = new Date(`${a.date} ${a.startTime}`);
-      const dateB = new Date(`${b.date} ${b.startTime}`);
-      return dateA.getTime() - dateB.getTime();
+      // 日付を数値に変換（YYYYMMDD形式）
+      const parseDate = (date: string) => {
+        if (date === '未定' || !date) return 99991231; // 未定は最後に表示
+        
+        const normalizedDate = date.replace(/\//g, '-'); // 2025/11/16 → 2025-11-16
+        const parts = normalizedDate.split('-');
+        
+        if (parts.length === 3) {
+          const year = parseInt(parts[0]) || 9999;
+          const month = parseInt(parts[1]) || 12;
+          const day = parseInt(parts[2]) || 31;
+          return year * 10000 + month * 100 + day;
+        }
+        return 99991231;
+      };
+
+      // 時間を分単位の数値に変換
+      const parseTime = (time: string) => {
+        if (!time || time === '' || time === '0:00' || time.includes('未定')) {
+          return 1439; // 23:59 = 23*60 + 59 時間未記載は同日の最後に表示
+        }
+        
+        const cleanTime = time.split('.')[0];
+        const timeParts = cleanTime.split(':');
+        
+        const hour = parseInt(timeParts[0]) || 0;
+        const minute = parseInt(timeParts[1]) || 0;
+        
+        return hour * 60 + minute;
+      };
+
+      const dateA = parseDate(a.date);
+      const dateB = parseDate(b.date);
+      
+      // 日付での比較
+      if (dateA !== dateB) {
+        return dateA - dateB;
+      }
+
+      // 同じ日付の場合、時間で比較
+      const timeA = parseTime(a.startTime);
+      const timeB = parseTime(b.startTime);
+      
+      return timeA - timeB;
     });
 
     res.json(sortedEvents);
