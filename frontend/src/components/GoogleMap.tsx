@@ -58,17 +58,23 @@ const GoogleMap: React.FC<GoogleMapProps> = ({ locations, selectedLocationId, on
     markers.forEach(marker => marker.setMap(null));
 
     const newMarkers = locations.map(location => {
+      const isSelected = selectedLocationId === location.id;
+
       const marker = new google.maps.Marker({
         position: { lat: location.lat, lng: location.lng },
         map: map,
         title: location.name,
-        icon: {
+        icon: isSelected ? {
           path: google.maps.SymbolPath.CIRCLE,
           scale: 8,
-          fillColor: selectedLocationId === location.id ? '#e74c3c' : '#3498db',
+          fillColor: '#e74c3c',
           fillOpacity: 0.8,
           strokeColor: '#ffffff',
           strokeWeight: 2
+        } : {
+          url: '/zen-favicon.png',
+          scaledSize: new google.maps.Size(40, 40),
+          anchor: new google.maps.Point(20, 20)
         }
       });
 
