@@ -7,7 +7,7 @@
     "startTime": "12:30",
     "endTime": "17:00",
     "locationId": "6",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "7",
@@ -17,7 +17,7 @@
     "startTime": "13:00",
     "endTime": "16:00",
     "locationId": "9",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "8",
@@ -27,7 +27,7 @@
     "startTime": "",
     "endTime": "",
     "locationId": "19",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "9",
@@ -37,7 +37,7 @@
     "startTime": "14:00",
     "endTime": "16:00",
     "locationId": "13",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "10",
@@ -47,7 +47,7 @@
     "startTime": "",
     "endTime": "",
     "locationId": "19",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "11",
@@ -57,7 +57,7 @@
     "startTime": "17:15",
     "endTime": "19:45",
     "locationId": "7",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "12",
@@ -67,7 +67,7 @@
     "startTime": "10:00",
     "endTime": "13:00",
     "locationId": "15",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "13",
@@ -77,7 +77,7 @@
     "startTime": "14:00",
     "endTime": "17:00",
     "locationId": "8",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "16",
@@ -87,7 +87,7 @@
     "startTime": "10:00",
     "endTime": "12:00",
     "locationId": "7",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "17",
@@ -97,7 +97,7 @@
     "startTime": "10:00",
     "endTime": "12:00",
     "locationId": "16",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "18",
@@ -107,7 +107,7 @@
     "startTime": "13:30",
     "endTime": "16:00",
     "locationId": "17",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "19",
@@ -117,7 +117,7 @@
     "startTime": "11:00",
     "endTime": "12:30",
     "locationId": "13",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "20",
@@ -127,7 +127,7 @@
     "startTime": "",
     "endTime": "",
     "locationId": "18",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "21",
@@ -137,7 +137,7 @@
     "startTime": "10:00",
     "endTime": "13:00",
     "locationId": "",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "22",
@@ -147,7 +147,7 @@
     "startTime": "0:00",
     "endTime": "0:00",
     "locationId": "10",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "23",
@@ -157,7 +157,7 @@
     "startTime": "",
     "endTime": "",
     "locationId": "19",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "24",
@@ -167,7 +167,7 @@
     "startTime": "17:00",
     "endTime": "19:00",
     "locationId": "7",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "26",
@@ -177,7 +177,7 @@
     "startTime": "9:15",
     "endTime": "10:45",
     "locationId": "9",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "27",
@@ -187,7 +187,7 @@
     "startTime": "13:00",
     "endTime": "16:00",
     "locationId": "12",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "28",
@@ -197,7 +197,7 @@
     "startTime": "13:00",
     "endTime": "16:00",
     "locationId": "7",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "30",
@@ -207,7 +207,7 @@
     "startTime": "17:00",
     "endTime": "19:30",
     "locationId": "4",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "31",
@@ -217,7 +217,7 @@
     "startTime": "",
     "endTime": "",
     "locationId": "19",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "33",
@@ -227,7 +227,7 @@
     "startTime": "",
     "endTime": "",
     "locationId": "19",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "34",
@@ -237,7 +237,7 @@
     "startTime": "",
     "endTime": "",
     "locationId": "",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "35",
@@ -247,7 +247,7 @@
     "startTime": "13:00",
     "endTime": "15:30",
     "locationId": "10",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "36",
@@ -257,7 +257,7 @@
     "startTime": "9:00",
     "endTime": "12:00",
     "locationId": "20",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "37",
@@ -267,7 +267,7 @@
     "startTime": "10:00",
     "endTime": "18:00",
     "locationId": "14",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "38",
@@ -277,7 +277,7 @@
     "startTime": "14:00",
     "endTime": "16:00",
     "locationId": "7",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "39",
@@ -287,7 +287,7 @@
     "startTime": "16:30",
     "endTime": "18:30",
     "locationId": "7",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "40",
@@ -297,7 +297,7 @@
     "startTime": "14:00",
     "endTime": "15:00",
     "locationId": "11",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "41",
@@ -307,7 +307,7 @@
     "startTime": "15:00",
     "endTime": "17:00",
     "locationId": "7",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "43",
@@ -317,7 +317,7 @@
     "startTime": "10:30",
     "endTime": "12:30",
     "locationId": "22",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "44",
@@ -327,17 +327,17 @@
     "startTime": "13:30",
     "endTime": "16:30",
     "locationId": "23",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "46",
     "title": "北欧の呼吸と氷の瞑想で真なる自分と繋がる",
-    "description": "ワークショップ",
+    "description": "L32\n\n北欧が生んだ「呼吸と氷を用いるマインドフルネス体験\"Wim Hof Method\"」をポーランドで習得した瞑想家テラが、簡潔なマインドフルネス体験を提供します。自身のポテンシャルを引き出す呼吸法を中心に、氷を用いる特殊な瞑想法も含めて体験いただきます。",
     "date": "2025/11/22",
     "startTime": "17:00",
     "endTime": "18:30",
     "locationId": "7",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "47",
@@ -347,17 +347,17 @@
     "startTime": "",
     "endTime": "",
     "locationId": "19",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "48",
     "title": "世界中の音楽と動く瞑想を通して文化や心を結び平和を祈る輪 DUP(Dances of Universal Peace)",
-    "description": "",
+    "description": "世界中の音楽と動く瞑想を通して文化や心を結び平和を祈る輪 Dances of Universal Peace",
     "date": "2025/11/19",
-    "startTime": "10:00",
-    "endTime": "15:00",
+    "startTime": "12:30",
+    "endTime": "16:30",
     "locationId": "12",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "50",
@@ -367,7 +367,7 @@
     "startTime": "17:00",
     "endTime": "19:30",
     "locationId": "4",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "51",
@@ -377,7 +377,7 @@
     "startTime": "17:00",
     "endTime": "19:30",
     "locationId": "4",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "52",
@@ -387,7 +387,7 @@
     "startTime": "17:00",
     "endTime": "19:30",
     "locationId": "4",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "53",
@@ -397,7 +397,7 @@
     "startTime": "17:00",
     "endTime": "19:30",
     "locationId": "4",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "54",
@@ -407,7 +407,7 @@
     "startTime": "17:00",
     "endTime": "19:30",
     "locationId": "4",
-    "status": "scheduled"
+    "status": "ticket_supported"
   },
   {
     "id": "55",
@@ -417,6 +417,6 @@
     "startTime": "17:00",
     "endTime": "19:30",
     "locationId": "4",
-    "status": "scheduled"
+    "status": "ticket_supported"
   }
 ]

@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import EventTabs from './components/EventTabs';
 import GoogleMap from './components/GoogleMap';
 import AdminPanel from './components/AdminPanel';
 import ResizableSplitter from './components/ResizableSplitter';
 import SettingsIcon from './components/SettingsIcon';
+import EventDetail from './components/EventDetail';
 import type { EventWithLocation, Location } from './types';
 import { eventApi, locationApi } from './services/api';
 import './App.css'
@@ -92,88 +94,106 @@ function App() {
   }
 
   return (
-    <div className="app">
-      <header className="app-header">
-        <div className="header-title">
-          <h1>
-            zen2.0-map <a 
-              href="https://www.mindful-kamakura.city/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="zen-link"
+    <Router>
+      <div className="app">
+        <header className="app-header">
+          <div className="header-title">
+            <h1>
+              zen2.0-map <a
+                href="https://www.mindful-kamakura.city/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="zen-link"
+              >
+                zen2.0はこちら
+              </a>
+            </h1>
+          </div>
+          <div className="header-controls">
+            <button
+              className={`mode-toggle ${isAdmin ? 'admin' : 'participant'}`}
+              onClick={handleModeToggle}
+              title={isAdmin ? '参加者モードに戻る' : '管理者モードに切り替え'}
             >
-              zen2.0はこちら
-            </a>
-          </h1>
-        </div>
-        <div className="header-controls">
-          <button
-            className={`mode-toggle ${isAdmin ? 'admin' : 'participant'}`}
-            onClick={handleModeToggle}
-            title={isAdmin ? '参加者モードに戻る' : '管理者モードに切り替え'}
-          >
-            {isAdmin ? '👤' : <SettingsIcon size={18} color="currentColor" />}
-          </button>
-        </div>
-      </header>
-      
-      <main className="app-main">
-        {!isAdmin ? (
-          <>
-            <div className="event-section">
-              <EventTabs
-                events={events}
-                locations={locations}
-                selectedEventId={selectedEventId}
-                selectedLocationId={selectedLocationId}
-                onEventSelect={handleEventSelect}
-                onLocationSelect={handleLocationSelect}
-              />
-            </div>
-            <div className="map-section">
-              <GoogleMap
-                locations={locations}
-                selectedLocationId={selectedLocationId}
-                onLocationSelect={handleLocationSelect}
-              />
-            </div>
-            <div className="app-main-mobile">
-              <ResizableSplitter
-                topContent={
-                  <EventTabs
-                    events={events}
-                    locations={locations}
-                    selectedEventId={selectedEventId}
-                    selectedLocationId={selectedLocationId}
-                    onEventSelect={handleEventSelect}
-                    onLocationSelect={handleLocationSelect}
-                  />
-                }
-                bottomContent={
+              {isAdmin ? '👤' : <SettingsIcon size={18} color="currentColor" />}
+            </button>
+          </div>
+        </header>
+
+        <main className="app-main">
+          <Routes>
+            <Route path="/event/:eventId" element={
+              <div className="event-detail-page">
+                <EventDetail events={events} onEventSelect={handleEventSelect} />
+                <div className="map-section">
                   <GoogleMap
                     locations={locations}
                     selectedLocationId={selectedLocationId}
                     onLocationSelect={handleLocationSelect}
                   />
-                }
-                defaultTopHeight={35}
-                minTopHeight={15}
-                maxTopHeight={85}
-              />
-            </div>
-          </>
-        ) : (
-          <div className="admin-section">
-            <AdminPanel
-              events={events}
-              locations={locations}
-              onEventsUpdate={setEvents}
-              onLocationsUpdate={setLocations}
-            />
-          </div>
-        )}
-      </main>
-    </div>
+                </div>
+              </div>
+            } />
+            <Route path="/" element={
+              !isAdmin ? (
+                <>
+                  <div className="event-section">
+                    <EventTabs
+                      events={events}
+                      locations={locations}
+                      selectedEventId={selectedEventId}
+                      selectedLocationId={selectedLocationId}
+                      onEventSelect={handleEventSelect}
+                      onLocationSelect={handleLocationSelect}
+                    />
+                  </div>
+                  <div className="map-section">
+                    <GoogleMap
+                      locations={locations}
+                      selectedLocationId={selectedLocationId}
+                      onLocationSelect={handleLocationSelect}
+                    />
+                  </div>
+                  <div className="app-main-mobile">
+                    <ResizableSplitter
+                      topContent={
+                        <EventTabs
+                          events={events}
+                          locations={locations}
+                          selectedEventId={selectedEventId}
+                          selectedLocationId={selectedLocationId}
+                          onEventSelect={handleEventSelect}
+                          onLocationSelect={handleLocationSelect}
+                        />
+                      }
+                      bottomContent={
+                        <GoogleMap
+                          locations={locations}
+                          selectedLocationId={selectedLocationId}
+                          onLocationSelect={handleLocationSelect}
+                        />
+                      }
+                      defaultTopHeight={35}
+                      minTopHeight={15}
+                      maxTopHeight={85}
+                    />
+                  </div>
+                </>
+              ) : (
+                <div className="admin-section">
+                  <AdminPanel
+                    events={events}
+                    locations={locations}
+                    onEventsUpdate={setEvents}
+                    onLocationsUpdate={setLocations}
+                  />
+                </div>
+              )
+            } />
+          </Routes>
+        </main>
+      </div>
+    </Router>
   );
 }
 

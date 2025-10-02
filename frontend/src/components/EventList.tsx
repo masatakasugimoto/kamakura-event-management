@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import type { EventWithLocation } from '../types';
 import './EventList.css';
 
@@ -9,15 +10,16 @@ interface EventListProps {
 }
 
 const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventSelect }) => {
+  const navigate = useNavigate();
+
   const getStatusBadge = (status: string) => {
     const statusMap = {
-      scheduled: { text: '予定', className: 'status-scheduled' },
-      ongoing: { text: '進行中', className: 'status-ongoing' },
-      completed: { text: '完了', className: 'status-completed' },
-      cancelled: { text: 'キャンセル', className: 'status-cancelled' },
+      ticket_supported: { text: '通し券対応', className: 'status-ticket-supported' },
+      ticket_not_supported: { text: '通し券未対応', className: 'status-ticket-not-supported' },
+      finished: { text: '終了', className: 'status-finished' },
     };
-    
-    const statusInfo = statusMap[status as keyof typeof statusMap] || statusMap.scheduled;
+
+    const statusInfo = statusMap[status as keyof typeof statusMap] || statusMap.ticket_supported;
     return (
       <span className={`status-badge ${statusInfo.className}`}>
         {statusInfo.text}
@@ -47,6 +49,11 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
     return groups;
   }, {} as Record<string, EventWithLocation[]>);
 
+  const handleShareClick = (e: React.MouseEvent, eventId: string) => {
+    e.stopPropagation();
+    navigate(`/event/${eventId}`);
+  };
+
   return (
     <div className="event-list">
       <h2>イベントスケジュール</h2>
@@ -61,7 +68,16 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
             >
               <div className="event-header">
                 <div className="event-title">{event.title}</div>
-                {getStatusBadge(event.status)}
+                <div className="event-header-actions">
+                  {getStatusBadge(event.status)}
+                  <button
+                    className="share-link-button"
+                    onClick={(e) => handleShareClick(e, event.id)}
+                    title="このイベントのリンクを開く"
+                  >
+                    🔗
+                  </button>
+                </div>
               </div>
               <div className="event-time">
                 {formatTime(event.startTime, event.endTime)}

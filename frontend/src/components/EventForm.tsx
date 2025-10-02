@@ -24,7 +24,7 @@ const EventForm: React.FC<EventFormProps> = ({
     startTime: '10:00',
     endTime: '17:30',
     locationId: '',
-    status: 'scheduled'
+    status: 'ticket_supported'
   });
 
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -215,10 +215,9 @@ const EventForm: React.FC<EventFormProps> = ({
                 value={formData.status}
                 onChange={handleInputChange}
               >
-                <option value="scheduled">予定</option>
-                <option value="ongoing">進行中</option>
-                <option value="completed">完了</option>
-                <option value="cancelled">キャンセル</option>
+                <option value="ticket_supported">通し券対応</option>
+                <option value="ticket_not_supported">通し券未対応</option>
+                <option value="finished">終了</option>
               </select>
             </div>
           </div>

@@ -140,6 +140,21 @@
   -webkit-overflow-scrolling: touch;
 }
 
+.event-detail-page {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.event-detail-page > div:first-child {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.event-detail-page .map-section {
+  flex: 1;
+}
+
 .admin-placeholder {
   text-align: center;
   padding: 48px;

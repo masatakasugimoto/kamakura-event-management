@@ -15,7 +15,7 @@ export interface Event {
   startTime: string;
   endTime: string;
   locationId: string;
-  status: 'scheduled' | 'ongoing' | 'completed' | 'cancelled';
+  status: 'ticket_supported' | 'ticket_not_supported' | 'finished';
 }
 
 export interface EventWithLocation extends Event {

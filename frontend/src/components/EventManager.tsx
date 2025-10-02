@@ -85,13 +85,12 @@ const EventManager: React.FC<EventManagerProps> = ({
 
   const getStatusBadge = (status: string) => {
     const statusMap = {
-      scheduled: { text: '予定', className: 'status-scheduled' },
-      ongoing: { text: '進行中', className: 'status-ongoing' },
-      completed: { text: '完了', className: 'status-completed' },
-      cancelled: { text: 'キャンセル', className: 'status-cancelled' },
+      ticket_supported: { text: '通し券対応', className: 'status-ticket-supported' },
+      ticket_not_supported: { text: '通し券未対応', className: 'status-ticket-not-supported' },
+      finished: { text: '終了', className: 'status-finished' },
     };
     
-    const statusInfo = statusMap[status as keyof typeof statusMap] || statusMap.scheduled;
+    const statusInfo = statusMap[status as keyof typeof statusMap] || statusMap.ticket_supported;
     return (
       <span className={`status-badge ${statusInfo.className}`}>
         {statusInfo.text}
@@ -165,10 +164,9 @@ const EventManager: React.FC<EventManagerProps> = ({
                       disabled={isLoading}
                       className="status-select"
                     >
-                      <option value="scheduled">予定</option>
-                      <option value="ongoing">進行中</option>
-                      <option value="completed">完了</option>
-                      <option value="cancelled">キャンセル</option>
+                      <option value="ticket_supported">通し券対応</option>
+                      <option value="ticket_not_supported">通し券未対応</option>
+                      <option value="finished">終了</option>
                     </select>
                     <button
                       className="edit-button"

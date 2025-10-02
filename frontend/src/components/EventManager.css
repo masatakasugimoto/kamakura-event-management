@@ -149,23 +149,18 @@
   font-weight: bold;
 }
 
-.status-scheduled {
+.status-ticket-supported {
   background-color: #3498db;
   color: white;
 }
 
-.status-ongoing {
-  background-color: #f39c12;
-  color: white;
-}
-
-.status-completed {
-  background-color: #27ae60;
-  color: white;
-}
-
-.status-cancelled {
+.status-ticket-not-supported {
   background-color: #e74c3c;
+  color: white;
+}
+
+.status-finished {
+  background-color: #000000;
   color: white;
 }
 
