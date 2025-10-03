@@ -1,15 +1,17 @@
 import React from 'react';
-import type { Location } from '../types';
+import type { Location, EventWithLocation } from '../types';
 import './VenueList.css';
 
 interface VenueListProps {
   locations: Location[];
+  events: EventWithLocation[];
   selectedLocationId: string | null;
   onLocationSelect: (locationId: string) => void;
 }
 
 const VenueList: React.FC<VenueListProps> = ({
   locations,
+  events,
   selectedLocationId,
   onLocationSelect
 }) => {
@@ -31,37 +33,69 @@ const VenueList: React.FC<VenueListProps> = ({
       </div>
       
       <div className="venue-list-content">
-        {locations.map(location => (
-          <div
-            key={location.id}
-            className={`venue-item ${selectedLocationId === location.id ? 'selected' : ''}`}
-            onClick={() => onLocationSelect(location.id)}
-          >
-            <div className="venue-main">
-              <h3 className="venue-name">{location.name}</h3>
-              <p className="venue-address">{location.address}</p>
-              {location.description && (
-                <p className="venue-description">{location.description}</p>
-              )}
+        {locations.map(location => {
+          // この会場で開催されるイベントを抽出
+          const locationEvents = events.filter(event => event.locationId === location.id);
+
+          return (
+            <div
+              key={location.id}
+              className={`venue-item ${selectedLocationId === location.id ? 'selected' : ''}`}
+              onClick={() => onLocationSelect(location.id)}
+            >
+              <div className="venue-main">
+                <h3 className="venue-name">{location.name}</h3>
+                <p className="venue-address">{location.address}</p>
+                {location.description && (
+                  <p className="venue-description">{location.description}</p>
+                )}
+
+                {/* 関連イベント表示 */}
+                {locationEvents.length > 0 && (
+                  <div className="venue-events">
+                    <h4 className="venue-events-title">📅 開催イベント ({locationEvents.length}件)</h4>
+                    <div className="venue-events-list">
+                      {locationEvents.map(event => (
+                        <div key={event.id} className="venue-event-item">
+                          <div className="venue-event-title">{event.title}</div>
+                          <div className="venue-event-info">
+                            {event.date} {event.startTime && `${event.startTime}${event.endTime ? '〜' + event.endTime : ''}`}
+                          </div>
+                          {event.status === 'ticket_supported' && (
+                            <span className="venue-event-badge ticket">🎫 チケット対応</span>
+                          )}
+                          {event.status === 'finished' && (
+                            <span className="venue-event-badge finished">✓ 終了</span>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {locationEvents.length === 0 && (
+                  <p className="venue-no-events">この会場での開催イベントはありません</p>
+                )}
+              </div>
+
+
+              <div className="venue-actions">
+                <button
+                  className="map-button"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    window.open(
+                      `https://www.google.com/maps?q=${location.lat},${location.lng}`,
+                      '_blank'
+                    );
+                  }}
+                >
+                  📍 地図で開く
+                </button>
+              </div>
             </div>
-            
-            
-            <div className="venue-actions">
-              <button
-                className="map-button"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  window.open(
-                    `https://www.google.com/maps?q=${location.lat},${location.lng}`,
-                    '_blank'
-                  );
-                }}
-              >
-                📍 地図で開く
-              </button>
-            </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );

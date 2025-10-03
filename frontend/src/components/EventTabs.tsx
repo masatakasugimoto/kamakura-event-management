@@ -51,6 +51,7 @@ const EventTabs: React.FC<EventTabsProps> = ({
         {activeTab === 'venues' && (
           <VenueList
             locations={locations}
+            events={events}
             selectedLocationId={selectedLocationId}
             onLocationSelect={onLocationSelect}
           />
