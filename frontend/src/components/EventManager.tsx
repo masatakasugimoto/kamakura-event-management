@@ -105,12 +105,19 @@ const EventManager: React.FC<EventManagerProps> = ({
     return `${month}/${day} ${startTime}-${endTime}`;
   };
 
+  // 日付を正規化する関数（YYYY/MM/DD形式に統一）
+  const normalizeDate = (dateString: string): string => {
+    // YYYY-MM-DD形式をYYYY/MM/DD形式に変換
+    return dateString.replace(/-/g, '/');
+  };
+
   const groupedEvents = events.reduce((groups, event) => {
-    const date = event.date;
-    if (!groups[date]) {
-      groups[date] = [];
+    // 日付を正規化してグループ化
+    const normalizedDate = normalizeDate(event.date);
+    if (!groups[normalizedDate]) {
+      groups[normalizedDate] = [];
     }
-    groups[date].push(event);
+    groups[normalizedDate].push(event);
     return groups;
   }, {} as Record<string, EventWithLocation[]>);
 

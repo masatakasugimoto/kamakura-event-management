@@ -75,10 +75,13 @@ const VenueList: React.FC<VenueListProps> = ({
                             {event.date} {event.startTime && `${event.startTime}${event.endTime ? '〜' + event.endTime : ''}`}
                           </div>
                           {event.status === 'ticket_supported' && (
-                            <span className="venue-event-badge ticket">🎫 チケット対応</span>
+                            <span className="venue-event-badge ticket">通し券対応</span>
+                          )}
+                          {event.status === 'ticket_not_supported' && (
+                            <span className="venue-event-badge ticket-not-supported">通し券未対応</span>
                           )}
                           {event.status === 'finished' && (
-                            <span className="venue-event-badge finished">✓ 終了</span>
+                            <span className="venue-event-badge finished">終了</span>
                           )}
                         </div>
                       ))}

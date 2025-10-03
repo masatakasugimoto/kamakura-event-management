@@ -7,13 +7,24 @@ import path from 'path';
 
 export function generateEventId(): string {
   const eventsPath = path.join(__dirname, '../../data/events.json');
-  
+
   try {
     const eventsData = JSON.parse(fs.readFileSync(eventsPath, 'utf8'));
-    const eventCount = eventsData.length;
-    
-    // 次のIDを生成
-    const nextId = eventCount + 1;
+
+    // 既存のIDを数値に変換し、重複を除外
+    const existingIds = eventsData
+      .map((event: any) => parseInt(event.id, 10))
+      .filter((id: number) => !isNaN(id));
+
+    // 既存IDが存在しない場合は1から開始
+    if (existingIds.length === 0) {
+      return '1';
+    }
+
+    // 最大IDを取得して+1
+    const maxId = Math.max(...existingIds);
+    const nextId = maxId + 1;
+
     return nextId.toString();
   } catch (error) {
     // ファイルが存在しない場合は1から開始
@@ -23,13 +34,24 @@ export function generateEventId(): string {
 
 export function generateLocationId(): string {
   const locationsPath = path.join(__dirname, '../../data/locations.json');
-  
+
   try {
     const locationsData = JSON.parse(fs.readFileSync(locationsPath, 'utf8'));
-    const locationCount = locationsData.length;
-    
-    // 次のIDを生成
-    const nextId = locationCount + 1;
+
+    // 既存のIDを数値に変換し、重複を除外
+    const existingIds = locationsData
+      .map((location: any) => parseInt(location.id, 10))
+      .filter((id: number) => !isNaN(id));
+
+    // 既存IDが存在しない場合は1から開始
+    if (existingIds.length === 0) {
+      return '1';
+    }
+
+    // 最大IDを取得して+1
+    const maxId = Math.max(...existingIds);
+    const nextId = maxId + 1;
+
     return nextId.toString();
   } catch (error) {
     // ファイルが存在しない場合は1から開始

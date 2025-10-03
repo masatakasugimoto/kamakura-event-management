@@ -2,6 +2,7 @@ import { Router } from 'express';
 import fs from 'fs';
 import path from 'path';
 import { generateEventId } from '../utils/idGenerator';
+import { normalizeEventDate } from '../utils/dateNormalizer';
 import { Event, Location, EventWithLocation } from '../types';
 
 const router = Router();
@@ -116,11 +117,11 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
   try {
     const events = readEvents();
-    const newEvent: Event = {
+    const newEvent: Event = normalizeEventDate({
       id: generateEventId(),
       ...req.body
-    };
-    
+    });
+
     events.push(newEvent);
     writeEvents(events);
     res.status(201).json(newEvent);
@@ -133,12 +134,15 @@ router.put('/:id', (req, res) => {
   try {
     const events = readEvents();
     const eventIndex = events.findIndex(e => e.id === req.params.id);
-    
+
     if (eventIndex === -1) {
       return res.status(404).json({ error: 'Event not found' });
     }
 
-    events[eventIndex] = { ...events[eventIndex], ...req.body };
+    events[eventIndex] = normalizeEventDate({
+      ...events[eventIndex],
+      ...req.body
+    });
     writeEvents(events);
     res.json(events[eventIndex]);
   } catch (error) {
