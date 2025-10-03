@@ -18,6 +18,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
+  const [shouldShowVenues, setShouldShowVenues] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -55,6 +56,10 @@ function App() {
     } else {
       setSelectedEventId(null);
     }
+    // 地図から会場がクリックされた時、会場一覧タブに切り替え
+    setShouldShowVenues(true);
+    // 少し遅延してリセット（次回のクリックに備える）
+    setTimeout(() => setShouldShowVenues(false), 100);
   };
 
   const handleModeToggle = () => {
@@ -145,6 +150,7 @@ function App() {
                       selectedLocationId={selectedLocationId}
                       onEventSelect={handleEventSelect}
                       onLocationSelect={handleLocationSelect}
+                      shouldShowVenues={shouldShowVenues}
                     />
                   </div>
                   <div className="map-section">
@@ -164,6 +170,7 @@ function App() {
                           selectedLocationId={selectedLocationId}
                           onEventSelect={handleEventSelect}
                           onLocationSelect={handleLocationSelect}
+                          shouldShowVenues={shouldShowVenues}
                         />
                       }
                       bottomContent={

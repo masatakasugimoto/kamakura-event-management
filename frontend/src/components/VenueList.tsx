@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import type { Location, EventWithLocation } from '../types';
 import './VenueList.css';
 
@@ -15,6 +15,18 @@ const VenueList: React.FC<VenueListProps> = ({
   selectedLocationId,
   onLocationSelect
 }) => {
+  const venueRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
+
+  // 選択された会場にスクロール
+  useEffect(() => {
+    if (selectedLocationId && venueRefs.current[selectedLocationId]) {
+      const selectedElement = venueRefs.current[selectedLocationId];
+      selectedElement?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+      });
+    }
+  }, [selectedLocationId]);
   if (locations.length === 0) {
     return (
       <div className="venue-list">
@@ -40,6 +52,7 @@ const VenueList: React.FC<VenueListProps> = ({
           return (
             <div
               key={location.id}
+              ref={(el) => { venueRefs.current[location.id] = el; }}
               className={`venue-item ${selectedLocationId === location.id ? 'selected' : ''}`}
               onClick={() => onLocationSelect(location.id)}
             >

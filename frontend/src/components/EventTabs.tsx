@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import EventList from './EventList';
 import VenueList from './VenueList';
 import type { EventWithLocation, Location } from '../types';
@@ -11,6 +11,7 @@ interface EventTabsProps {
   selectedLocationId: string | null;
   onEventSelect: (eventId: string) => void;
   onLocationSelect: (locationId: string) => void;
+  shouldShowVenues?: boolean;
 }
 
 const EventTabs: React.FC<EventTabsProps> = ({
@@ -19,9 +20,17 @@ const EventTabs: React.FC<EventTabsProps> = ({
   selectedEventId,
   selectedLocationId,
   onEventSelect,
-  onLocationSelect
+  onLocationSelect,
+  shouldShowVenues = false
 }) => {
   const [activeTab, setActiveTab] = useState<'events' | 'venues'>('events');
+
+  // shouldShowVenuesがtrueの時、会場一覧タブに切り替え
+  useEffect(() => {
+    if (shouldShowVenues) {
+      setActiveTab('venues');
+    }
+  }, [shouldShowVenues]);
 
   return (
     <div className="event-tabs">
