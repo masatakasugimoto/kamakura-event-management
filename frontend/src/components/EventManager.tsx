@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import type { EventWithLocation, Location, Event } from '../types';
+import type { EventWithLocation, Location, Event, EventCategory } from '../types';
 import { eventApi } from '../services/api';
 import EventForm from './EventForm';
 import './EventManager.css';
@@ -56,6 +56,20 @@ const EventManager: React.FC<EventManagerProps> = ({
     } catch (error) {
       alert('ステータスの更新に失敗しました。');
       console.error('Status update error:', error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleCategoryUpdate = async (eventId: string, category: EventCategory | '') => {
+    try {
+      setIsLoading(true);
+      await eventApi.update(eventId, { category: category || undefined });
+      const updatedEvents = await eventApi.getAll();
+      onEventsUpdate(updatedEvents);
+    } catch (error) {
+      alert('カテゴリーの更新に失敗しました。');
+      console.error('Category update error:', error);
     } finally {
       setIsLoading(false);
     }
@@ -174,6 +188,21 @@ const EventManager: React.FC<EventManagerProps> = ({
                       <option value="ticket_supported">通し券対応</option>
                       <option value="ticket_not_supported">通し券未対応</option>
                       <option value="finished">終了</option>
+                    </select>
+                    <select
+                      value={event.category || ''}
+                      onChange={(e) => handleCategoryUpdate(event.id, e.target.value as EventCategory | '')}
+                      disabled={isLoading}
+                      className="category-select"
+                    >
+                      <option value="">カテゴリー未設定</option>
+                      <option value="伝統">伝統</option>
+                      <option value="ビジネス">ビジネス</option>
+                      <option value="対話">対話</option>
+                      <option value="体験">体験</option>
+                      <option value="食">食</option>
+                      <option value="自然">自然</option>
+                      <option value="パフォーマンス">パフォーマンス</option>
                     </select>
                     <button
                       className="edit-button"

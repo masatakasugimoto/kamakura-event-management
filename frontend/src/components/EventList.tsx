@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import type { EventWithLocation } from '../types';
+import type { EventWithLocation, EventCategory } from '../types';
 import './EventList.css';
 
 interface EventListProps {
@@ -11,6 +11,27 @@ interface EventListProps {
 
 const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventSelect }) => {
   const navigate = useNavigate();
+
+  const getCategoryIcon = (category?: EventCategory) => {
+    if (!category) return null;
+
+    const categoryMap: Record<EventCategory, string> = {
+      '伝統': 'zentradition.png',
+      'ビジネス': 'zenbusiness.png',
+      '対話': 'zendialogue.png',
+      '体験': 'zenexhibition.png',
+      '食': 'zenfood.png',
+      '自然': 'zennatureact.png',
+      'パフォーマンス': 'zenperformance.png',
+    };
+
+    return (
+      <div className="event-category">
+        <img src={`/${categoryMap[category]}`} alt={category} className="category-icon" />
+        <span className="category-name">{category}</span>
+      </div>
+    );
+  };
 
   const getStatusBadge = (status: string) => {
     const statusMap = {
@@ -89,8 +110,11 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
               <div className="event-time">
                 {formatTime(event.startTime, event.endTime)}
               </div>
-              <div className="event-location">
-                📍 {event.location.name}
+              <div className="event-location-category">
+                <div className="event-location">
+                  📍 {event.location.name}
+                </div>
+                {getCategoryIcon(event.category)}
               </div>
               <div className="event-description">
                 {event.description}

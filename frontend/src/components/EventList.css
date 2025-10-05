@@ -115,10 +115,38 @@
   margin-bottom: 6px;
 }
 
+.event-location-category {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
 .event-location {
   color: #e74c3c;
   font-weight: 500;
-  margin-bottom: 8px;
+}
+
+.event-category {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #f8f9fa;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid #e0e0e0;
+}
+
+.category-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.category-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: #2c3e50;
 }
 
 .event-description {

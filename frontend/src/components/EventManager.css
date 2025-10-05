@@ -92,12 +92,18 @@
   align-items: center;
 }
 
-.status-select {
+.status-select,
+.category-select {
   padding: 6px 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
   background: white;
   cursor: pointer;
+  font-size: 13px;
+}
+
+.category-select {
+  min-width: 140px;
 }
 
 .edit-button, .delete-button {

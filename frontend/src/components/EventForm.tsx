@@ -24,21 +24,26 @@ const EventForm: React.FC<EventFormProps> = ({
     startTime: '10:00',
     endTime: '17:30',
     locationId: '',
-    status: 'ticket_supported'
+    status: 'ticket_supported',
+    category: undefined
   });
 
   const [errors, setErrors] = useState<Record<string, string>>({});
 
   useEffect(() => {
     if (event) {
+      // YYYY/MM/DD形式をYYYY-MM-DD形式に変換
+      const formattedDate = event.date.replace(/\//g, '-');
+
       setFormData({
         title: event.title,
         description: event.description,
-        date: event.date,
+        date: formattedDate,
         startTime: event.startTime,
         endTime: event.endTime,
         locationId: event.locationId,
-        status: event.status
+        status: event.status,
+        category: event.category
       });
     }
   }, [event]);
@@ -220,6 +225,25 @@ const EventForm: React.FC<EventFormProps> = ({
                 <option value="finished">終了</option>
               </select>
             </div>
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="category">カテゴリー</label>
+            <select
+              id="category"
+              name="category"
+              value={formData.category || ''}
+              onChange={handleInputChange}
+            >
+              <option value="">カテゴリーを選択してください（任意）</option>
+              <option value="伝統">伝統</option>
+              <option value="ビジネス">ビジネス</option>
+              <option value="対話">対話</option>
+              <option value="体験">体験</option>
+              <option value="食">食</option>
+              <option value="自然">自然</option>
+              <option value="パフォーマンス">パフォーマンス</option>
+            </select>
           </div>
 
           <div className="form-actions">

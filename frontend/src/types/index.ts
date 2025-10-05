@@ -7,6 +7,8 @@ export interface Location {
   description?: string;
 }
 
+export type EventCategory = '伝統' | 'ビジネス' | '対話' | '体験' | '食' | '自然' | 'パフォーマンス';
+
 export interface Event {
   id: string;
   title: string;
@@ -16,6 +18,7 @@ export interface Event {
   endTime: string;
   locationId: string;
   status: 'ticket_supported' | 'ticket_not_supported' | 'finished';
+  category?: EventCategory;
 }
 
 export interface EventWithLocation extends Event {

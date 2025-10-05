@@ -177,7 +177,8 @@
     "startTime": "13:00",
     "endTime": "16:00",
     "locationId": "12",
-    "status": "ticket_supported"
+    "status": "ticket_supported",
+    "category": "伝統"
   },
   {
     "id": "28",
@@ -242,12 +243,12 @@
   {
     "id": "36",
     "title": "AI (人工知能)とAI (祖先の知恵)の統合",
-    "description": "",
+    "description": "AI (人工知能)とAI (祖先の知恵)の統合",
     "date": "2025/11/16",
-    "startTime": "9:00",
+    "startTime": "10:00",
     "endTime": "12:00",
     "locationId": "20",
-    "status": "ticket_not_supported"
+    "status": "ticket_supported"
   },
   {
     "id": "37",
@@ -407,7 +408,8 @@
     "startTime": "09:45",
     "endTime": "13:00",
     "locationId": "10",
-    "status": "ticket_not_supported"
+    "status": "ticket_not_supported",
+    "category": "体験"
   },
   {
     "id": "58",
