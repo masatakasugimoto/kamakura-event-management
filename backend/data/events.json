@@ -20,16 +20,6 @@
     "status": "ticket_supported"
   },
   {
-    "id": "8",
-    "title": "Spiritual Lunch with Sacred Ecology 　〜五感を超え、第六感で味わう食の瞑想体験〜",
-    "description": "食（マインドフルイーティング・自然食の提供・料理体験・食べる瞑想など）",
-    "date": "未定",
-    "startTime": "",
-    "endTime": "",
-    "locationId": "19",
-    "status": "ticket_supported"
-  },
-  {
     "id": "9",
     "title": "『自然に還る　自分に還る』②New Moon Meditations & Sound Bath　イベントカテゴリー：ワークショップ",
     "description": "ワークショップ",
@@ -47,7 +37,7 @@
     "startTime": "",
     "endTime": "",
     "locationId": "19",
-    "status": "ticket_supported"
+    "status": "ticket_not_supported"
   },
   {
     "id": "11",
@@ -87,22 +77,22 @@
     "startTime": "10:00",
     "endTime": "12:00",
     "locationId": "7",
-    "status": "ticket_supported"
+    "status": "ticket_not_supported"
   },
   {
     "id": "17",
-    "title": "本来の自分につながる手のひらレター",
-    "description": "ワークショップ",
+    "title": "手放すことで、本当の自分は手のひらに戻ってくる。",
+    "description": "手放す瞑想と、そこで得た感覚を手紙として表現する、体験型ワークショップです。\n瞑想を通じて余分なものを手放し、自然とつながりながら、本来の安らぎや豊かさに満ちた自分に出会っていきます。\n\n日時：2025年11月22日（土）※①または②のいずれかを最後にご選択ください\n　①午前10:00〜12:00\n　②午後14:00〜16:00\n\nその感覚を「本来の自分からの手紙」として書き出し、仲間と交換・対話することで、一時的な気づきを日常へ持ち帰るリマインダーへと変えていきます。\n自分と深くつながりながら、他者との間に新しい響きを見つける。\nZen2.0ならではの、静けさと温かさに包まれるセッションです。\n",
     "date": "2025/11/22",
     "startTime": "10:00",
-    "endTime": "12:00",
-    "locationId": "16",
-    "status": "ticket_supported"
+    "endTime": "16:00",
+    "locationId": "25",
+    "status": "ticket_not_supported"
   },
   {
     "id": "18",
-    "title": "ライフフォース・アントレプレナーシップ",
-    "description": "",
+    "title": "～本来の力を発揮し、自分の生き方へシフトする～ライフフォース・アントレプレナーシップ体験ワークショップ",
+    "description": "～本来の力を発揮し、自分の生き方へシフトする～ライフフォース・アントレプレナーシップ体験ワークショップ",
     "date": "2025/11/16",
     "startTime": "13:30",
     "endTime": "16:00",
@@ -181,7 +171,7 @@
   },
   {
     "id": "27",
-    "title": "ナラティブから始める宇宙思考",
+    "title": "超学際ラボ　惑星視点と日本文化視点からこれからの時代を物語る 　― 宇宙と自然のスピリチュアリティが示す未来 ―",
     "description": "講演・対話",
     "date": "2025/11/17",
     "startTime": "13:00",
@@ -191,13 +181,13 @@
   },
   {
     "id": "28",
-    "title": "仏教と心理療法による心身と精神へのアプローチ",
-    "description": "",
+    "title": "イタリア発 : 仏道を歩む心理療法家による心と身体と霊性をつなぐアプローチ",
+    "description": "【時間未確定】\nイタリア発 : 仏道を歩む心理療法家による心と身体と霊性をつなぐアプローチ",
     "date": "2025/11/18",
     "startTime": "13:00",
     "endTime": "16:00",
     "locationId": "7",
-    "status": "ticket_supported"
+    "status": "ticket_not_supported"
   },
   {
     "id": "30",
@@ -207,7 +197,7 @@
     "startTime": "17:00",
     "endTime": "19:30",
     "locationId": "4",
-    "status": "ticket_supported"
+    "status": "ticket_not_supported"
   },
   {
     "id": "31",
@@ -217,7 +207,7 @@
     "startTime": "",
     "endTime": "",
     "locationId": "19",
-    "status": "ticket_supported"
+    "status": "ticket_not_supported"
   },
   {
     "id": "33",
@@ -227,7 +217,7 @@
     "startTime": "",
     "endTime": "",
     "locationId": "19",
-    "status": "ticket_supported"
+    "status": "ticket_not_supported"
   },
   {
     "id": "34",
@@ -257,11 +247,11 @@
     "startTime": "9:00",
     "endTime": "12:00",
     "locationId": "20",
-    "status": "ticket_supported"
+    "status": "ticket_not_supported"
   },
   {
     "id": "37",
-    "title": "「自然を感じ香りとタッチと食で整える鎌倉の癒し体験」（仮）",
+    "title": "『和精油×薬膳×リフレクソロジー　鎌倉《いい塩梅》コラボユニット』",
     "description": "ワークショップ",
     "date": "2025/11/22",
     "startTime": "10:00",
@@ -287,7 +277,7 @@
     "startTime": "16:30",
     "endTime": "18:30",
     "locationId": "7",
-    "status": "ticket_supported"
+    "status": "ticket_not_supported"
   },
   {
     "id": "40",
@@ -301,32 +291,12 @@
   },
   {
     "id": "41",
-    "title": "＜仮＞小泉八雲（ラフカディオ・ハーン）が見た日本の美と霊性",
+    "title": "〜おけの会〜「八雲はなぜ“霊性の発見者”になり得たのか」",
     "description": "講演・対話",
     "date": "2025/11/18",
     "startTime": "15:00",
     "endTime": "17:00",
     "locationId": "7",
-    "status": "ticket_supported"
-  },
-  {
-    "id": "43",
-    "title": "【晩秋の美しさに時めく】　Aroma Scent ワークショップ",
-    "description": "ワークショップ",
-    "date": "2025/11/22",
-    "startTime": "10:30",
-    "endTime": "12:30",
-    "locationId": "22",
-    "status": "ticket_supported"
-  },
-  {
-    "id": "44",
-    "title": "草から紐へ -植物との呼応を探る-",
-    "description": "ワークショップ",
-    "date": "2025/11/16",
-    "startTime": "13:30",
-    "endTime": "16:30",
-    "locationId": "23",
     "status": "ticket_supported"
   },
   {
@@ -347,7 +317,7 @@
     "startTime": "",
     "endTime": "",
     "locationId": "19",
-    "status": "ticket_supported"
+    "status": "ticket_not_supported"
   },
   {
     "id": "48",
@@ -367,7 +337,7 @@
     "startTime": "17:00",
     "endTime": "19:30",
     "locationId": "4",
-    "status": "ticket_supported"
+    "status": "ticket_not_supported"
   },
   {
     "id": "51",
@@ -377,7 +347,7 @@
     "startTime": "17:00",
     "endTime": "19:30",
     "locationId": "4",
-    "status": "ticket_supported"
+    "status": "ticket_not_supported"
   },
   {
     "id": "52",
@@ -387,7 +357,7 @@
     "startTime": "17:00",
     "endTime": "19:30",
     "locationId": "4",
-    "status": "ticket_supported"
+    "status": "ticket_not_supported"
   },
   {
     "id": "53",
@@ -397,7 +367,7 @@
     "startTime": "17:00",
     "endTime": "19:30",
     "locationId": "4",
-    "status": "ticket_supported"
+    "status": "ticket_not_supported"
   },
   {
     "id": "54",
@@ -407,7 +377,7 @@
     "startTime": "17:00",
     "endTime": "19:30",
     "locationId": "4",
-    "status": "ticket_supported"
+    "status": "ticket_not_supported"
   },
   {
     "id": "55",
@@ -417,6 +387,76 @@
     "startTime": "17:00",
     "endTime": "19:30",
     "locationId": "4",
+    "status": "ticket_not_supported"
+  },
+  {
+    "id": "56",
+    "title": "掌に美しい日本を奏でる  \"Sprituality× Art × The Book” ーJapan Craft Book projectー",
+    "description": "「日本の神様の物語を、日本の紙に綴る、描く」というサブコンセプトから生まれたアートブックの世界へ皆様を誘うとともに、手触りや佇まいを大切にしたこれからの本のあり方、\n「Spirituality」×「Art」 ×「 Book」について、ワインを片手に皆様と語り合うひとときを過ごしたいと思います。",
+    "date": "2025/11/21",
+    "startTime": "18:30",
+    "endTime": "20:30",
+    "locationId": "21",
     "status": "ticket_supported"
+  },
+  {
+    "id": "57",
+    "title": " Transpersonal Art for Health and Wellbeing ‐ New Eyes for Nature  トランスパーソナル アート体験会『自然界へのあたらしいまなざし』",
+    "description": "冬至へと向かう鎌倉山の穏やかな光のもと、身近な植物や鉱物と私たちのあいだにある境界に、そっと触れていきます。その輪郭がやわらかくほどけていく過程では、自己の感覚が静かにひらき、存在と響きあいながら、関係性が結びなおされていきます。 \n\n本ワークショップでは、創作と対話を通じて、こうした繊細な共振のありようを探ります。",
+    "date": "2025/11/16",
+    "startTime": "09:45",
+    "endTime": "13:00",
+    "locationId": "10",
+    "status": "ticket_not_supported"
+  },
+  {
+    "id": "58",
+    "title": "禅 × 囲炉端：いのちに火を灯す会話",
+    "description": "人と人のこころの通ったコミュニケーション量が低下し、\nストレスがかかりやすい環境下にある現代において、\n「話し合う」ではなく、「語り合う」。\n囲炉裏の火のぬくもりと静けさの中でこころとこころで語り合う体験を通して\n持続可能で精神的に健康な状態を体感していただけます。",
+    "date": "2025/11/17",
+    "startTime": "18:00",
+    "endTime": "21:00",
+    "locationId": "26",
+    "status": "ticket_not_supported"
+  },
+  {
+    "id": "59",
+    "title": "私色の秋のSceneを紡ぐAroma Scent作り",
+    "description": "天然精油を使用したアロマ香水づくり。アロマ×心理学に精通したアロマコロジストが考案したベースのレシピに基づき香水を作りながら、最後に好きな香りの精油を足して\"私色\"に秋を楽しめるワークショップ。天然の植物から抽出した精油のエネルギーや精神性を頂き、生ｓ津を楽しみ生きる力へとつなげる。マインドフルに香りを楽しむワークあり。",
+    "date": "2025/11/22",
+    "startTime": "10:30",
+    "endTime": "12:00",
+    "locationId": "22",
+    "status": "ticket_supported"
+  },
+  {
+    "id": "60",
+    "title": "マインドフルネス瞑想の源流に触れて",
+    "description": "プログラムは、午前中はタイ仏教のご紹介と座る瞑想を行い、午後は、天気が良ければ源氏山にて歩く瞑想を行います。午前中のみご参加も可能。\n1日リトリートとして、午前、午後通してご参加いただく方にはタイ寺院のビュッフェスタイルのお食事をご用意いたします。\n今年の春、僧侶とともにタイの山寺を訪問し、地域の方々と交わりました。\n自然と溶け合い、生活に溶け込んだタイ仏教の在り方を、皆様と分かち合いながら、慈悲を広げるために、共に瞑想できたら、と思っています。\n皆様のご参加、心よりお待ちいたします。\n（なお、宗教的な勧誘などはありません。安心してご参加下さい。）　\n",
+    "date": "2025/11/18",
+    "startTime": "10:30",
+    "endTime": "16:30",
+    "locationId": "13",
+    "status": "ticket_supported"
+  },
+  {
+    "id": "61",
+    "title": "AI時代と禅の精神 〜答えのない時代を、どう生きるか。そのヒントは、北鎌倉の静寂の中にあった〜",
+    "description": "答えのない時代を、どう生きるか。\n\nそのヒントは、北鎌倉の静寂の中にあった。\n\n\nテクノロジーの最先端と、日本の精神文化が出会う特別な一日。\n\nAI開発者も知らない、人間の“最後の砦”とは？\n\n\n禅が教える、未来のリーダーシップを体感しに来ませんか。",
+    "date": "2025/11/21",
+    "startTime": "10:00",
+    "endTime": "12:00",
+    "locationId": "24",
+    "status": "ticket_supported"
+  },
+  {
+    "id": "62",
+    "title": "イタリア発 : 仏道を歩む心理療法家による心と身体と霊性をつなぐアプローチ",
+    "description": "【時間未確定】\nイタリア発 : 仏道を歩む心理療法家による心と身体と霊性をつなぐアプローチ",
+    "date": "2025/11/20",
+    "startTime": "10:00",
+    "endTime": "11:30",
+    "locationId": "7",
+    "status": "ticket_not_supported"
   }
 ]
