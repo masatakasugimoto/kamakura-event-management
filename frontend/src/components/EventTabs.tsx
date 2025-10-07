@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import EventList from './EventList';
 import VenueList from './VenueList';
+import CategoryList from './CategoryList';
 import type { EventWithLocation, Location } from '../types';
 import './EventTabs.css';
 
@@ -23,7 +24,7 @@ const EventTabs: React.FC<EventTabsProps> = ({
   onLocationSelect,
   shouldShowVenues = false
 }) => {
-  const [activeTab, setActiveTab] = useState<'events' | 'venues'>('events');
+  const [activeTab, setActiveTab] = useState<'events' | 'venues' | 'categories'>('events');
 
   // shouldShowVenuesがtrueの時、会場一覧タブに切り替え
   useEffect(() => {
@@ -47,8 +48,14 @@ const EventTabs: React.FC<EventTabsProps> = ({
         >
           イベント会場一覧
         </button>
+        <button
+          className={`tab-button ${activeTab === 'categories' ? 'active' : ''}`}
+          onClick={() => setActiveTab('categories')}
+        >
+          イベントカテゴリー一覧
+        </button>
       </div>
-      
+
       <div className="tab-content">
         {activeTab === 'events' && (
           <EventList
@@ -63,6 +70,13 @@ const EventTabs: React.FC<EventTabsProps> = ({
             events={events}
             selectedLocationId={selectedLocationId}
             onLocationSelect={onLocationSelect}
+          />
+        )}
+        {activeTab === 'categories' && (
+          <CategoryList
+            events={events}
+            selectedEventId={selectedEventId}
+            onEventSelect={onEventSelect}
           />
         )}
       </div>
