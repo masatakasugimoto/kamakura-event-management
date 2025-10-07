@@ -199,10 +199,11 @@ const EventManager: React.FC<EventManagerProps> = ({
                       <option value="伝統">伝統</option>
                       <option value="ビジネス">ビジネス</option>
                       <option value="対話">対話</option>
-                      <option value="体験">体験</option>
+                      <option value="展示">展示</option>
                       <option value="食">食</option>
                       <option value="自然">自然</option>
                       <option value="パフォーマンス">パフォーマンス</option>
+                      <option value="体験">体験</option>
                     </select>
                     <button
                       className="edit-button"

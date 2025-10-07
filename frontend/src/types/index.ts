@@ -7,7 +7,7 @@ export interface Location {
   description?: string;
 }
 
-export type EventCategory = '伝統' | 'ビジネス' | '対話' | '体験' | '食' | '自然' | 'パフォーマンス';
+export type EventCategory = '伝統' | 'ビジネス' | '対話' | '展示' | '食' | '自然' | 'パフォーマンス' | '体験';
 
 export interface Event {
   id: string;

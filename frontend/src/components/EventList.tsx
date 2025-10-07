@@ -19,10 +19,11 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
       '伝統': 'zentradition.png',
       'ビジネス': 'zenbusiness.png',
       '対話': 'zendialogue.png',
-      '体験': 'zenexhibition.png',
+      '展示': 'zenexhibition.png',
       '食': 'zenfood.png',
       '自然': 'zennatureact.png',
       'パフォーマンス': 'zenperformance.png',
+      '体験': 'zenworkshop.png',
     };
 
     return (
