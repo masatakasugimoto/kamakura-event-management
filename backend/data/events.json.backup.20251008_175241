@@ -30,8 +30,7 @@
     "endTime": "16:00",
     "locationId": "13",
     "status": "ticket_supported",
-    "category": "体験",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/newmoonmeditations-and-soundbath-2"
+    "category": "体験"
   },
   {
     "id": "11",
@@ -42,8 +41,7 @@
     "endTime": "19:45",
     "locationId": "7",
     "status": "ticket_supported",
-    "category": "体験",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E3%81%A4%E3%81%AA%E3%81%8C%E3%82%8A%E3%82%92%E5%8F%96%E3%82%8A%E6%88%BB%E3%81%99%E3%83%AF%E3%83%BC%E3%82%AF%E4%BD%93%E9%A8%93%E4%BC%9A%EF%BD%9Eweb-of-life%EF%BC%88%E7%94%9F%E5%91%BD%E3%81%AE%E7%B9%94%E7%89%A9%EF%BC%89%E3%81%A8%E3%81%AE%E3%81%A4%E3%81%AA%E3%81%8C%E3%82%8A%E3%82%92%E6%80%9D%E3%81%84%E5%87%BA%E3%81%99%EF%BD%9E"
+    "category": "体験"
   },
   {
     "id": "12",
@@ -54,8 +52,7 @@
     "endTime": "13:00",
     "locationId": "15",
     "status": "ticket_supported",
-    "category": "体験",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E7%94%9F%E5%91%BD%E3%81%AE%E8%BC%9D%E3%81%8D%E3%81%A8%E7%B9%8B%E3%81%8C%E3%82%8A%E3%81%AB%E7%9B%AE%E8%A6%9A%E3%82%81%E3%82%8B%E3%82%AF%E3%83%B3%E3%83%80%E3%83%AA%E3%83%BC%E3%83%8B%E3%83%A8%E3%82%AC"
+    "category": "体験"
   },
   {
     "id": "13",
@@ -66,8 +63,7 @@
     "endTime": "17:00",
     "locationId": "8",
     "status": "ticket_supported",
-    "category": "対話",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E3%80%8Cidgs%E3%81%A7%E5%A7%8B%E3%82%81%E3%82%8B%E3%80%81%E7%A7%81%E3%81%8B%E3%82%89%E4%B8%96%E7%95%8C%E3%81%B8%E5%BA%83%E3%81%8C%E3%82%8B%E5%A4%89%E5%8C%96%E3%81%AE%E6%97%85%E3%80%8D-%EF%BD%9E%E5%8F%A4%E9%83%BD%E9%8E%8C%E5%80%89%E3%81%A7%E5%86%85%E3%81%AA%E3%82%8B%E6%88%90%E9%95%B7%E3%81%A8%E6%9C%AA%E6%9D%A5%E5%85%B1%E5%89%B5%E3%81%B8%E3%81%AE%EF%BC%95%E3%81%A4%E3%81%AE%E9%81%93%E3%82%92%E8%BE%BF%E3%82%8B%EF%BD%9E"
+    "category": "対話"
   },
   {
     "id": "16",
@@ -78,8 +74,7 @@
     "endTime": "12:00",
     "locationId": "7",
     "status": "ticket_not_supported",
-    "category": "体験",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/the-dao-of-flow-~-taichi-experience-%E6%B5%81%E3%81%AE%E9%81%93%EF%BC%9A%E5%A4%AA%E6%A5%B5%E6%8B%B3%E3%81%AE%E4%BD%93%E9%A8%93"
+    "category": "体験"
   },
   {
     "id": "17",
@@ -90,8 +85,7 @@
     "endTime": "16:00",
     "locationId": "25",
     "status": "ticket_not_supported",
-    "category": "体験",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E6%9C%AC%E6%9D%A5%E3%81%AE%E8%87%AA%E5%88%86%E3%81%AB%E3%81%A4%E3%81%AA%E3%81%8C%E3%82%8B%E6%89%8B%E3%81%AE%E3%81%B2%E3%82%89%E3%83%AC%E3%82%BF%E3%83%BC-"
+    "category": "体験"
   },
   {
     "id": "18",
@@ -102,8 +96,7 @@
     "endTime": "16:00",
     "locationId": "17",
     "status": "ticket_supported",
-    "category": "ビジネス",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E3%83%9F%E3%83%83%E3%83%89%E3%83%A1%E3%83%87%E3%82%A3%E3%82%A2%E6%9C%89%E9%99%90%E4%BC%9A%E7%A4%BE"
+    "category": "ビジネス"
   },
   {
     "id": "19",
@@ -114,8 +107,7 @@
     "endTime": "12:30",
     "locationId": "13",
     "status": "ticket_supported",
-    "category": "対話",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E3%80%8E%E8%87%AA%E7%84%B6%E3%81%AB%E9%82%84%E3%82%8B%E3%80%80%E8%87%AA%E5%88%86%E3%81%AB%E9%82%84%E3%82%8B%E3%80%8F%E3%80%80%E2%91%A0%E3%81%82%E3%82%8B%E3%81%8C%E3%81%BE%E3%81%BE%E3%81%A7%E3%81%82%E3%82%8B%E3%81%93%E3%81%A8%E3%82%92%E6%84%89%E3%81%97%E3%82%80%E6%99%82%E9%96%93%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E3%83%88%E3%83%BC%E3%82%AF%E3%82%BB%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3%E3%80%80%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E3%82%AB%E3%83%86%E3%82%B4%E3%83%AA%E3%83%BC%EF%BC%9A%E5%AF%BE%E8%A9%B1%E4%BC%9A%E3%80%80%E2%91%A1new-moon-meditations-%26-sound-bath%E3%80%80%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E3%82%AB%E3%83%86%E3%82%B4%E3%83%AA%E3%83%BC%EF%BC%9A%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97"
+    "category": "対話"
   },
   {
     "id": "20",
@@ -126,8 +118,7 @@
     "endTime": "11:30",
     "locationId": "17",
     "status": "ticket_supported",
-    "category": "伝統",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E2%91%A0%E6%9B%B8%E3%81%8F%E6%99%82%E9%96%93%E2%91%A1%E5%BA%8A%E3%81%AE%E9%96%93%E5%B1%95%E7%A4%BA%E5%86%85%E7%9C%81%E3%81%AE%E6%99%82%E9%96%93"
+    "category": "伝統"
   },
   {
     "id": "21",
@@ -137,8 +128,7 @@
     "startTime": "10:00",
     "endTime": "13:00",
     "locationId": "",
-    "status": "ticket_supported",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%AF-in-%E9%8E%8C%E5%80%89-%E3%80%9C46%E5%84%84%E5%B9%B4%E3%82%92%E6%AD%A9%E3%81%8F%E6%97%85%E3%80%9C"
+    "status": "ticket_supported"
   },
   {
     "id": "22",
@@ -149,8 +139,7 @@
     "endTime": "22:00",
     "locationId": "10",
     "status": "ticket_not_supported",
-    "category": "体験",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E6%81%90%E3%82%8C%E3%81%A8%E3%82%B7%E3%83%A3%E3%83%BC%E3%83%9E%E3%83%8B%E3%82%BA%E3%83%A0%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+    "category": "体験"
   },
   {
     "id": "23",
@@ -161,8 +150,7 @@
     "endTime": "18:00",
     "locationId": "19",
     "status": "ticket_supported",
-    "category": "展示",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E5%B7%A1%E3%82%8A%E3%81%A8%E5%A4%89%E5%AE%B9%E3%81%AE%E3%82%B8%E3%83%A5%E3%82%A8%E3%83%AA%E3%83%BC%E5%B1%95"
+    "category": "展示"
   },
   {
     "id": "24",
@@ -173,20 +161,18 @@
     "endTime": "19:00",
     "locationId": "7",
     "status": "ticket_supported",
-    "category": "体験",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E3%83%93%E3%82%AA%E3%83%80%E3%83%B3%E3%82%B5%E7%94%9F%E5%91%BD%E3%82%92%E8%B8%8A%E3%82%8B"
+    "category": "体験"
   },
   {
     "id": "26",
     "title": "鎌倉シンギング・リン音浴体験会",
     "description": "音響楽器シンギング・リン®の音響で、心と体を調和の周波数にチューニングしませんか？\n\nシンギング・リンを体の上で奏でると、脳波が瞑想状態になり、経絡バランスが調い、ストレスが減少、沈静度がアップ、体内の生体細胞水が活性化する事が学術研究で明らかになっています。\n\n今回は、シンギング・リン開発者の和 真音（かずしおん）が特別音浴体験会を行います。\nぜひお誘い合わせの上、ご参加ください。",
     "date": "2025/11/22",
-    "startTime": "9:15",
+    "startTime": "09:15",
     "endTime": "12:45",
     "locationId": "9",
     "status": "ticket_supported",
-    "category": "体験",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E3%82%B7%E3%83%B3%E3%82%AE%E3%83%B3%E3%82%B0%E3%83%AA%E3%83%B3%E9%9F%B3%E6%B5%B4%E4%BD%93%E9%A8%93%E4%BC%9A"
+    "category": "体験"
   },
   {
     "id": "27",
@@ -197,8 +183,7 @@
     "endTime": "16:30",
     "locationId": "12",
     "status": "ticket_supported",
-    "category": "対話",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E3%83%8A%E3%83%A9%E3%83%86%E3%82%A3%E3%83%96%E3%81%8B%E3%82%89%E5%A7%8B%E3%82%81%E3%82%8B%E5%AE%87%E5%AE%99%E6%80%9D%E8%80%83"
+    "category": "対話"
   },
   {
     "id": "28",
@@ -209,8 +194,7 @@
     "endTime": "16:00",
     "locationId": "7",
     "status": "ticket_not_supported",
-    "category": "体験",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/healing-body-and-mind-%C2%A0~integrating-body-oriented-and-mindful-centered-approach"
+    "category": "体験"
   },
   {
     "id": "30",
@@ -221,8 +205,7 @@
     "endTime": "19:30",
     "locationId": "4",
     "status": "ticket_not_supported",
-    "category": "伝統",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/zen-night-walk-kamakura"
+    "category": "伝統"
   },
   {
     "id": "31",
@@ -233,8 +216,7 @@
     "endTime": "18:00",
     "locationId": "19",
     "status": "ticket_not_supported",
-    "category": "食",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/regenerative-wisdom%3Asoil%2C-soul%2C-society%E3%80%82spirituality-in-nature%E3%81%A8%E3%81%AF%E4%BD%95%E3%81%8B%E3%82%92%E3%81%BF%E3%82%93%E3%81%AA%E3%81%A7%E8%80%83%E3%81%88%E3%82%8B%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97"
+    "category": "食"
   },
   {
     "id": "33",
@@ -245,8 +227,7 @@
     "endTime": "13:00",
     "locationId": "19",
     "status": "ticket_not_supported",
-    "category": "食",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E3%82%A4%E3%83%B3%E3%83%8A%E3%83%BC%E3%83%91%E3%83%BC%E3%83%9E%E3%82%AB%E3%83%AB%E3%83%81%E3%83%A3%E3%83%BC%EF%BC%9A%E3%83%91%E3%83%BC%E3%83%9E%E3%82%AB%E3%83%AB%E3%83%81%E3%83%A3%E3%83%BC%E3%81%A8%E3%81%84%E3%81%86%E7%94%9F%E6%85%8B%E7%B3%BB%E3%81%AE%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E5%8E%9F%E5%89%87%E3%81%8C%E6%8C%81%E3%81%A4%E4%BB%A3%E8%A1%A8%E7%9A%84%E3%81%AA12%E3%81%AE%E7%9F%A5%E6%81%B5%E3%82%92%E3%80%81%E6%AF%8E%E6%97%A5%E3%81%AE%E7%94%9F%E6%B4%BB%E3%81%A7%E6%B4%BB%E3%81%8B%E3%81%99%E6%96%B9%E6%B3%95%E3%82%92%E3%81%8A%E4%BC%9D%E3%81%88%E3%81%97%E3%81%BE%E3%81%99"
+    "category": "食"
   },
   {
     "id": "34",
@@ -267,20 +248,19 @@
     "endTime": "16:30",
     "locationId": "10",
     "status": "ticket_supported",
-    "category": "対話",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E6%9B%BC%E8%8D%BC%E7%BE%85%E3%81%8B%E3%82%89%E8%AA%AD%E3%81%BF%E8%A7%A3%E3%81%8F%E5%AE%87%E5%AE%99%E3%81%AE%E6%9C%AC%E8%B3%AA%E3%83%BC%E7%B5%B5%E5%86%99%E7%B5%8C%E3%81%A7%E7%B2%BE%E7%A5%9E%E4%B8%96%E7%95%8C%E3%81%AB%E8%A7%A6%E3%82%8C%E3%82%8B%E4%BD%93%E9%A8%93"
+    "category": "対話"
   },
   {
     "id": "36",
     "title": "AI (人工知能)とAI (祖先の知恵)の統合",
     "description": "AI (人工知能)がその恐るべき力と可能性によって人間を圧倒しようとする中で、もう一つのAI (祖先の知恵）は重力と均衡をもたらす必要な源として存在しています。先住の知恵は、自己・他者・大地との断たれたつながりを取り戻し、この困難な時代を生き抜く道しるべとなります。祖先の知恵は、より人間的な人工知能を築き上げるための指針となり、集合的な癒やしとウェルビーイングを支えるプラットフォームやツールの創造を可能にします。本ワークショップでは、芸術・音楽・瞑想が交わる場において、誰もが取り組める内省的な実践をどのようにデザインできるかを探究します。",
     "date": "2025/11/16",
-    "startTime": "9:00",
+    "startTime": "09:00",
     "endTime": "12:00",
     "locationId": "20",
     "status": "ticket_supported",
     "category": "対話",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/connecting-hearts-and-nature"
+    "eventUrl": "https://www.yahoo.com"
   },
   {
     "id": "37",
@@ -291,8 +271,7 @@
     "endTime": "17:00",
     "locationId": "14",
     "status": "ticket_supported",
-    "category": "体験",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E3%80%8C%E8%87%AA%E7%84%B6%E3%82%92%E6%84%9F%E3%81%98%E9%A6%99%E3%82%8A%E3%81%A8%E3%82%BF%E3%83%83%E3%83%81%E3%81%A8%E9%A3%9F%E3%81%A7%E6%95%B4%E3%81%88%E3%82%8B%E9%8E%8C%E5%80%89%E3%81%AE%E7%99%92%E3%81%97%E4%BD%93%E9%A8%93%E3%80%8D%EF%BC%88%E4%BB%AE%EF%BC%89"
+    "category": "体験"
   },
   {
     "id": "38",
@@ -303,8 +282,7 @@
     "endTime": "16:00",
     "locationId": "7",
     "status": "ticket_supported",
-    "category": "対話",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E3%83%AA%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3-%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97-in-kamakura"
+    "category": "対話"
   },
   {
     "id": "39",
@@ -315,8 +293,7 @@
     "endTime": "18:30",
     "locationId": "7",
     "status": "ticket_supported",
-    "category": "体験",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E7%9F%B3%E7%AC%9B%E6%BC%94%E5%A5%8F"
+    "category": "体験"
   },
   {
     "id": "40",
@@ -327,8 +304,7 @@
     "endTime": "14:45",
     "locationId": "11",
     "status": "ticket_supported",
-    "category": "伝統",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E9%8E%8C%E5%80%89%E6%9C%80%E5%8F%A4%E3%81%AE%E5%8E%84%E9%99%A4%E3%81%91%E7%A5%9E%E7%A4%BE%E3%81%A7%E6%97%A5%E6%9C%AC%E3%81%AE%E7%A5%9E%E8%A9%B1%E3%81%AB%E3%81%B5%E3%82%8C%E3%82%8B"
+    "category": "伝統"
   },
   {
     "id": "41",
@@ -339,8 +315,7 @@
     "endTime": "17:00",
     "locationId": "7",
     "status": "ticket_supported",
-    "category": "対話",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%EF%BC%9C%E4%BB%AE%EF%BC%9E%E5%B0%8F%E6%B3%89%E5%85%AB%E9%9B%B2%EF%BC%88%E3%83%A9%E3%83%95%E3%82%AB%E3%83%87%E3%82%A3%E3%82%AA%E3%83%BB%E3%83%8F%E3%83%BC%E3%83%B3%EF%BC%89%E3%81%8C%E8%A6%8B%E3%81%9F%E6%97%A5%E6%9C%AC%E3%81%AE%E7%BE%8E%E3%81%A8%E9%9C%8A%E6%80%A7"
+    "category": "対話"
   },
   {
     "id": "46",
@@ -351,8 +326,7 @@
     "endTime": "18:30",
     "locationId": "7",
     "status": "ticket_supported",
-    "category": "体験",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E5%8C%97%E6%AC%A7%E3%81%AE%E5%91%BC%E5%90%B8%E3%81%A8%E6%B0%B7%E3%81%AE%E7%9E%91%E6%83%B3%E3%81%A7%22%E7%9C%9F%E3%81%AA%E3%82%8B%E8%87%AA%E5%88%86%22%E3%81%A8%E7%B9%8B%E3%81%8C%E3%82%8B"
+    "category": "体験"
   },
   {
     "id": "47",
@@ -363,8 +337,7 @@
     "endTime": "",
     "locationId": "19",
     "status": "ticket_not_supported",
-    "category": "食",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/exploring-plant-wisdom"
+    "category": "食"
   },
   {
     "id": "48",
@@ -375,8 +348,7 @@
     "endTime": "16:03",
     "locationId": "12",
     "status": "ticket_supported",
-    "category": "対話",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E4%B8%96%E7%95%8C%E4%B8%AD%E3%81%AE%E9%9F%B3%E6%A5%BD%E3%81%A8%E5%8B%95%E3%81%8F%E7%9E%91%E6%83%B3%E3%82%92%E9%80%9A%E3%81%97%E3%81%A6%E6%96%87%E5%8C%96%E3%82%84%E5%BF%83%E3%82%92%E7%B5%90%E3%81%B3%E5%B9%B3%E5%92%8C%E3%82%92%E7%A5%88%E3%82%8B%E8%BC%AA-dup(dances-of-universal-peace)"
+    "category": "対話"
   },
   {
     "id": "50",
@@ -387,8 +359,7 @@
     "endTime": "19:30",
     "locationId": "4",
     "status": "ticket_not_supported",
-    "category": "対話",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/zen-night-walk-kamakura"
+    "category": "対話"
   },
   {
     "id": "51",
@@ -399,8 +370,7 @@
     "endTime": "19:30",
     "locationId": "4",
     "status": "ticket_not_supported",
-    "category": "体験",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/zen-night-walk-kamakura"
+    "category": "体験"
   },
   {
     "id": "52",
@@ -411,8 +381,7 @@
     "endTime": "19:30",
     "locationId": "4",
     "status": "ticket_not_supported",
-    "category": "体験",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/zen-night-walk-kamakura"
+    "category": "体験"
   },
   {
     "id": "53",
@@ -423,8 +392,7 @@
     "endTime": "19:30",
     "locationId": "4",
     "status": "ticket_not_supported",
-    "category": "体験",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/zen-night-walk-kamakura"
+    "category": "体験"
   },
   {
     "id": "54",
@@ -435,8 +403,7 @@
     "endTime": "19:30",
     "locationId": "4",
     "status": "ticket_not_supported",
-    "category": "体験",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/zen-night-walk-kamakura"
+    "category": "体験"
   },
   {
     "id": "55",
@@ -447,8 +414,7 @@
     "endTime": "19:30",
     "locationId": "4",
     "status": "ticket_not_supported",
-    "category": "伝統",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/zen-night-walk-kamakura"
+    "category": "伝統"
   },
   {
     "id": "56",
@@ -459,20 +425,18 @@
     "endTime": "20:30",
     "locationId": "21",
     "status": "ticket_supported",
-    "category": "体験",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%22tradition-%C3%97-art-%C3%97-the-book%22"
+    "category": "体験"
   },
   {
     "id": "57",
     "title": " Transpersonal Art for Health and Wellbeing ‐ New Eyes for Nature  トランスパーソナル アート体験会『自然界へのあたらしいまなざし』",
     "description": "冬至へと向かう鎌倉山の穏やかな光のもと、身近な植物や鉱物と私たちのあいだにある境界に、そっと触れていきます。その輪郭がやわらかくほどけていく過程では、自己の感覚が静かにひらき、存在と響きあいながら、関係性が結びなおされていきます。 \n\n本ワークショップでは、創作と対話を通じて、こうした繊細な共振のありようを探ります。",
     "date": "2025/11/20",
-    "startTime": "9:45",
+    "startTime": "09:45",
     "endTime": "13:00",
     "locationId": "10",
     "status": "ticket_not_supported",
-    "category": "体験",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/transpersonal-art-for-health-and-wellbeing"
+    "category": "体験"
   },
   {
     "id": "58",
@@ -483,8 +447,7 @@
     "endTime": "21:00",
     "locationId": "26",
     "status": "ticket_not_supported",
-    "category": "対話",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E7%A6%85-%C3%97-%E5%9B%B2%E7%82%89%E7%AB%AF%EF%BC%9A%E3%81%84%E3%81%AE%E3%81%A1%E3%81%AB%E7%81%AB%E3%82%92%E7%81%AF%E3%81%99%E4%BC%9A%E8%A9%B1"
+    "category": "対話"
   },
   {
     "id": "59",
@@ -495,8 +458,7 @@
     "endTime": "12:00",
     "locationId": "22",
     "status": "ticket_supported",
-    "category": "体験",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E7%A7%81%E8%89%B2%E3%81%AE%E7%A7%8B%E3%81%AEscene%E3%82%92%E7%B4%A1%E3%81%90aroma-scent%E4%BD%9C%E3%82%8A"
+    "category": "体験"
   },
   {
     "id": "60",
@@ -507,8 +469,7 @@
     "endTime": "16:30",
     "locationId": "13",
     "status": "ticket_supported",
-    "category": "体験",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%89%E3%83%95%E3%83%AB%E3%83%8D%E3%82%B9%E7%9E%91%E6%83%B3%E3%81%AE%E6%BA%90%E6%B5%81%E3%81%AB%E8%A7%A6%E3%82%8C%E3%81%A6"
+    "category": "体験"
   },
   {
     "id": "61",
@@ -519,8 +480,7 @@
     "endTime": "12:00",
     "locationId": "24",
     "status": "ticket_supported",
-    "category": "対話",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/ai%E6%99%82%E4%BB%A3%E3%81%A8%E7%A6%85%E3%81%AE%E7%B2%BE%E7%A5%9E-%E3%80%9C%E7%AD%94%E3%81%88%E3%81%AE%E3%81%AA%E3%81%84%E6%99%82%E4%BB%A3%E3%82%92%E3%80%81%E3%81%A9%E3%81%86%E7%94%9F%E3%81%8D%E3%82%8B%E3%81%8B%E3%80%82%E3%81%9D%E3%81%AE%E3%83%92%E3%83%B3%E3%83%88%E3%81%AF%E3%80%81%E5%8C%97%E9%8E%8C%E5%80%89%E3%81%AE%E9%9D%99%E5%AF%82%E3%81%AE%E4%B8%AD%E3%81%AB%E3%81%82%E3%81%A3%E3%81%9F%E3%80%9C"
+    "category": "対話"
   },
   {
     "id": "62",
@@ -531,8 +491,7 @@
     "endTime": "11:30",
     "locationId": "7",
     "status": "ticket_not_supported",
-    "category": "体験",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/healing-body-and-mind-%C2%A0~integrating-body-oriented-and-mindful-centered-approach"
+    "category": "体験"
   },
   {
     "id": "63",
@@ -543,8 +502,7 @@
     "endTime": "14:00",
     "locationId": "19",
     "status": "ticket_not_supported",
-    "category": "食",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/biohacking-with-plants%E3%83%BC%E3%83%9B%E3%83%AA%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E3%81%AA%E6%84%9F%E6%80%A7%E3%81%A7%E6%84%89%E3%81%97%E3%82%80%E3%83%90%E3%82%A4%E3%82%AA%E3%83%8F%E3%83%83%E3%82%AF_11%2F19"
+    "category": "食"
   },
   {
     "id": "64",
@@ -555,8 +513,7 @@
     "endTime": "15:30",
     "locationId": "18",
     "status": "ticket_supported",
-    "category": "伝統",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E2%91%A0%E6%9B%B8%E3%81%8F%E6%99%82%E9%96%93%E2%91%A1%E5%BA%8A%E3%81%AE%E9%96%93%E5%B1%95%E7%A4%BA%E5%86%85%E7%9C%81%E3%81%AE%E6%99%82%E9%96%93"
+    "category": "伝統"
   },
   {
     "id": "65",
@@ -567,8 +524,7 @@
     "endTime": "14:00",
     "locationId": "19",
     "status": "ticket_not_supported",
-    "category": "食",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/exploring-plant-wisdom"
+    "category": "食"
   },
   {
     "id": "66",
@@ -579,8 +535,7 @@
     "endTime": "20:00",
     "locationId": "19",
     "status": "ticket_not_supported",
-    "category": "食",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/balance-within-yin-yang-lunch-dessert-by-rutileq"
+    "category": "食"
   },
   {
     "id": "67",
@@ -591,20 +546,18 @@
     "endTime": "18:00",
     "locationId": "19",
     "status": "ticket_supported",
-    "category": "展示",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E5%B7%A1%E3%82%8A%E3%81%A8%E5%A4%89%E5%AE%B9%E3%81%AE%E3%82%B8%E3%83%A5%E3%82%A8%E3%83%AA%E3%83%BC%E5%B1%95"
+    "category": "展示"
   },
   {
     "id": "68",
     "title": "自分のことばに出会う時①",
     "description": "自分のことばに出会う時\n\nふだんの忙しさから離れ、海や山、森など、「自然の精神性」に触れるとき、あるいは人との繋がりを感じるとき、私たちは自分自身の内なる声にも出会うことができます。\n\n今回の対話会では、フィンランドでウェルビーイングを学んだ対話デザイナーが開発した「EQsイーキューズ～あなたに光を当てる問い～」のメソッドを使います。身の回りにある「ふつう・当たり前」をテーマにして、体感的・直感的に、自分自身の心に宿るほんとうの「ことば」をゆっくりと見つけていきます。",
     "date": "2025/11/17",
-    "startTime": "9:40",
+    "startTime": "09:40",
     "endTime": "11:40",
     "locationId": "7",
     "status": "ticket_supported",
-    "category": "体験",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E8%87%AA%E5%88%86%E3%81%AE%E3%81%93%E3%81%A8%E3%81%B0%E3%81%AB%E5%87%BA%E4%BC%9A%E3%81%86%E6%99%82"
+    "category": "体験"
   },
   {
     "id": "69",
@@ -615,8 +568,7 @@
     "endTime": "20:00",
     "locationId": "7",
     "status": "ticket_supported",
-    "category": "体験",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E8%87%AA%E5%88%86%E3%81%AE%E3%81%93%E3%81%A8%E3%81%B0%E3%81%AB%E5%87%BA%E4%BC%9A%E3%81%86%E6%99%82"
+    "category": "体験"
   },
   {
     "id": "70",
@@ -627,8 +579,7 @@
     "endTime": "13:00",
     "locationId": "27",
     "status": "ticket_supported",
-    "category": "体験",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E8%8D%89%E3%81%8B%E3%82%89%E7%B4%90%E3%81%B8--%E6%A4%8D%E7%89%A9%E3%81%A8%E3%81%AE%E5%91%BC%E5%BF%9C%E3%82%92%E6%8E%A2%E3%82%8B-"
+    "category": "体験"
   },
   {
     "id": "71",
@@ -639,7 +590,6 @@
     "endTime": "19:00",
     "locationId": "7",
     "status": "ticket_not_supported",
-    "category": "体験",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/healing-body-and-mind-%C2%A0~integrating-body-oriented-and-mindful-centered-approach"
+    "category": "体験"
   }
 ]

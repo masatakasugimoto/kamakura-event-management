@@ -54,9 +54,13 @@ const CategoryList: React.FC<CategoryListProps> = ({ events, selectedEventId, on
     return `${startTime} - ${endTime}`;
   };
 
-  const handleShareClick = (e: React.MouseEvent, eventId: string) => {
+  const handleShareClick = (e: React.MouseEvent, event: EventWithLocation) => {
     e.stopPropagation();
-    navigate(`/event/${eventId}`);
+    if (event.eventUrl) {
+      window.open(event.eventUrl, '_blank');
+    } else {
+      navigate(`/event/${event.id}`);
+    }
   };
 
   // カテゴリー毎にイベントをグループ化し、日時でソート
@@ -116,7 +120,7 @@ const CategoryList: React.FC<CategoryListProps> = ({ events, selectedEventId, on
                     {getStatusBadge(event.status)}
                     <button
                       className="share-link-button"
-                      onClick={(e) => handleShareClick(e, event.id)}
+                      onClick={(e) => handleShareClick(e, event)}
                       title="このイベントのリンクを開く"
                     >
                       🔗
@@ -160,7 +164,7 @@ const CategoryList: React.FC<CategoryListProps> = ({ events, selectedEventId, on
                     {getStatusBadge(event.status)}
                     <button
                       className="share-link-button"
-                      onClick={(e) => handleShareClick(e, event.id)}
+                      onClick={(e) => handleShareClick(e, event)}
                       title="このイベントのリンクを開く"
                     >
                       🔗

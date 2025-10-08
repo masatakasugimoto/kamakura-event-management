@@ -19,6 +19,7 @@ export interface Event {
   locationId: string;
   status: 'ticket_supported' | 'ticket_not_supported' | 'finished';
   category?: EventCategory;
+  eventUrl?: string;
 }
 
 export interface EventWithLocation extends Event {

@@ -78,9 +78,13 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
     return groups;
   }, {} as Record<string, EventWithLocation[]>);
 
-  const handleShareClick = (e: React.MouseEvent, eventId: string) => {
+  const handleShareClick = (e: React.MouseEvent, event: EventWithLocation) => {
     e.stopPropagation();
-    navigate(`/event/${eventId}`);
+    if (event.eventUrl) {
+      window.open(event.eventUrl, '_blank');
+    } else {
+      navigate(`/event/${event.id}`);
+    }
   };
 
   return (
@@ -101,7 +105,7 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
                   {getStatusBadge(event.status)}
                   <button
                     className="share-link-button"
-                    onClick={(e) => handleShareClick(e, event.id)}
+                    onClick={(e) => handleShareClick(e, event)}
                     title="このイベントのリンクを開く"
                   >
                     🔗

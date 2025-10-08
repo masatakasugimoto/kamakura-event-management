@@ -1,0 +1,452 @@
+[
+  {
+    "id": "1",
+    "title": "始まりの響き、未来への序章。Mindful City Kamakura Week キックオフイベント",
+    "description": "2025年11月16日、鎌倉の歴史が新たな音色を奏で始めます。世界初のマインドフルシティ実現への、記念すべき7日間の幕開けとなる「Mindful City Kamakura Week キックオフイベント」。この歴史的瞬間を、豪華ゲストと共に体験しませんか？",
+    "date": "2025/11/16",
+    "startTime": "12:30",
+    "endTime": "17:00",
+    "locationId": "6",
+    "status": "ticket_supported"
+  },
+  {
+    "id": "7",
+    "title": "マインドフルシティ鎌倉ウィーク 最終日懇親会",
+    "description": "〜 再会と共創の集い 〜\n一週間の感動と学びを、温かな交流で締めくくる\n\nマインドフルシティ鎌倉ウィークの最終日、私たちは特別な時間を用意しました。 これは単なる懇親会ではありません。共に学び、共に成長してきた仲間たちが集う「同窓会」です。",
+    "date": "2025/11/22",
+    "startTime": "13:00",
+    "endTime": "16:00",
+    "locationId": "9",
+    "status": "ticket_supported"
+  },
+  {
+    "id": "9",
+    "title": "『自然に還る　自分に還る』②New Moon Meditations & Sound Bath　イベントカテゴリー：ワークショップ",
+    "description": "ワークショップ",
+    "date": "2025/11/20",
+    "startTime": "14:00",
+    "endTime": "16:00",
+    "locationId": "13",
+    "status": "ticket_supported"
+  },
+  {
+    "id": "10",
+    "title": "Balance Within – Yin-Yang Lunch & Dessert by Rutileq 　陰陽のリチュアルと、ルチルクのランチ＆デザート",
+    "description": "食（マインドフルイーティング・自然食の提供・料理体験・食べる瞑想など）",
+    "date": "未定",
+    "startTime": "",
+    "endTime": "",
+    "locationId": "19",
+    "status": "ticket_not_supported"
+  },
+  {
+    "id": "11",
+    "title": "つながりを取り戻すワーク体験会～Web Of Life（生命の織物）とのつながりを思い出す～",
+    "description": "",
+    "date": "2025/11/17",
+    "startTime": "17:15",
+    "endTime": "19:45",
+    "locationId": "7",
+    "status": "ticket_supported"
+  },
+  {
+    "id": "12",
+    "title": "生命の輝きと繋がりに目覚めるクンダリーニヨガ",
+    "description": "",
+    "date": "2025/11/22",
+    "startTime": "10:00",
+    "endTime": "13:00",
+    "locationId": "15",
+    "status": "ticket_supported"
+  },
+  {
+    "id": "13",
+    "title": "「IDGsで始める、私から世界へ広がる変化の旅」 ～古都鎌倉で内なる成長と未来共創への５つの道を辿る～",
+    "description": "",
+    "date": "2025/11/21",
+    "startTime": "14:00",
+    "endTime": "17:00",
+    "locationId": "8",
+    "status": "ticket_supported"
+  },
+  {
+    "id": "16",
+    "title": "The Dao of Flow ~ Taichi Experience 流の道：太極拳の体験",
+    "description": "ワークショップ",
+    "date": "2025/11/20",
+    "startTime": "10:00",
+    "endTime": "12:00",
+    "locationId": "7",
+    "status": "ticket_not_supported"
+  },
+  {
+    "id": "17",
+    "title": "手放すことで、本当の自分は手のひらに戻ってくる。",
+    "description": "手放す瞑想と、そこで得た感覚を手紙として表現する、体験型ワークショップです。\n瞑想を通じて余分なものを手放し、自然とつながりながら、本来の安らぎや豊かさに満ちた自分に出会っていきます。\n\n日時：2025年11月22日（土）※①または②のいずれかを最後にご選択ください\n　①午前10:00〜12:00\n　②午後14:00〜16:00\n\nその感覚を「本来の自分からの手紙」として書き出し、仲間と交換・対話することで、一時的な気づきを日常へ持ち帰るリマインダーへと変えていきます。\n自分と深くつながりながら、他者との間に新しい響きを見つける。\nZen2.0ならではの、静けさと温かさに包まれるセッションです。\n",
+    "date": "2025/11/22",
+    "startTime": "10:00",
+    "endTime": "16:00",
+    "locationId": "25",
+    "status": "ticket_not_supported"
+  },
+  {
+    "id": "18",
+    "title": "～本来の力を発揮し、自分の生き方へシフトする～ライフフォース・アントレプレナーシップ体験ワークショップ",
+    "description": "～本来の力を発揮し、自分の生き方へシフトする～ライフフォース・アントレプレナーシップ体験ワークショップ",
+    "date": "2025/11/16",
+    "startTime": "13:30",
+    "endTime": "16:00",
+    "locationId": "17",
+    "status": "ticket_supported"
+  },
+  {
+    "id": "19",
+    "title": "『自然に還る　自分に還る』　①あるがままであることを愉しむ時間についてのトークセッション　イベントカテゴリー：対話会",
+    "description": "ワークショップ",
+    "date": "2025/11/19",
+    "startTime": "11:00",
+    "endTime": "12:30",
+    "locationId": "13",
+    "status": "ticket_supported"
+  },
+  {
+    "id": "20",
+    "title": "①書く時間②床の間展示　内省の時間",
+    "description": "伝統（禅体験・武道・茶道・華道・香道など）",
+    "date": "未定",
+    "startTime": "",
+    "endTime": "",
+    "locationId": "18",
+    "status": "ticket_supported"
+  },
+  {
+    "id": "21",
+    "title": "ディープタイムウォーク in 鎌倉 〜46億年を歩く旅〜",
+    "description": "自然体験（森林浴・トレイルランニング・ネイチャーウォーク・セーリング・サーフィンなど）",
+    "date": "2025/11/22",
+    "startTime": "10:00",
+    "endTime": "13:00",
+    "locationId": "",
+    "status": "ticket_supported"
+  },
+  {
+    "id": "22",
+    "title": "恐れとシャーマニズムについて",
+    "description": "講演・対話",
+    "date": "2025/11/18",
+    "startTime": "0:00",
+    "endTime": "0:00",
+    "locationId": "10",
+    "status": "ticket_supported"
+  },
+  {
+    "id": "23",
+    "title": "巡りと変容のジュエリー展 ーあなた本来の美しさに鎌倉で出逢うー",
+    "description": "",
+    "date": "2025/11/16",
+    "startTime": "",
+    "endTime": "",
+    "locationId": "19",
+    "status": "ticket_supported"
+  },
+  {
+    "id": "24",
+    "title": "ビオダンサ　～生命を踊る～",
+    "description": "ワークショップ",
+    "date": "2025/11/21",
+    "startTime": "17:00",
+    "endTime": "19:00",
+    "locationId": "7",
+    "status": "ticket_supported"
+  },
+  {
+    "id": "26",
+    "title": "シンギング・リン音浴体験会　by 和真音",
+    "description": "ワークショップ",
+    "date": "2025/11/22",
+    "startTime": "9:15",
+    "endTime": "10:45",
+    "locationId": "9",
+    "status": "ticket_supported"
+  },
+  {
+    "id": "27",
+    "title": "超学際ラボ　惑星視点と日本文化視点からこれからの時代を物語る 　― 宇宙と自然のスピリチュアリティが示す未来 ―",
+    "description": "講演・対話",
+    "date": "2025/11/17",
+    "startTime": "13:00",
+    "endTime": "16:00",
+    "locationId": "12",
+    "status": "ticket_supported"
+  },
+  {
+    "id": "28",
+    "title": "イタリア発 : 仏道を歩む心理療法家による心と身体と霊性をつなぐアプローチ",
+    "description": "イタリア発 : 仏道を歩む心理療法家による心と身体と霊性をつなぐアプローチ",
+    "date": "2025/11/18",
+    "startTime": "13:00",
+    "endTime": "16:00",
+    "locationId": "7",
+    "status": "ticket_not_supported"
+  },
+  {
+    "id": "30",
+    "title": "ZEN NIGHT WALK KAMAKURA",
+    "description": "展示",
+    "date": "2025/11/16",
+    "startTime": "17:00",
+    "endTime": "19:30",
+    "locationId": "4",
+    "status": "ticket_not_supported"
+  },
+  {
+    "id": "31",
+    "title": "Regenerative Wisdom:Soil Soul Society Spirituality in Natureとは何かをみんなで考えるワークショップ",
+    "description": "講演・対話（講演会、対話会、パネルディスカッション、哲学カフェなど",
+    "date": "2025/11/16",
+    "startTime": "",
+    "endTime": "",
+    "locationId": "19",
+    "status": "ticket_not_supported"
+  },
+  {
+    "id": "33",
+    "title": "インナーパーマカルチャー：パーマカルチャーという生態系のデザイン原則が持つ代表的な12の知恵を、毎日の生活で活かす方法をお伝えします",
+    "description": "ワークショップ（マインドフルネス、瞑想、ヨガ、ウェルビーングなど）",
+    "date": "2025/11/16",
+    "startTime": "",
+    "endTime": "",
+    "locationId": "19",
+    "status": "ticket_not_supported"
+  },
+  {
+    "id": "34",
+    "title": "Healing Body and Mind  ~Integrating Body-Oriented and Mindful Centered Approach",
+    "description": "ワークショップ",
+    "date": "2025/11/18",
+    "startTime": "",
+    "endTime": "",
+    "locationId": "",
+    "status": "ticket_supported"
+  },
+  {
+    "id": "35",
+    "title": "曼荼羅から読み解く宇宙の本質ー絵写経で精神世界に触れる体験",
+    "description": "ワークショップ",
+    "date": "2025/11/21",
+    "startTime": "13:00",
+    "endTime": "15:30",
+    "locationId": "10",
+    "status": "ticket_supported"
+  },
+  {
+    "id": "36",
+    "title": "AI (人工知能)とAI (祖先の知恵)の統合",
+    "description": "",
+    "date": "2025/11/16",
+    "startTime": "9:00",
+    "endTime": "12:00",
+    "locationId": "20",
+    "status": "ticket_not_supported"
+  },
+  {
+    "id": "37",
+    "title": "『和精油×薬膳×リフレクソロジー　鎌倉《いい塩梅》コラボユニット』",
+    "description": "ワークショップ",
+    "date": "2025/11/22",
+    "startTime": "10:00",
+    "endTime": "18:00",
+    "locationId": "14",
+    "status": "ticket_supported"
+  },
+  {
+    "id": "38",
+    "title": "リジェネレーション ワークショップ in Kamakura",
+    "description": "",
+    "date": "2025/11/21",
+    "startTime": "14:00",
+    "endTime": "16:00",
+    "locationId": "7",
+    "status": "ticket_supported"
+  },
+  {
+    "id": "39",
+    "title": "新月の会（石笛演奏）",
+    "description": "",
+    "date": "2025/11/21",
+    "startTime": "16:30",
+    "endTime": "18:30",
+    "locationId": "7",
+    "status": "ticket_not_supported"
+  },
+  {
+    "id": "40",
+    "title": "鎌倉最古の厄除け神社で、日本の神話にふれる",
+    "description": "伝統",
+    "date": "2025/11/18",
+    "startTime": "14:00",
+    "endTime": "15:00",
+    "locationId": "11",
+    "status": "ticket_supported"
+  },
+  {
+    "id": "41",
+    "title": "〜おけの会〜「八雲はなぜ“霊性の発見者”になり得たのか」",
+    "description": "講演・対話",
+    "date": "2025/11/18",
+    "startTime": "15:00",
+    "endTime": "17:00",
+    "locationId": "7",
+    "status": "ticket_supported"
+  },
+  {
+    "id": "46",
+    "title": "北欧の呼吸と氷の瞑想で真なる自分と繋がる",
+    "description": "L32\n\n北欧が生んだ「呼吸と氷を用いるマインドフルネス体験\"Wim Hof Method\"」をポーランドで習得した瞑想家テラが、簡潔なマインドフルネス体験を提供します。自身のポテンシャルを引き出す呼吸法を中心に、氷を用いる特殊な瞑想法も含めて体験いただきます。",
+    "date": "2025/11/22",
+    "startTime": "17:00",
+    "endTime": "18:30",
+    "locationId": "7",
+    "status": "ticket_supported"
+  },
+  {
+    "id": "47",
+    "title": "Exploring Plant Wisdom〜植物の叡智を探究するお食事会〜",
+    "description": "講演・対話（講演会、対話会、パネルディスカッション、哲学カフェなど",
+    "date": "2025/11/16",
+    "startTime": "",
+    "endTime": "",
+    "locationId": "19",
+    "status": "ticket_not_supported"
+  },
+  {
+    "id": "48",
+    "title": "世界中の音楽と動く瞑想を通して文化や心を結び平和を祈る輪 DUP(Dances of Universal Peace)",
+    "description": "世界中の音楽と動く瞑想を通して文化や心を結び平和を祈る輪 Dances of Universal Peace",
+    "date": "2025/11/19",
+    "startTime": "12:30",
+    "endTime": "16:30",
+    "locationId": "12",
+    "status": "ticket_supported"
+  },
+  {
+    "id": "50",
+    "title": "ZEN NIGHT WALK KAMAKURA",
+    "description": "展示",
+    "date": "2025/11/17",
+    "startTime": "17:00",
+    "endTime": "19:30",
+    "locationId": "4",
+    "status": "ticket_not_supported"
+  },
+  {
+    "id": "51",
+    "title": "ZEN NIGHT WALK KAMAKURA",
+    "description": "展示",
+    "date": "2025/11/18",
+    "startTime": "17:00",
+    "endTime": "19:30",
+    "locationId": "4",
+    "status": "ticket_not_supported"
+  },
+  {
+    "id": "52",
+    "title": "ZEN NIGHT WALK KAMAKURA",
+    "description": "展示",
+    "date": "2025/11/19",
+    "startTime": "17:00",
+    "endTime": "19:30",
+    "locationId": "4",
+    "status": "ticket_not_supported"
+  },
+  {
+    "id": "53",
+    "title": "ZEN NIGHT WALK KAMAKURA",
+    "description": "展示",
+    "date": "2025/11/20",
+    "startTime": "17:00",
+    "endTime": "19:30",
+    "locationId": "4",
+    "status": "ticket_not_supported"
+  },
+  {
+    "id": "54",
+    "title": "ZEN NIGHT WALK KAMAKURA",
+    "description": "展示",
+    "date": "2025/11/21",
+    "startTime": "17:00",
+    "endTime": "19:30",
+    "locationId": "4",
+    "status": "ticket_not_supported"
+  },
+  {
+    "id": "55",
+    "title": "ZEN NIGHT WALK KAMAKURA",
+    "description": "展示",
+    "date": "2025/11/22",
+    "startTime": "17:00",
+    "endTime": "19:30",
+    "locationId": "4",
+    "status": "ticket_not_supported"
+  },
+  {
+    "id": "56",
+    "title": "掌に美しい日本を奏でる  \"Sprituality× Art × The Book” ーJapan Craft Book projectー",
+    "description": "「日本の神様の物語を、日本の紙に綴る、描く」というサブコンセプトから生まれたアートブックの世界へ皆様を誘うとともに、手触りや佇まいを大切にしたこれからの本のあり方、\n「Spirituality」×「Art」 ×「 Book」について、ワインを片手に皆様と語り合うひとときを過ごしたいと思います。",
+    "date": "2025/11/21",
+    "startTime": "18:30",
+    "endTime": "20:30",
+    "locationId": "21",
+    "status": "ticket_supported"
+  },
+  {
+    "id": "57",
+    "title": " Transpersonal Art for Health and Wellbeing ‐ New Eyes for Nature  トランスパーソナル アート体験会『自然界へのあたらしいまなざし』",
+    "description": "冬至へと向かう鎌倉山の穏やかな光のもと、身近な植物や鉱物と私たちのあいだにある境界に、そっと触れていきます。その輪郭がやわらかくほどけていく過程では、自己の感覚が静かにひらき、存在と響きあいながら、関係性が結びなおされていきます。 \n\n本ワークショップでは、創作と対話を通じて、こうした繊細な共振のありようを探ります。",
+    "date": "2025/11/16",
+    "startTime": "09:45",
+    "endTime": "13:00",
+    "locationId": "10",
+    "status": "ticket_not_supported"
+  },
+  {
+    "id": "58",
+    "title": "禅 × 囲炉端：いのちに火を灯す会話",
+    "description": "人と人のこころの通ったコミュニケーション量が低下し、\nストレスがかかりやすい環境下にある現代において、\n「話し合う」ではなく、「語り合う」。\n囲炉裏の火のぬくもりと静けさの中でこころとこころで語り合う体験を通して\n持続可能で精神的に健康な状態を体感していただけます。",
+    "date": "2025/11/17",
+    "startTime": "18:00",
+    "endTime": "21:00",
+    "locationId": "26",
+    "status": "ticket_not_supported"
+  },
+  {
+    "id": "59",
+    "title": "私色の秋のSceneを紡ぐAroma Scent作り",
+    "description": "天然精油を使用したアロマ香水づくり。アロマ×心理学に精通したアロマコロジストが考案したベースのレシピに基づき香水を作りながら、最後に好きな香りの精油を足して\"私色\"に秋を楽しめるワークショップ。天然の植物から抽出した精油のエネルギーや精神性を頂き、生ｓ津を楽しみ生きる力へとつなげる。マインドフルに香りを楽しむワークあり。",
+    "date": "2025/11/22",
+    "startTime": "10:30",
+    "endTime": "12:00",
+    "locationId": "22",
+    "status": "ticket_supported"
+  },
+  {
+    "id": "60",
+    "title": "マインドフルネス瞑想の源流に触れて",
+    "description": "プログラムは、午前中はタイ仏教のご紹介と座る瞑想を行い、午後は、天気が良ければ源氏山にて歩く瞑想を行います。午前中のみご参加も可能。\n1日リトリートとして、午前、午後通してご参加いただく方にはタイ寺院のビュッフェスタイルのお食事をご用意いたします。\n今年の春、僧侶とともにタイの山寺を訪問し、地域の方々と交わりました。\n自然と溶け合い、生活に溶け込んだタイ仏教の在り方を、皆様と分かち合いながら、慈悲を広げるために、共に瞑想できたら、と思っています。\n皆様のご参加、心よりお待ちいたします。\n（なお、宗教的な勧誘などはありません。安心してご参加下さい。）　\n",
+    "date": "2025/11/18",
+    "startTime": "10:30",
+    "endTime": "16:30",
+    "locationId": "13",
+    "status": "ticket_supported"
+  },
+  {
+    "id": "61",
+    "title": "AI時代と禅の精神 〜答えのない時代を、どう生きるか。そのヒントは、北鎌倉の静寂の中にあった〜",
+    "description": "答えのない時代を、どう生きるか。\n\nそのヒントは、北鎌倉の静寂の中にあった。\n\n\nテクノロジーの最先端と、日本の精神文化が出会う特別な一日。\n\nAI開発者も知らない、人間の“最後の砦”とは？\n\n\n禅が教える、未来のリーダーシップを体感しに来ませんか。",
+    "date": "2025/11/21",
+    "startTime": "10:00",
+    "endTime": "12:00",
+    "locationId": "24",
+    "status": "ticket_supported"
+  }
+]

@@ -25,7 +25,8 @@ const EventForm: React.FC<EventFormProps> = ({
     endTime: '17:30',
     locationId: '',
     status: 'ticket_supported',
-    category: undefined
+    category: undefined,
+    eventUrl: ''
   });
 
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -43,7 +44,8 @@ const EventForm: React.FC<EventFormProps> = ({
         endTime: event.endTime,
         locationId: event.locationId,
         status: event.status,
-        category: event.category
+        category: event.category,
+        eventUrl: event.eventUrl || ''
       });
     }
   }, [event]);
@@ -245,6 +247,21 @@ const EventForm: React.FC<EventFormProps> = ({
               <option value="パフォーマンス">パフォーマンス</option>
               <option value="体験">体験</option>
             </select>
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="eventUrl">イベントURL（任意）</label>
+            <input
+              type="url"
+              id="eventUrl"
+              name="eventUrl"
+              value={formData.eventUrl}
+              onChange={handleInputChange}
+              placeholder="例: https://example.com/event"
+            />
+            <small style={{ color: '#7f8c8d', fontSize: '12px', marginTop: '4px', display: 'block' }}>
+              リンクボタンのジャンプ先として使用されます。未入力の場合はデフォルトのイベントページに移動します。
+            </small>
           </div>
 
           <div className="form-actions">

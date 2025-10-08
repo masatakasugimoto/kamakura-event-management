@@ -180,7 +180,9 @@ router.get('/export/events/csv', async (req, res) => {
         { id: 'endTime', title: '終了時間' },
         { id: 'locationId', title: '場所ID' },
         { id: 'locationName', title: '場所名' },
-        { id: 'status', title: 'ステータス' }
+        { id: 'status', title: 'ステータス' },
+        { id: 'category', title: 'カテゴリー' },
+        { id: 'eventUrl', title: 'イベントURL' }
       ]
     });
     
@@ -231,33 +233,83 @@ router.get('/export/locations/csv', async (req, res) => {
 router.post('/import/events/csv', async (req, res) => {
   try {
     const { csvData } = req.body;
-    
+
     if (!csvData || typeof csvData !== 'string') {
       return res.status(400).json({ error: 'CSVデータが必要です' });
     }
 
     const newEvents: Event[] = [];
-    const csvLines = csvData.trim().split('\n');
-    
-    if (csvLines.length < 2) {
+
+    // RFC 4180準拠のCSVパーサー（改行を含むフィールドに対応）
+    const parseCSV = (csvString: string): string[][] => {
+      const rows: string[][] = [];
+      let currentRow: string[] = [];
+      let currentField = '';
+      let inQuotes = false;
+
+      for (let i = 0; i < csvString.length; i++) {
+        const char = csvString[i];
+        const nextChar = csvString[i + 1];
+
+        if (char === '"') {
+          if (inQuotes && nextChar === '"') {
+            // エスケープされた引用符
+            currentField += '"';
+            i++;
+          } else {
+            // 引用符の開始/終了
+            inQuotes = !inQuotes;
+          }
+        } else if (char === ',' && !inQuotes) {
+          // フィールドの区切り
+          currentRow.push(currentField);
+          currentField = '';
+        } else if ((char === '\n' || char === '\r') && !inQuotes) {
+          // 行の区切り（\r\nと\nの両方に対応）
+          if (char === '\r' && nextChar === '\n') {
+            i++; // \r\nの場合は\nをスキップ
+          }
+          if (currentField || currentRow.length > 0) {
+            currentRow.push(currentField);
+            rows.push(currentRow);
+            currentRow = [];
+            currentField = '';
+          }
+        } else {
+          currentField += char;
+        }
+      }
+
+      // 最後の行を追加
+      if (currentField || currentRow.length > 0) {
+        currentRow.push(currentField);
+        rows.push(currentRow);
+      }
+
+      return rows;
+    };
+
+    const rows = parseCSV(csvData);
+
+    if (rows.length < 2) {
       return res.status(400).json({ error: 'CSVデータが空または不正です' });
     }
-    
-    // ヘッダー行を解析
-    const headers = csvLines[0].split(',').map(h => h.trim().replace(/"/g, ''));
-    
+
+    // ヘッダー行
+    const headers = rows[0];
+
     // データ行を処理
-    for (let i = 1; i < csvLines.length; i++) {
-      const values = csvLines[i].split(',').map(v => v.trim().replace(/"/g, ''));
-      
-      if (values.length < headers.length) continue;
-      
+    for (let i = 1; i < rows.length; i++) {
+      const values = rows[i];
+
       const event: any = {};
       headers.forEach((header, index) => {
+        const value = values[index] || '';
+
         switch (header) {
           case 'ID':
             // 科学的記数法の値を正しい文字列に変換
-            let idValue = values[index];
+            let idValue = value;
             if (idValue.includes('E+') || idValue.includes('e+')) {
               const num = parseFloat(idValue);
               idValue = Math.round(num).toString();
@@ -265,23 +317,23 @@ router.post('/import/events/csv', async (req, res) => {
             event.id = idValue;
             break;
           case 'タイトル':
-            event.title = values[index];
+            event.title = value;
             break;
           case '説明':
-            event.description = values[index];
+            event.description = value;
             break;
           case '日付':
-            event.date = values[index];
+            event.date = value;
             break;
           case '開始時間':
-            event.startTime = values[index];
+            event.startTime = value;
             break;
           case '終了時間':
-            event.endTime = values[index];
+            event.endTime = value;
             break;
           case '場所ID':
             // 科学的記数法の値を正しい文字列に変換
-            let locationIdValue = values[index];
+            let locationIdValue = value;
             if (locationIdValue.includes('E+') || locationIdValue.includes('e+')) {
               const num = parseFloat(locationIdValue);
               locationIdValue = Math.round(num).toString();
@@ -289,11 +341,21 @@ router.post('/import/events/csv', async (req, res) => {
             event.locationId = locationIdValue;
             break;
           case 'ステータス':
-            event.status = values[index];
+            event.status = value;
+            break;
+          case 'カテゴリー':
+            if (value) {
+              event.category = value;
+            }
+            break;
+          case 'イベントURL':
+            if (value) {
+              event.eventUrl = value;
+            }
             break;
         }
       });
-      
+
       if (event.id && event.title && event.date) {
         newEvents.push(event);
       }
@@ -329,7 +391,8 @@ router.post('/import/events/csv', async (req, res) => {
     existingEvents.forEach(existingEvent => {
       const newEvent = newEventsMap.get(existingEvent.id);
       if (newEvent) {
-        // 更新対象：新しいデータで置き換え
+        // 更新対象：新しいデータで完全に置き換え
+        // eventUrlが空文字列でも、CSVの内容を確実に反映
         finalEvents.push(newEvent);
         updatedCount++;
       } else {

@@ -19,6 +19,7 @@ export interface Event {
   locationId: string;
   status: 'scheduled' | 'ongoing' | 'completed' | 'cancelled';
   category?: EventCategory;
+  eventUrl?: string;
 }
 
 export interface EventWithLocation extends Event {
