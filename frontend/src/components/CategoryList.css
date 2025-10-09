@@ -103,24 +103,26 @@
 }
 
 .share-link-button {
-  background: transparent;
-  border: 1px solid #95a5a6;
-  border-radius: 50%;
-  width: 28px;
-  height: 28px;
+  background: #3498db;
+  border: 1px solid #3498db;
+  border-radius: 6px;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 12px;
   transition: all 0.2s ease;
-  padding: 0;
+  padding: 6px 12px;
+  white-space: nowrap;
+  font-weight: 500;
 }
 
 .share-link-button:hover {
-  background: #3498db;
-  border-color: #3498db;
-  transform: scale(1.1);
+  background: #2980b9;
+  border-color: #2980b9;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .status-ticket-supported {
