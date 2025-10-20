@@ -121,9 +121,9 @@ const CategoryList: React.FC<CategoryListProps> = ({ events, selectedEventId, on
                     <button
                       className="share-link-button"
                       onClick={(e) => handleShareClick(e, event)}
-                      title="プログラムを見る"
+                      title="詳細"
                     >
-                      プログラムを見る
+                      詳細
                     </button>
                   </div>
                 </div>
@@ -165,9 +165,9 @@ const CategoryList: React.FC<CategoryListProps> = ({ events, selectedEventId, on
                     <button
                       className="share-link-button"
                       onClick={(e) => handleShareClick(e, event)}
-                      title="プログラムを見る"
+                      title="詳細"
                     >
-                      プログラムを見る
+                      詳細
                     </button>
                   </div>
                 </div>

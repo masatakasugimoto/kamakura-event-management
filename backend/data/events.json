@@ -23,8 +23,8 @@
   },
   {
     "id": "9",
-    "title": "『自然に還る 自分に還る』②New Moon Meditations & Sound Bath",
-    "description": "​時間\n①午前10:00～午後12:00\n②午後2:00～午後4:00",
+    "title": "自然に還る　自分に還る ～New Moon Meditations & Sound Bath～",
+    "description": "新月の日に、マインドフルネス瞑想とクリスタルボウルによるサウンドバスでこころと体を調え、自分の内側をみつめていきます。場所は、鎌倉の緑に囲まれた古民家サロンcocorokamakura。「自然に還る　自分に還る」豊かな時間をお過ごしください。",
     "date": "2025/11/20",
     "startTime": "10:00",
     "endTime": "16:00",
@@ -72,11 +72,11 @@
   {
     "id": "16",
     "title": "The Dao of Flow ~ Taichi Experience 流の道：太極拳の体験",
-    "description": "ワークショップ",
-    "date": "2025/11/20",
-    "startTime": "10:00",
-    "endTime": "12:00",
-    "locationId": "7",
+    "description": "水は柔らかくありながら、岩をも穿つ力を持っています。争わず、しかし確実に自らの道を見つけます。この太極拳ワークショップでは、そんな水の性質を身体で学び、現代社会でストレスと上手に付き合い、自然な流れの中で生きる方法を探求します。\n『The Dao of Flow』の哲学を、読むだけでなく、実際に動きながら体感することで、より深い理解と実践への道が開かれるでしょう。\n",
+    "date": "2025/11/17",
+    "startTime": "15:00",
+    "endTime": "17:00",
+    "locationId": "8",
     "status": "ticket_not_supported",
     "category": "体験",
     "eventUrl": "https://www.mindful-kamakura.city/courses/the-dao-of-flow-~-taichi-experience-%E6%B5%81%E3%81%AE%E9%81%93%EF%BC%9A%E5%A4%AA%E6%A5%B5%E6%8B%B3%E3%81%AE%E4%BD%93%E9%A8%93"
@@ -107,8 +107,8 @@
   },
   {
     "id": "19",
-    "title": "『自然に還る　自分に還る』　①あるがままであることを愉しむ時間についてのトークセッション　イベントカテゴリー：対話会",
-    "description": "cocorokamakuraは、鎌倉の四季を感じながら、こころと体をケアするサロンです。日常の忙しさから離れ、ほっと安心できる居場所になればと思っています。\ncocorokamakuraでは、毎月1回オープンデーを開催しています。何かをするのではなく、ただその場を共有し、あるがままでいることを愉しむ時間。\n自然との繋がりを感じながら、安心できる環境で、あるがままでいることで何がうまれるのか、オープンデーについて皆さんとお話しできればと思います。\n対話会の後は、ランチを予定しています。参加ご希望の方は、各自お好きなランチをお持ちください。\n​",
+    "title": "自然に還る　自分に還る～あるがままでいることを愉しむ時間についての対話会～",
+    "description": "cocorokamakuraでは、毎月1回オープンデーを開催しています。何かをするのではなく、ただその場を共有し、あるがままでいることを愉しむ時間。自然との繋がりを感じながら、あるがままでいることで何がうまれるのか、オープンデーについてみなさまと語り合います。日常の忙しさから離れ、自然のリズムにあわせて、ゆったりのんびり過ごしませんか。",
     "date": "2025/11/19",
     "startTime": "11:00",
     "endTime": "12:30",
@@ -355,24 +355,12 @@
     "eventUrl": "https://www.mindful-kamakura.city/courses/%E5%8C%97%E6%AC%A7%E3%81%AE%E5%91%BC%E5%90%B8%E3%81%A8%E6%B0%B7%E3%81%AE%E7%9E%91%E6%83%B3%E3%81%A7%22%E7%9C%9F%E3%81%AA%E3%82%8B%E8%87%AA%E5%88%86%22%E3%81%A8%E7%B9%8B%E3%81%8C%E3%82%8B"
   },
   {
-    "id": "47",
-    "title": "Exploring Plant Wisdom〜植物の叡智を探究するお食事会〜",
-    "description": "講演・対話（講演会、対話会、パネルディスカッション、哲学カフェなど",
-    "date": "2025/11/16",
-    "startTime": "",
-    "endTime": "",
-    "locationId": "19",
-    "status": "ticket_not_supported",
-    "category": "食",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/exploring-plant-wisdom"
-  },
-  {
     "id": "48",
     "title": "世界中の音楽と動く瞑想を通して文化や心を結び平和を祈る輪 DUP(Dances of Universal Peace)",
     "description": "世界中の音楽と動く瞑想を通して文化や心を結び平和を祈る輪 Dances of Universal Peace",
-    "date": "2025/11/19",
+    "date": "2025/11/21",
     "startTime": "12:30",
-    "endTime": "16:03",
+    "endTime": "16:00",
     "locationId": "12",
     "status": "ticket_supported",
     "category": "対話",
@@ -641,5 +629,17 @@
     "status": "ticket_not_supported",
     "category": "体験",
     "eventUrl": "https://www.mindful-kamakura.city/courses/healing-body-and-mind-%C2%A0~integrating-body-oriented-and-mindful-centered-approach"
+  },
+  {
+    "id": "72",
+    "title": "The Dao of Flow ~ Taichi Experience 流の道：太極拳の体験",
+    "description": "水は柔らかくありながら、岩をも穿つ力を持っています。争わず、しかし確実に自らの道を見つけます。この太極拳ワークショップでは、そんな水の性質を身体で学び、現代社会でストレスと上手に付き合い、自然な流れの中で生きる方法を探求します。\n『The Dao of Flow』の哲学を、読むだけでなく、実際に動きながら体感することで、より深い理解と実践への道が開かれるでしょう。\n",
+    "date": "2025/11/18",
+    "startTime": "15:00",
+    "endTime": "17:00",
+    "locationId": "8",
+    "status": "ticket_not_supported",
+    "category": "体験",
+    "eventUrl": "https://www.mindful-kamakura.city/courses/the-dao-of-flow-~-taichi-experience-%E6%B5%81%E3%81%AE%E9%81%93%EF%BC%9A%E5%A4%AA%E6%A5%B5%E6%8B%B3%E3%81%AE%E4%BD%93%E9%A8%93"
   }
 ]

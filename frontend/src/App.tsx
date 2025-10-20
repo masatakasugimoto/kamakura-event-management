@@ -65,7 +65,7 @@ function App() {
   const handleModeToggle = () => {
     if (!isAdmin) {
       const password = prompt('管理者パスワードを入力してください:');
-      if (password === 'zen20') {
+      if (password === 'zen20-2025') {
         setIsAdmin(true);
       } else if (password !== null) {
         alert('パスワードが間違っています。');

@@ -106,9 +106,9 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
                   <button
                     className="share-link-button"
                     onClick={(e) => handleShareClick(e, event)}
-                    title="プログラムを見る"
+                    title="詳細"
                   >
-                    プログラムを見る
+                    詳細
                   </button>
                 </div>
               </div>
