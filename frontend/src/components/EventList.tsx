@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import type { EventWithLocation, EventCategory } from '../types';
 import './EventList.css';
@@ -11,6 +11,7 @@ interface EventListProps {
 
 const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventSelect }) => {
   const navigate = useNavigate();
+  const [searchQuery, setSearchQuery] = useState('');
 
   const getCategoryIcon = (category?: EventCategory) => {
     if (!category) return null;
@@ -68,7 +69,18 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
     return dateString.replace(/-/g, '/');
   };
 
-  const groupedEvents = events.reduce((groups, event) => {
+  // 検索クエリでイベントをフィルタリング
+  const filteredEvents = useMemo(() => {
+    if (!searchQuery.trim()) {
+      return events;
+    }
+    const query = searchQuery.toLowerCase();
+    return events.filter(event =>
+      event.title.toLowerCase().includes(query)
+    );
+  }, [events, searchQuery]);
+
+  const groupedEvents = filteredEvents.reduce((groups, event) => {
     // 日付を正規化してグループ化
     const normalizedDate = normalizeDate(event.date);
     if (!groups[normalizedDate]) {
@@ -89,7 +101,24 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
 
   return (
     <div className="event-list">
-      <h2>イベントスケジュール</h2>
+      <div className="event-search">
+        <input
+          type="text"
+          placeholder="イベントを検索"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          className="search-input"
+        />
+        {searchQuery && (
+          <button
+            className="clear-search"
+            onClick={() => setSearchQuery('')}
+            title="検索をクリア"
+          >
+            ✕
+          </button>
+        )}
+      </div>
       {Object.entries(groupedEvents).map(([date, dateEvents]) => (
         <div key={date} className="date-group">
           <h3 className="date-header">{formatDate(date)}</h3>
