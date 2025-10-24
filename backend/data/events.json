@@ -641,5 +641,29 @@
     "status": "ticket_not_supported",
     "category": "体験",
     "eventUrl": "https://www.mindful-kamakura.city/courses/the-dao-of-flow-~-taichi-experience-%E6%B5%81%E3%81%AE%E9%81%93%EF%BC%9A%E5%A4%AA%E6%A5%B5%E6%8B%B3%E3%81%AE%E4%BD%93%E9%A8%93"
+  },
+  {
+    "id": "73",
+    "title": "【Zen2.0 連携企画】すべてはつながり、巡っている。",
+    "description": "モバイル茶室「Café 循環車」\nあなたは、いかなる循環の中心（ハブ）となるか。\n——その問いに立ち向かうには、私たち一人ひとりが「自分を取り巻く循環」を深く理解し、主体的な役割を見出す必要があります。\n\n本企画は、北鎌倉・浄智寺に期間限定で出現する、内省と対話のための特別な空間です。\nモバイル茶室という静謐な場で、情報過多な日常から離れ、あなたと社会、自然との根源的なつながりを思索します。\n\n対話を通じて、「自分はどんな循環の一部か」「どんな循環の中心（ハブ）でありたいか」という深淵な問いに向き合い、「循環とは何か」を共に創造する時間をご提供いたします。",
+    "date": "2025/11/21",
+    "startTime": "09:00",
+    "endTime": "15:00",
+    "locationId": "24",
+    "status": "ticket_supported",
+    "category": "対話",
+    "eventUrl": "https://www.mindful-kamakura.city/courses/%E5%BE%AA%E7%92%B0%E8%BB%8Azen20%E4%BB%95%E6%A7%98%E7%A7%BB%E5%8B%95%E8%8C%B6%E5%AE%A4?fbclid=IwY2xjawNnpWlleHRuA2FlbQIxMQABHlic5lX14ht6o4C0MKDPMNR9dnmP-BnN3JsBKBYTuHNwAsXAhhZDrwNTQTpN_aem_xo97C-XpuiDmuSjIg_fjkg"
+  },
+  {
+    "id": "74",
+    "title": "思考を外し、身体感覚と融合する「回る瞑想＝旋回」ワークショップ in 観音堂（安国論寺）",
+    "description": "思考を外し、身体感覚と融合する「回る瞑想＝旋回」ワークショップ in 観音堂（安国論寺）\n___\n\n「からだ」という最も身近な「自然」を探求し、精神性と身体性のつながりを深く感じられる回る瞑想＝旋回（せんかい）\n\n「ずっと回り続けるなんて無理だ！」\n「気持ち悪くなるに決まっている・・」\n\nと思う方は多いですが、あるコツを掴むと、はじめてでも5分、10分、長い人は20分近く回ることができます。しかも気持ちよく。\n\nコツは「思考を外す」こと\n\n頭の声ではなく、身体感覚に意識を向け続け、無心になるほどに深い瞑想状態に近づきます。\n\n日本では珍しい「回る瞑想＝旋回」を、安国論寺・観音堂という素晴らしい空間で体験してみませんか。\n\n身体の整え方や心構え、旋回の方法をイチから丁寧にお伝えしますので、はじめての方でも安心してご参加いただけますが、不安な方は見学だけも可能です。\n",
+    "date": "2025/11/19",
+    "startTime": "14:30",
+    "endTime": "16:30",
+    "locationId": "12",
+    "status": "ticket_not_supported",
+    "category": "体験",
+    "eventUrl": "https://www.mindful-kamakura.city/courses/%E6%80%9D%E8%80%83%E3%82%92%E5%A4%96%E3%81%97%E3%80%81%E8%BA%AB%E4%BD%93%E6%84%9F%E8%A6%9A%E3%81%A8%E8%9E%8D%E5%90%88%E3%81%99%E3%82%8B%E3%80%8C%E5%9B%9E%E3%82%8B%E7%9E%91%E6%83%B3%EF%BC%9D%E6%97%8B%E5%9B%9E%E3%80%8D%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97-in-%E8%A6%B3%E9%9F%B3%E5%A0%82%EF%BC%88%E5%AE%89%E5%9B%BD%E8%AB%96%E5%AF%BA%EF%BC%89"
   }
 ]
