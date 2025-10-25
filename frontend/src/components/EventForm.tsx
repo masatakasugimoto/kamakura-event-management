@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import type { EventWithLocation, Location, Event } from '../types';
+import type { EventWithLocation, Location, Event, EventCategory } from '../types';
 import './EventForm.css';
 
 interface EventFormProps {
@@ -95,10 +95,40 @@ const EventForm: React.FC<EventFormProps> = ({
   ) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
-    
+
     if (errors[name]) {
       setErrors(prev => ({ ...prev, [name]: '' }));
     }
+  };
+
+  const handleCategoryChange = (category: EventCategory) => {
+    setFormData(prev => {
+      const currentCategory = prev.category;
+
+      // カテゴリーが未設定の場合
+      if (!currentCategory) {
+        return { ...prev, category: [category] };
+      }
+
+      // 単一カテゴリーの場合、配列に変換
+      const categories = Array.isArray(currentCategory) ? currentCategory : [currentCategory];
+
+      // すでに選択されている場合は削除、されていない場合は追加
+      if (categories.includes(category)) {
+        const updated = categories.filter(c => c !== category);
+        return { ...prev, category: updated.length === 0 ? undefined : updated };
+      } else {
+        return { ...prev, category: [...categories, category] };
+      }
+    });
+  };
+
+  const isCategorySelected = (category: EventCategory): boolean => {
+    if (!formData.category) return false;
+    if (Array.isArray(formData.category)) {
+      return formData.category.includes(category);
+    }
+    return formData.category === category;
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -230,23 +260,19 @@ const EventForm: React.FC<EventFormProps> = ({
           </div>
 
           <div className="form-group">
-            <label htmlFor="category">カテゴリー</label>
-            <select
-              id="category"
-              name="category"
-              value={formData.category || ''}
-              onChange={handleInputChange}
-            >
-              <option value="">カテゴリーを選択してください（任意）</option>
-              <option value="伝統">伝統</option>
-              <option value="ビジネス">ビジネス</option>
-              <option value="対話">対話</option>
-              <option value="展示">展示</option>
-              <option value="食">食</option>
-              <option value="自然">自然</option>
-              <option value="パフォーマンス">パフォーマンス</option>
-              <option value="体験">体験</option>
-            </select>
+            <label>カテゴリー（複数選択可）</label>
+            <div className="category-checkboxes">
+              {(['伝統', 'ビジネス', '対話', '展示', '食', '自然', 'パフォーマンス', '体験'] as EventCategory[]).map(category => (
+                <label key={category} className="category-checkbox-label">
+                  <input
+                    type="checkbox"
+                    checked={isCategorySelected(category)}
+                    onChange={() => handleCategoryChange(category)}
+                  />
+                  <span>{category}</span>
+                </label>
+              ))}
+            </div>
           </div>
 
           <div className="form-group">

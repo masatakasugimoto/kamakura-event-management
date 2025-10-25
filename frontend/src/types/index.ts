@@ -18,7 +18,7 @@ export interface Event {
   endTime: string;
   locationId: string;
   status: 'ticket_supported' | 'ticket_not_supported' | 'finished';
-  category?: EventCategory;
+  category?: EventCategory | EventCategory[];
   eventUrl?: string;
 }
 

@@ -14,7 +14,7 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<EventCategory | ''>('');
 
-  const getCategoryIcon = (category?: EventCategory) => {
+  const getCategoryIcon = (category?: EventCategory | EventCategory[]) => {
     if (!category) return null;
 
     const categoryMap: Record<EventCategory, string> = {
@@ -28,10 +28,17 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
       '体験': 'zenworkshop.png',
     };
 
+    // 配列の場合は複数のカテゴリーを表示
+    const categories = Array.isArray(category) ? category : [category];
+
     return (
-      <div className="event-category">
-        <img src={`/${categoryMap[category]}`} alt={category} className="category-icon" />
-        <span className="category-name">{category}</span>
+      <div className="event-categories">
+        {categories.map((cat) => (
+          <div key={cat} className="event-category">
+            <img src={`/${categoryMap[cat]}`} alt={cat} className="category-icon" />
+            <span className="category-name">{cat}</span>
+          </div>
+        ))}
       </div>
     );
   };
@@ -87,7 +94,15 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
 
     // カテゴリーでフィルタリング
     if (selectedCategory) {
-      filtered = filtered.filter(event => event.category === selectedCategory);
+      filtered = filtered.filter(event => {
+        if (!event.category) return false;
+        // 配列の場合は選択されたカテゴリーが含まれているかチェック
+        if (Array.isArray(event.category)) {
+          return event.category.includes(selectedCategory);
+        }
+        // 単一カテゴリーの場合は一致するかチェック
+        return event.category === selectedCategory;
+      });
     }
 
     return filtered;

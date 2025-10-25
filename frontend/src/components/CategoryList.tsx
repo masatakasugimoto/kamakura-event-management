@@ -66,7 +66,15 @@ const CategoryList: React.FC<CategoryListProps> = ({ events, selectedEventId, on
   // カテゴリー毎にイベントをグループ化し、日時でソート
   const groupedByCategory = categories.reduce((groups, category) => {
     const categoryEvents = events
-      .filter(event => event.category === category)
+      .filter(event => {
+        if (!event.category) return false;
+        // 配列の場合は指定されたカテゴリーが含まれているかチェック
+        if (Array.isArray(event.category)) {
+          return event.category.includes(category);
+        }
+        // 単一カテゴリーの場合は一致するかチェック
+        return event.category === category;
+      })
       .sort((a, b) => {
         // 日付でソート
         const dateCompare = a.date.localeCompare(b.date);

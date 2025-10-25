@@ -192,6 +192,12 @@
   font-weight: 500;
 }
 
+.event-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
 .event-category {
   display: flex;
   align-items: center;
