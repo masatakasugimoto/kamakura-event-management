@@ -58,12 +58,12 @@
 }
 
 .splitter-grip {
-  font-size: 12px;
+  font-size: 18px;
   color: #666;
   padding: 0 8px;
   user-select: none;
-  transform: rotate(90deg);
   line-height: 1;
+  font-weight: bold;
 }
 
 .resizable-splitter:hover .splitter-grip {
@@ -111,8 +111,9 @@
   }
   
   .splitter-grip {
-    font-size: 14px;
+    font-size: 24px;
     padding: 0 12px;
+    font-weight: bold;
   }
   
   .resizable-splitter:hover {

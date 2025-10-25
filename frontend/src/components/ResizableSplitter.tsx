@@ -157,7 +157,7 @@ const ResizableSplitter: React.FC<ResizableSplitterProps> = ({
       >
         <div className="splitter-handle">
           <div className="splitter-line"></div>
-          <div className="splitter-grip">⋯</div>
+          <div className="splitter-grip">⇅</div>
           <div className="splitter-line"></div>
         </div>
       </div>
