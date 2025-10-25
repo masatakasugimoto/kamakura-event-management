@@ -12,6 +12,7 @@ interface EventListProps {
 const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventSelect }) => {
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState<EventCategory | ''>('');
 
   const getCategoryIcon = (category?: EventCategory) => {
     if (!category) return null;
@@ -69,16 +70,28 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
     return dateString.replace(/-/g, '/');
   };
 
-  // 検索クエリでイベントをフィルタリング
+  // カテゴリーの一覧を取得
+  const categories: EventCategory[] = ['伝統', 'ビジネス', '対話', '展示', '食', '自然', 'パフォーマンス', '体験'];
+
+  // 検索クエリとカテゴリーでイベントをフィルタリング
   const filteredEvents = useMemo(() => {
-    if (!searchQuery.trim()) {
-      return events;
+    let filtered = events;
+
+    // 検索クエリでフィルタリング
+    if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase();
+      filtered = filtered.filter(event =>
+        event.title.toLowerCase().includes(query)
+      );
     }
-    const query = searchQuery.toLowerCase();
-    return events.filter(event =>
-      event.title.toLowerCase().includes(query)
-    );
-  }, [events, searchQuery]);
+
+    // カテゴリーでフィルタリング
+    if (selectedCategory) {
+      filtered = filtered.filter(event => event.category === selectedCategory);
+    }
+
+    return filtered;
+  }, [events, searchQuery, selectedCategory]);
 
   const groupedEvents = filteredEvents.reduce((groups, event) => {
     // 日付を正規化してグループ化
@@ -101,23 +114,39 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
 
   return (
     <div className="event-list">
-      <div className="event-search">
-        <input
-          type="text"
-          placeholder="イベントを検索"
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          className="search-input"
-        />
-        {searchQuery && (
-          <button
-            className="clear-search"
-            onClick={() => setSearchQuery('')}
-            title="検索をクリア"
+      <div className="event-filters">
+        <div className="event-search">
+          <input
+            type="text"
+            placeholder="イベントを検索"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="search-input"
+          />
+          {searchQuery && (
+            <button
+              className="clear-search"
+              onClick={() => setSearchQuery('')}
+              title="検索をクリア"
+            >
+              ✕
+            </button>
+          )}
+        </div>
+        <div className="category-filter">
+          <select
+            value={selectedCategory}
+            onChange={(e) => setSelectedCategory(e.target.value as EventCategory | '')}
+            className="category-select"
           >
-            ✕
-          </button>
-        )}
+            <option value="">カテゴリーで絞る</option>
+            {categories.map((category) => (
+              <option key={category} value={category}>
+                {category}
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
       {Object.entries(groupedEvents).map(([date, dateEvents]) => (
         <div key={date} className="date-group">

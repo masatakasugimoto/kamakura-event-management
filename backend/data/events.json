@@ -72,7 +72,7 @@
   {
     "id": "16",
     "title": "The Dao of Flow ~ Taichi Experience 流の道：太極拳の体験",
-    "description": "水は柔らかくありながら、岩をも穿つ力を持っています。争わず、しかし確実に自らの道を見つけます。この太極拳ワークショップでは、そんな水の性質を身体で学び、現代社会でストレスと上手に付き合い、自然な流れの中で生きる方法を探求します。\n『The Dao of Flow』の哲学を、読むだけでなく、実際に動きながら体感することで、より深い理解と実践への道が開かれるでしょう。\n",
+    "description": "The Dao of Flow ~ Taichi Experience 流の道：太極拳の体験\n📚 書籍紹介：『The Dao of Flow: A Journey to Discover the Ancient Wisdom of Water』\n古代の道教哲学と現代生活を結ぶ、水の智慧についての探求の書を紹介しつつ、太極拳で探求する「流れの道」のワークショップを行います。『The Dao of Flow』で語られる水の智慧を、太極拳の動きを通じて実際に体感するワークショップ。参加人数に応じて45分から60分で実施します。",
     "date": "2025/11/17",
     "startTime": "15:00",
     "endTime": "17:00",
@@ -221,7 +221,7 @@
     "endTime": "19:30",
     "locationId": "4",
     "status": "ticket_not_supported",
-    "category": "伝統",
+    "category": "展示",
     "eventUrl": "https://www.mindful-kamakura.city/courses/zen-night-walk-kamakura"
   },
   {
@@ -375,7 +375,7 @@
     "endTime": "19:30",
     "locationId": "4",
     "status": "ticket_not_supported",
-    "category": "対話",
+    "category": "展示",
     "eventUrl": "https://www.mindful-kamakura.city/courses/zen-night-walk-kamakura"
   },
   {
@@ -387,7 +387,7 @@
     "endTime": "19:30",
     "locationId": "4",
     "status": "ticket_not_supported",
-    "category": "体験",
+    "category": "展示",
     "eventUrl": "https://www.mindful-kamakura.city/courses/zen-night-walk-kamakura"
   },
   {
@@ -399,7 +399,7 @@
     "endTime": "19:30",
     "locationId": "4",
     "status": "ticket_not_supported",
-    "category": "体験",
+    "category": "展示",
     "eventUrl": "https://www.mindful-kamakura.city/courses/zen-night-walk-kamakura"
   },
   {
@@ -411,7 +411,7 @@
     "endTime": "19:30",
     "locationId": "4",
     "status": "ticket_not_supported",
-    "category": "体験",
+    "category": "展示",
     "eventUrl": "https://www.mindful-kamakura.city/courses/zen-night-walk-kamakura"
   },
   {
@@ -423,7 +423,7 @@
     "endTime": "19:30",
     "locationId": "4",
     "status": "ticket_not_supported",
-    "category": "体験",
+    "category": "展示",
     "eventUrl": "https://www.mindful-kamakura.city/courses/zen-night-walk-kamakura"
   },
   {
@@ -435,7 +435,7 @@
     "endTime": "19:30",
     "locationId": "4",
     "status": "ticket_not_supported",
-    "category": "伝統",
+    "category": "展示",
     "eventUrl": "https://www.mindful-kamakura.city/courses/zen-night-walk-kamakura"
   },
   {
@@ -633,7 +633,7 @@
   {
     "id": "72",
     "title": "The Dao of Flow ~ Taichi Experience 流の道：太極拳の体験",
-    "description": "水は柔らかくありながら、岩をも穿つ力を持っています。争わず、しかし確実に自らの道を見つけます。この太極拳ワークショップでは、そんな水の性質を身体で学び、現代社会でストレスと上手に付き合い、自然な流れの中で生きる方法を探求します。\n『The Dao of Flow』の哲学を、読むだけでなく、実際に動きながら体感することで、より深い理解と実践への道が開かれるでしょう。\n",
+    "description": "プーアル茶会：熟成の時を味わう『The Dao of Flow』の一杯\n『The Dao of Flow』に描かれる「流れの道」の哲学を、お茶という静かな体験を通して味わう時間です。\n今回は、中国雲南省の名茶・プーアル茶（Pu’er Tea）の中でも「熟茶（Ripe Pu’er）」を中心に、３種類のヴィンテージを飲み比べながら、時間と発酵が育む“流れ”を体感します。\n古代から伝わる発酵の知恵と、自然の変化を受け入れる心。その両方が、まさに『The Dao of Flow』の精神と響き合います。",
     "date": "2025/11/18",
     "startTime": "15:00",
     "endTime": "17:00",
