@@ -337,7 +337,7 @@ const EventManager: React.FC<EventManagerProps> = ({
                     ⏰ {formatDateTime(event.date, event.startTime, event.endTime)}
                   </div>
                   <div className="event-location">
-                    📍 {event.location.name}
+                    {event.location ? `📍 ${event.location.name}` : '💻 オンライン開催'}
                   </div>
                   <div className="event-status">
                     {getStatusBadge(getDisplayStatus(event.id))}

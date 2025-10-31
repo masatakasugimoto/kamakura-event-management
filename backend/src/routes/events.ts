@@ -30,14 +30,18 @@ router.get('/', (req, res) => {
     
     const eventsWithLocation: EventWithLocation[] = events
       .map(event => {
+        // locationIdが未設定の場合（オンライン開催など）
+        if (!event.locationId) {
+          return { ...event, location: undefined };
+        }
+
         const location = locations.find(loc => loc.id === event.locationId);
         if (!location) {
           console.warn(`Warning: Location not found for event ${event.id} (locationId: ${event.locationId})`);
-          return null;
+          return { ...event, location: undefined };
         }
         return { ...event, location };
-      })
-      .filter((event): event is EventWithLocation => event !== null);
+      });
 
     const sortedEvents = eventsWithLocation.sort((a, b) => {
       // 日付を数値に変換（YYYYMMDD形式）
@@ -98,14 +102,20 @@ router.get('/:id', (req, res) => {
     const events = readEvents();
     const locations = readLocations();
     const event = events.find(e => e.id === req.params.id);
-    
+
     if (!event) {
       return res.status(404).json({ error: 'Event not found' });
     }
 
+    // locationIdが未設定の場合（オンライン開催など）
+    if (!event.locationId) {
+      return res.json({ ...event, location: undefined });
+    }
+
     const location = locations.find(loc => loc.id === event.locationId);
     if (!location) {
-      return res.status(500).json({ error: 'Location not found for event' });
+      console.warn(`Warning: Location not found for event ${event.id} (locationId: ${event.locationId})`);
+      return res.json({ ...event, location: undefined });
     }
 
     res.json({ ...event, location });

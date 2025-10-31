@@ -76,15 +76,13 @@ const EventForm: React.FC<EventFormProps> = ({
     if (formData.startTime && formData.endTime) {
       const start = new Date(`2000-01-01 ${formData.startTime}`);
       const end = new Date(`2000-01-01 ${formData.endTime}`);
-      
+
       if (start >= end) {
         newErrors.endTime = '終了時間は開始時間より後である必要があります';
       }
     }
 
-    if (!formData.locationId) {
-      newErrors.locationId = '場所は必須です';
-    }
+    // 場所は任意（Zoom開催などの場合は不要）
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -226,15 +224,15 @@ const EventForm: React.FC<EventFormProps> = ({
 
           <div className="form-row">
             <div className="form-group">
-              <label htmlFor="locationId">場所 *</label>
+              <label htmlFor="locationId">場所（オンライン開催の場合は不要）</label>
               <select
                 id="locationId"
                 name="locationId"
-                value={formData.locationId}
+                value={formData.locationId || ''}
                 onChange={handleInputChange}
                 className={errors.locationId ? 'error' : ''}
               >
-                <option value="">場所を選択してください</option>
+                <option value="">オンライン開催 / 場所未定</option>
                 {locations.map(location => (
                   <option key={location.id} value={location.id}>
                     {location.name}

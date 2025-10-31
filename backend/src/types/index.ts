@@ -16,12 +16,12 @@ export interface Event {
   date: string; // YYYY-MM-DD format
   startTime: string; // HH:MM format
   endTime: string; // HH:MM format
-  locationId: string;
+  locationId?: string;
   status: 'scheduled' | 'ongoing' | 'completed' | 'cancelled';
   category?: EventCategory;
   eventUrl?: string;
 }
 
 export interface EventWithLocation extends Event {
-  location: Location;
+  location?: Location;
 }

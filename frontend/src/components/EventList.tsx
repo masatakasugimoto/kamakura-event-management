@@ -13,6 +13,7 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<EventCategory | ''>('');
+  const [selectedDate, setSelectedDate] = useState<string>('');
 
   const getCategoryIcon = (category?: EventCategory | EventCategory[]) => {
     if (!category) return null;
@@ -80,7 +81,13 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
   // カテゴリーの一覧を取得
   const categories: EventCategory[] = ['伝統', 'ビジネス', '対話', '展示', '食', '自然', 'パフォーマンス', '体験'];
 
-  // 検索クエリとカテゴリーでイベントをフィルタリング
+  // イベントからユニークな日付リストを取得
+  const uniqueDates = useMemo(() => {
+    const dates = events.map(event => normalizeDate(event.date));
+    return Array.from(new Set(dates)).sort();
+  }, [events]);
+
+  // 検索クエリ、カテゴリー、日付でイベントをフィルタリング
   const filteredEvents = useMemo(() => {
     let filtered = events;
 
@@ -105,8 +112,13 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
       });
     }
 
+    // 日付でフィルタリング
+    if (selectedDate) {
+      filtered = filtered.filter(event => normalizeDate(event.date) === selectedDate);
+    }
+
     return filtered;
-  }, [events, searchQuery, selectedCategory]);
+  }, [events, searchQuery, selectedCategory, selectedDate]);
 
   const groupedEvents = filteredEvents.reduce((groups, event) => {
     // 日付を正規化してグループ化
@@ -130,10 +142,38 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
   return (
     <div className="event-list">
       <div className="event-filters">
+        <div className="date-filter">
+          <select
+            value={selectedDate}
+            onChange={(e) => setSelectedDate(e.target.value)}
+            className="date-select"
+          >
+            <option value="">開催日</option>
+            {uniqueDates.map((date) => (
+              <option key={date} value={date}>
+                {formatDate(date)}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="category-filter">
+          <select
+            value={selectedCategory}
+            onChange={(e) => setSelectedCategory(e.target.value as EventCategory | '')}
+            className="category-select"
+          >
+            <option value="">カテゴリー</option>
+            {categories.map((category) => (
+              <option key={category} value={category}>
+                {category}
+              </option>
+            ))}
+          </select>
+        </div>
         <div className="event-search">
           <input
             type="text"
-            placeholder="イベントを検索"
+            placeholder="イベント検索"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="search-input"
@@ -147,20 +187,6 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
               ✕
             </button>
           )}
-        </div>
-        <div className="category-filter">
-          <select
-            value={selectedCategory}
-            onChange={(e) => setSelectedCategory(e.target.value as EventCategory | '')}
-            className="category-select"
-          >
-            <option value="">カテゴリーで絞る</option>
-            {categories.map((category) => (
-              <option key={category} value={category}>
-                {category}
-              </option>
-            ))}
-          </select>
         </div>
       </div>
       {Object.entries(groupedEvents).map(([date, dateEvents]) => (
@@ -190,7 +216,7 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
               </div>
               <div className="event-location-category">
                 <div className="event-location">
-                  📍 {event.location.name}
+                  {event.location ? `📍 ${event.location.name}` : '💻 オンライン開催'}
                 </div>
                 {getCategoryIcon(event.category)}
               </div>

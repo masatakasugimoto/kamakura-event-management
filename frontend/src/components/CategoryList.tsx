@@ -140,7 +140,7 @@ const CategoryList: React.FC<CategoryListProps> = ({ events, selectedEventId, on
                     📅 {formatDate(event.date)} {formatTime(event.startTime, event.endTime)}
                   </div>
                   <div className="event-location">
-                    📍 {event.location.name}
+                    {event.location ? `📍 ${event.location.name}` : '💻 オンライン開催'}
                   </div>
                 </div>
                 <div className="event-description">
@@ -184,7 +184,7 @@ const CategoryList: React.FC<CategoryListProps> = ({ events, selectedEventId, on
                     📅 {formatDate(event.date)} {formatTime(event.startTime, event.endTime)}
                   </div>
                   <div className="event-location">
-                    📍 {event.location.name}
+                    {event.location ? `📍 ${event.location.name}` : '💻 オンライン開催'}
                   </div>
                 </div>
                 <div className="event-description">

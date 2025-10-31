@@ -16,12 +16,12 @@ export interface Event {
   date: string;
   startTime: string;
   endTime: string;
-  locationId: string;
+  locationId?: string;
   status: 'ticket_supported' | 'ticket_not_supported' | 'finished';
   category?: EventCategory | EventCategory[];
   eventUrl?: string;
 }
 
 export interface EventWithLocation extends Event {
-  location: Location;
+  location?: Location;
 }

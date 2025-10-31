@@ -91,7 +91,7 @@ const EventDetail: React.FC<EventDetailProps> = ({ events, onEventSelect }) => {
             <strong>📅 日時:</strong> {formatDate(event.date)} {formatTime(event.startTime, event.endTime)}
           </div>
           <div className="info-item">
-            <strong>📍 場所:</strong> {event.location.name}
+            <strong>📍 場所:</strong> {event.location ? event.location.name : 'オンライン開催'}
           </div>
           <div className="info-item">
             <strong>📝 説明:</strong>

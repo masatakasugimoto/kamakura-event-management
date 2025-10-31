@@ -44,7 +44,7 @@ function App() {
     setSelectedEventId(eventId);
     const event = events.find(e => e.id === eventId);
     if (event) {
-      setSelectedLocationId(event.locationId);
+      setSelectedLocationId(event.locationId || null);
     }
   };
 

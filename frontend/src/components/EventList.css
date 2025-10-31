@@ -9,17 +9,19 @@
   display: flex;
   gap: 12px;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .event-search {
   position: relative;
   flex: 1;
+  min-width: 0;
 }
 
 .search-input {
   width: 100%;
   padding: 12px 40px 12px 16px;
-  font-size: 16px;
+  font-size: 18px;
   border: 2px solid #ddd;
   border-radius: 8px;
   outline: none;
@@ -53,6 +55,7 @@
 
 .category-filter {
   flex: 1;
+  min-width: 0;
 }
 
 .category-select {
@@ -79,6 +82,37 @@
 .category-select:hover {
   border-color: #c0392b;
   background: #fff5f5;
+}
+
+.date-filter {
+  flex: 1;
+  min-width: 0;
+}
+
+.date-select {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 18px;
+  border: 3px solid #27ae60;
+  border-radius: 8px;
+  outline: none;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  font-weight: 600;
+  color: #2c3e50;
+  height: 48px;
+}
+
+.date-select:focus {
+  border-color: #229954;
+  box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.2);
+}
+
+.date-select:hover {
+  border-color: #229954;
+  background: #f0fff4;
 }
 
 .date-group {
@@ -230,4 +264,23 @@
   color: #34495e;
   line-height: 1.4;
   font-size: 14px;
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+  .event-filters {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .date-filter,
+  .category-filter {
+    flex: 1;
+    min-width: calc(50% - 5px);
+  }
+
+  .event-search {
+    flex: 1 1 100%;
+    width: 100%;
+  }
 }
