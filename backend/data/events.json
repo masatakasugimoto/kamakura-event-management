@@ -2,25 +2,37 @@
   {
     "id": "1",
     "title": "始まりの響き、未来への序章。Mindful City Kamakura Week キックオフイベント",
-    "description": "2025年11月16日、鎌倉の歴史が新たな音色を奏で始めます。世界初のマインドフルシティ実現への、記念すべき7日間の幕開けとなる「Mindful City Kamakura Week キックオフイベント」。この歴史的瞬間を、豪華ゲストと共に体験しませんか？",
+    "description": "＜プログラム＞\nI. 尺八  （工藤煉山氏）\n尺八の第一人者による献奏が、一音一音で心の喧騒を解き放ち、自然との無為自然な一体感へと誘います。イベントの幕開けです。\n\nII. 禅体験　 椅子坐禅 （横田南嶺老師）\n椅子に座った状態でも出来る椅子坐禅を提唱していらっしゃる円覚寺管長・横田南嶺老師ご本人直々にご指導頂ける、貴重な坐禅体験。これから坐禅のある生活を普段に取り入れて頂くきっかけになることでしょう。\n\nIII.講演「人と自然のあいだをめぐって〜日本的あわいとリジェネラティブ・リーダーシップとは〜」 （小林泰紘氏）\n国際的な視野で人と自然の関係性や組織変革を問い直す実践をしてきた小林泰紘さんから、最近のご活動の中から体験・発見されていることをお話し頂きます。\n\nIV. パネルでの「Spirituality in Nature」 対話】（藤田一照氏 × 涼恵 × 小林泰紘氏）\n対話の響き。禅僧、リジェネラティブ思想家・実践家、そして神主・シンガーソングライターという異分野のスペシャリストたちが集結。それぞれの視点から「人と自然の中のスピリチュアリティ」を深く掘り下げます。\n\nV.今回の見どころ\nMCKWの7日間のご紹介と、そして「マインドフルシティ鎌倉」の未来へと想いを繋ぎます。新しいコミュニティの誕生を共に宣言。\n\nVI.\t 歌と舞（25分）\n瞑想舞香織の舞と、涼恵の歌が呼応し合い、呼吸とリズムが一つになる時間。声と身体のうつろいの中に、自然と人の境がほどけていきます。",
     "date": "2025/11/16",
-    "startTime": "12:00",
+    "startTime": "12:30",
     "endTime": "17:00",
     "locationId": "6",
     "status": "ticket_supported",
-    "category": "対話",
-    "eventUrl": "https://www.mindful-kamakura.city/event-details/opuningu-kamakuranobutai-seikaradoe-tamashi-supirichuariti-gatachinoboru"
+    "category": [
+      "対話",
+      "体験",
+      "伝統",
+      "パフォーマンス"
+    ],
+    "eventUrl": "https://www.mindful-kamakura.city/event-details/opuningu-kamakuranobutai-seikaradoe-tamashi-supirichuariti-gatachinoboru",
+    "highlighted": true
   },
   {
     "id": "7",
-    "title": "マインドフルシティ鎌倉ウィーク 最終日懇親会",
-    "description": "〜 再会と共創の集い 〜\n一週間の感動と学びを、温かな交流で締めくくる\n\nマインドフルシティ鎌倉ウィークの最終日、私たちは特別な時間を用意しました。 これは単なる懇親会ではありません。共に学び、共に成長してきた仲間たちが集う「同窓会」です。",
+    "title": "グランド・フィナーレ「鎌倉で繋がろうパーティー」",
+    "description": "\t•ナシャールさんによる献舞\n\n\t•グループ対話\n\n\t•スティーブン・マーフィー重松先生：ワーク\n\n\t•前野隆先生： Spirituality in Natureのお話＋たかしバンド演奏\n\n\t•横澤和夫先生：ヴォイスワーク＆石笛演奏 ＜終了の笛＞\n\n一週間にわたるMindful City Kamakura Week (MCKW)の特別な旅を締めくくる、グランド・フィナーレ「鎌倉で繋がろうパーティー」へようこそ。\n\n\n潮風を感じる海辺の会場で、格式張らない、カジュアルな雰囲気の中、仲間たちと集う特別な時間です。イベント期間中に心動かされた体験や、未来へのアイデア、そして内に秘めた熱い想いを、それぞれの立場や背景の垣根を越えて、自由に分かち合いましょう。\n\n\nこのパーティーは、新たな繋がりが生まれ、未来へのインスピレーションが湧き上がるような、創造的で心温まる時間となることを目指しています。皆様のご参加を心よりお待ちしております。",
     "date": "2025/11/22",
-    "startTime": "13:00",
-    "endTime": "16:00",
+    "startTime": "13:30",
+    "endTime": "16:30",
     "locationId": "9",
     "status": "ticket_supported",
-    "category": "体験"
+    "category": [
+      "体験",
+      "対話",
+      "パフォーマンス"
+    ],
+    "eventUrl": "https://www.mindful-kamakura.city/event-details/gurando-finare-kamakuradetsunagaroupati",
+    "highlighted": true
   },
   {
     "id": "9",
@@ -793,5 +805,35 @@
       "体験"
     ],
     "eventUrl": "https://www.mindful-kamakura.city/courses/%E6%9C%9D%E3%81%AE%E8%87%AA%E7%84%B6%E7%9E%91%E6%83%B3-%E3%80%9Cmorning-meditation-in-nature%E3%80%9C"
+  },
+  {
+    "id": "83",
+    "title": "神聖幾何学を描くダンス瞑想 in 観音堂【安国論寺】",
+    "description": "昨年のZen 2.0 「大地に座す」の続編。ダンスの「ゆれ」「ゆらぎ」を使い瞑想的に踊るダンス瞑想を中心に、身体を大自然へと開いていき、内なる霊性を目覚めさせていきます。\n\n女性限定、よりディープで瞑想的で身体的なジャーニーへと誘います。\n\n女性向けのワークショップとして、ナシャールが長らくプラクティスしている「SHAKTI DANCE(シャクティダンス)」の手法を用いて、女性として生まれた身体を愛でるエネルギーを高めます。\n\n昨今日本でも広く知られるようになったベリーダンスは、エンターテイメント性が高く華やかな印象がありますが、元来は世界最古のダンスとして古代より女性の妊娠・出産と深い結びつきがあり、神聖幾何学を表現する動きがもりこまれています。\n\nそうした動きは、女性のバイタルエナジー（生命力）を発露させ、霊性を目覚めさせるエッセンスに溢れているのです。\n\nシャクティダンスは、ベリーダンスをマイルドにしたスタイルですので、ダンス経験の全くない方にもご参加いただけます。\n\nまた、お腹を出す必要はありません。\nダンス未体験の方でもダンス瞑想を気軽に体感いただける機会となっております。",
+    "date": "2025/11/19",
+    "startTime": "09:30",
+    "endTime": "11:30",
+    "locationId": "12",
+    "status": "ticket_supported",
+    "category": [
+      "パフォーマンス",
+      "体験"
+    ],
+    "eventUrl": "https://www.mindful-kamakura.city/courses/母なる大地と内なる霊性をはぐくむダンス瞑想"
+  },
+  {
+    "id": "84",
+    "title": "鎌倉マインドフル・プチリトリート　SATOYAMER TEA PARTY　～海と花瞑想の茶会～",
+    "description": "建築家・ランドスケープデザイナー　吉田美帆と、サステナブルに共生できる社会づくりを行うNPO法人ハチドリーズ代表の井上綾子の初コラボ企画。鎌倉マインドフル・プチリトリートとして、SATOYAMER TEA PARTY～海と花瞑想の茶会～を開催します。\n\n鎌倉の海の散策と、花瞑想をしながら、リジェネラティブTEAのSATOYMAERで心整うリジェネラティブな時間を一緒に過ごしましょう。場所は、藤井麗美さん主宰のgeneral storeの空間をお借りして。https://generalstore.love/\nランチには、general store のブッダプレートと共に、禅の調5事について、学びます。",
+    "date": "2025/11/21",
+    "startTime": "10:00",
+    "endTime": "13:00",
+    "locationId": "19",
+    "status": "ticket_not_supported",
+    "category": [
+      "食"
+    ],
+    "eventUrl": "https://www.mindful-kamakura.city/courses/鎌倉マインドフル・プチリトリート「satoyamer-tea-party」",
+    "highlighted": false
   }
 ]

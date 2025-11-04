@@ -119,7 +119,7 @@ const CategoryList: React.FC<CategoryListProps> = ({ events, selectedEventId, on
             {categoryEvents.map((event) => (
               <div
                 key={event.id}
-                className={`category-event-item ${selectedEventId === event.id ? 'selected' : ''}`}
+                className={`category-event-item ${selectedEventId === event.id ? 'selected' : ''} ${event.highlighted ? 'highlighted' : ''}`}
                 onClick={() => onEventSelect(event.id)}
               >
                 <div className="event-header">
@@ -163,7 +163,7 @@ const CategoryList: React.FC<CategoryListProps> = ({ events, selectedEventId, on
             {uncategorizedEvents.map((event) => (
               <div
                 key={event.id}
-                className={`category-event-item ${selectedEventId === event.id ? 'selected' : ''}`}
+                className={`category-event-item ${selectedEventId === event.id ? 'selected' : ''} ${event.highlighted ? 'highlighted' : ''}`}
                 onClick={() => onEventSelect(event.id)}
               >
                 <div className="event-header">

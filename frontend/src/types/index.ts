@@ -20,6 +20,7 @@ export interface Event {
   status: 'ticket_supported' | 'ticket_not_supported' | 'finished';
   category?: EventCategory | EventCategory[];
   eventUrl?: string;
+  highlighted?: boolean;
 }
 
 export interface EventWithLocation extends Event {

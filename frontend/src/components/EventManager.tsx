@@ -277,7 +277,7 @@ const EventManager: React.FC<EventManagerProps> = ({
             </h4>
             
             {dateEvents.map((event) => (
-              <div key={event.id} className={`event-card ${pendingChanges.has(event.id) ? 'has-changes' : ''}`}>
+              <div key={event.id} className={`event-card ${pendingChanges.has(event.id) ? 'has-changes' : ''} ${event.highlighted ? 'highlighted' : ''}`}>
                 <div className="event-card-header">
                   <h5 className="event-title">{event.title}</h5>
                   <div className="event-actions">

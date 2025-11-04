@@ -26,7 +26,8 @@ const EventForm: React.FC<EventFormProps> = ({
     locationId: '',
     status: 'ticket_supported',
     category: undefined,
-    eventUrl: ''
+    eventUrl: '',
+    highlighted: false
   });
 
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -45,7 +46,8 @@ const EventForm: React.FC<EventFormProps> = ({
         locationId: event.locationId,
         status: event.status,
         category: event.category,
-        eventUrl: event.eventUrl || ''
+        eventUrl: event.eventUrl || '',
+        highlighted: event.highlighted || false
       });
     }
   }, [event]);
@@ -285,6 +287,20 @@ const EventForm: React.FC<EventFormProps> = ({
             />
             <small style={{ color: '#7f8c8d', fontSize: '12px', marginTop: '4px', display: 'block' }}>
               リンクボタンのジャンプ先として使用されます。未入力の場合はデフォルトのイベントページに移動します。
+            </small>
+          </div>
+
+          <div className="form-group">
+            <label className="highlight-checkbox-label">
+              <input
+                type="checkbox"
+                checked={formData.highlighted || false}
+                onChange={(e) => setFormData(prev => ({ ...prev, highlighted: e.target.checked }))}
+              />
+              <span>このイベントを強調表示する</span>
+            </label>
+            <small style={{ color: '#7f8c8d', fontSize: '12px', marginTop: '4px', display: 'block' }}>
+              チェックすると、イベント一覧で背景色が変わり目立つように表示されます。
             </small>
           </div>
 

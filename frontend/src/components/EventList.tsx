@@ -195,7 +195,7 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
           {dateEvents.map((event) => (
             <div
               key={event.id}
-              className={`event-item ${selectedEventId === event.id ? 'selected' : ''}`}
+              className={`event-item ${selectedEventId === event.id ? 'selected' : ''} ${event.highlighted ? 'highlighted' : ''}`}
               onClick={() => onEventSelect(event.id)}
             >
               <div className="event-header">
