@@ -111,6 +111,13 @@ function App() {
                 className="zen-link"
               >
                 MCKWはこちら
+              </a> <a
+                href="https://www.mindful-kamakura.city/courses"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="zen-link"
+              >
+                コース一覧
               </a>
             </h1>
           </div>
