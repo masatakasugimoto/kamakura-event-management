@@ -87,12 +87,13 @@
     "title": "The Dao of Flow ~ Taichi Experience 流の道：太極拳の体験",
     "description": "The Dao of Flow ~ Taichi Experience 流の道：太極拳の体験\n📚 書籍紹介：『The Dao of Flow: A Journey to Discover the Ancient Wisdom of Water』\n古代の道教哲学と現代生活を結ぶ、水の智慧についての探求の書を紹介しつつ、太極拳で探求する「流れの道」のワークショップを行います。『The Dao of Flow』で語られる水の智慧を、太極拳の動きを通じて実際に体感するワークショップ。参加人数に応じて45分から60分で実施します。",
     "date": "2025/11/17",
-    "startTime": "15:00",
-    "endTime": "17:00",
+    "startTime": "16:00",
+    "endTime": "18:00",
     "locationId": "8",
     "status": "ticket_not_supported",
     "category": "体験",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/the-dao-of-flow-~-taichi-experience-%E6%B5%81%E3%81%AE%E9%81%93%EF%BC%9A%E5%A4%AA%E6%A5%B5%E6%8B%B3%E3%81%AE%E4%BD%93%E9%A8%93"
+    "eventUrl": "https://www.mindful-kamakura.city/courses/the-dao-of-flow-~-taichi-experience-%E6%B5%81%E3%81%AE%E9%81%93%EF%BC%9A%E5%A4%AA%E6%A5%B5%E6%8B%B3%E3%81%AE%E4%BD%93%E9%A8%93",
+    "highlighted": false
   },
   {
     "id": "17",
@@ -834,6 +835,126 @@
       "食"
     ],
     "eventUrl": "https://www.mindful-kamakura.city/courses/鎌倉マインドフル・プチリトリート「satoyamer-tea-party」",
+    "highlighted": false
+  },
+  {
+    "id": "85",
+    "title": "Mindful City Kamakura Week 対話会",
+    "description": "Mindful City Kamakura Weekでの体験を、ゆったりとした空間で分かち合いませんか?\n\nこのプログラムは、イベントに参加された皆さまが、心に残った瞬間や気づき、感じたことを自由に語り合える場所です。リラックスした雰囲気の中で、他の参加者の方々とつながり、体験を深めることができます。\n\n◎プログラムの特徴\n\n◎体験のシェアリング\nMCKWで体験したこと、感じたことを自由に話したり、聞いたりできる時間です。一人ひとりの気づきが、新たな視点や学びを生み出します。\n\n◎Zen2.0ファシリテーター在中\n経験豊富なファシリテーターが場を見守り、安心して対話できる空間を整えます。\n\n◎マインドフルな紅茶「Be Here Now」のご提供\n今この瞬間に意識を向けながら味わう、マインドフルネスに特化した特別な紅茶を「Be Here Now」をご用意。温かい一杯とともに、心を落ち着けてお過ごしください。",
+    "date": "2025/11/16",
+    "startTime": "13:00",
+    "endTime": "17:00",
+    "locationId": "8",
+    "status": "ticket_supported",
+    "category": [
+      "対話"
+    ],
+    "eventUrl": "https://www.mindful-kamakura.city/courses/mindful-city-kamakura-week-%E5%AF%BE%E8%A9%B1%E4%BC%9A",
+    "highlighted": false
+  },
+  {
+    "id": "86",
+    "title": "Mindful City Kamakura Week 対話会",
+    "description": "Mindful City Kamakura Weekでの体験を、ゆったりとした空間で分かち合いませんか?\n\nこのプログラムは、イベントに参加された皆さまが、心に残った瞬間や気づき、感じたことを自由に語り合える場所です。リラックスした雰囲気の中で、他の参加者の方々とつながり、体験を深めることができます。\n\n◎プログラムの特徴\n\n◎体験のシェアリング\nMCKWで体験したこと、感じたことを自由に話したり、聞いたりできる時間です。一人ひとりの気づきが、新たな視点や学びを生み出します。\n\n◎Zen2.0ファシリテーター在中\n経験豊富なファシリテーターが場を見守り、安心して対話できる空間を整えます。\n\n◎マインドフルな紅茶「Be Here Now」のご提供\n今この瞬間に意識を向けながら味わう、マインドフルネスに特化した特別な紅茶を「Be Here Now」をご用意。温かい一杯とともに、心を落ち着けてお過ごしください。",
+    "date": "2025/11/17",
+    "startTime": "13:00",
+    "endTime": "15:00",
+    "locationId": "8",
+    "status": "ticket_supported",
+    "category": [
+      "対話"
+    ],
+    "eventUrl": "https://www.mindful-kamakura.city/courses/mindful-city-kamakura-week-%E5%AF%BE%E8%A9%B1%E4%BC%9A",
+    "highlighted": false
+  },
+  {
+    "id": "87",
+    "title": "Mindful City Kamakura Week 対話会",
+    "description": "Mindful City Kamakura Weekでの体験を、ゆったりとした空間で分かち合いませんか?\n\nこのプログラムは、イベントに参加された皆さまが、心に残った瞬間や気づき、感じたことを自由に語り合える場所です。リラックスした雰囲気の中で、他の参加者の方々とつながり、体験を深めることができます。\n\n◎プログラムの特徴\n\n◎体験のシェアリング\nMCKWで体験したこと、感じたことを自由に話したり、聞いたりできる時間です。一人ひとりの気づきが、新たな視点や学びを生み出します。\n\n◎Zen2.0ファシリテーター在中\n経験豊富なファシリテーターが場を見守り、安心して対話できる空間を整えます。\n\n◎マインドフルな紅茶「Be Here Now」のご提供\n今この瞬間に意識を向けながら味わう、マインドフルネスに特化した特別な紅茶を「Be Here Now」をご用意。温かい一杯とともに、心を落ち着けてお過ごしください。",
+    "date": "2025/11/18",
+    "startTime": "13:00",
+    "endTime": "15:00",
+    "locationId": "8",
+    "status": "ticket_supported",
+    "category": [
+      "対話"
+    ],
+    "eventUrl": "https://www.mindful-kamakura.city/courses/mindful-city-kamakura-week-%E5%AF%BE%E8%A9%B1%E4%BC%9A",
+    "highlighted": false
+  },
+  {
+    "id": "88",
+    "title": "Mindful City Kamakura Week 対話会",
+    "description": "Mindful City Kamakura Weekでの体験を、ゆったりとした空間で分かち合いませんか?\n\nこのプログラムは、イベントに参加された皆さまが、心に残った瞬間や気づき、感じたことを自由に語り合える場所です。リラックスした雰囲気の中で、他の参加者の方々とつながり、体験を深めることができます。\n\n◎プログラムの特徴\n\n◎体験のシェアリング\nMCKWで体験したこと、感じたことを自由に話したり、聞いたりできる時間です。一人ひとりの気づきが、新たな視点や学びを生み出します。\n\n◎Zen2.0ファシリテーター在中\n経験豊富なファシリテーターが場を見守り、安心して対話できる空間を整えます。\n\n◎マインドフルな紅茶「Be Here Now」のご提供\n今この瞬間に意識を向けながら味わう、マインドフルネスに特化した特別な紅茶を「Be Here Now」をご用意。温かい一杯とともに、心を落ち着けてお過ごしください。",
+    "date": "2025/11/19",
+    "startTime": "13:00",
+    "endTime": "17:00",
+    "locationId": "8",
+    "status": "ticket_supported",
+    "category": [
+      "対話"
+    ],
+    "eventUrl": "https://www.mindful-kamakura.city/courses/mindful-city-kamakura-week-%E5%AF%BE%E8%A9%B1%E4%BC%9A",
+    "highlighted": false
+  },
+  {
+    "id": "89",
+    "title": "Mindful City Kamakura Week 対話会",
+    "description": "Mindful City Kamakura Weekでの体験を、ゆったりとした空間で分かち合いませんか?\n\nこのプログラムは、イベントに参加された皆さまが、心に残った瞬間や気づき、感じたことを自由に語り合える場所です。リラックスした雰囲気の中で、他の参加者の方々とつながり、体験を深めることができます。\n\n◎プログラムの特徴\n\n◎体験のシェアリング\nMCKWで体験したこと、感じたことを自由に話したり、聞いたりできる時間です。一人ひとりの気づきが、新たな視点や学びを生み出します。\n\n◎Zen2.0ファシリテーター在中\n経験豊富なファシリテーターが場を見守り、安心して対話できる空間を整えます。\n\n◎マインドフルな紅茶「Be Here Now」のご提供\n今この瞬間に意識を向けながら味わう、マインドフルネスに特化した特別な紅茶を「Be Here Now」をご用意。温かい一杯とともに、心を落ち着けてお過ごしください。",
+    "date": "2025/11/20",
+    "startTime": "13:00",
+    "endTime": "17:00",
+    "locationId": "8",
+    "status": "ticket_supported",
+    "category": [
+      "対話"
+    ],
+    "eventUrl": "https://www.mindful-kamakura.city/courses/mindful-city-kamakura-week-%E5%AF%BE%E8%A9%B1%E4%BC%9A",
+    "highlighted": false
+  },
+  {
+    "id": "90",
+    "title": "Mindful City Kamakura Week 対話会",
+    "description": "Mindful City Kamakura Weekでの体験を、ゆったりとした空間で分かち合いませんか?\n\nこのプログラムは、イベントに参加された皆さまが、心に残った瞬間や気づき、感じたことを自由に語り合える場所です。リラックスした雰囲気の中で、他の参加者の方々とつながり、体験を深めることができます。\n\n◎プログラムの特徴\n\n◎体験のシェアリング\nMCKWで体験したこと、感じたことを自由に話したり、聞いたりできる時間です。一人ひとりの気づきが、新たな視点や学びを生み出します。\n\n◎Zen2.0ファシリテーター在中\n経験豊富なファシリテーターが場を見守り、安心して対話できる空間を整えます。\n\n◎マインドフルな紅茶「Be Here Now」のご提供\n今この瞬間に意識を向けながら味わう、マインドフルネスに特化した特別な紅茶を「Be Here Now」をご用意。温かい一杯とともに、心を落ち着けてお過ごしください。",
+    "date": "2025/11/21",
+    "startTime": "13:00",
+    "endTime": "14:00",
+    "locationId": "8",
+    "status": "ticket_supported",
+    "category": [
+      "対話"
+    ],
+    "eventUrl": "https://www.mindful-kamakura.city/courses/mindful-city-kamakura-week-%E5%AF%BE%E8%A9%B1%E4%BC%9A",
+    "highlighted": false
+  },
+  {
+    "id": "91",
+    "title": "Mindful City Kamakura Week 対話会",
+    "description": "Mindful City Kamakura Weekでの体験を、ゆったりとした空間で分かち合いませんか?\n\nこのプログラムは、イベントに参加された皆さまが、心に残った瞬間や気づき、感じたことを自由に語り合える場所です。リラックスした雰囲気の中で、他の参加者の方々とつながり、体験を深めることができます。\n\n◎プログラムの特徴\n\n◎体験のシェアリング\nMCKWで体験したこと、感じたことを自由に話したり、聞いたりできる時間です。一人ひとりの気づきが、新たな視点や学びを生み出します。\n\n◎Zen2.0ファシリテーター在中\n経験豊富なファシリテーターが場を見守り、安心して対話できる空間を整えます。\n\n◎マインドフルな紅茶「Be Here Now」のご提供\n今この瞬間に意識を向けながら味わう、マインドフルネスに特化した特別な紅茶を「Be Here Now」をご用意。温かい一杯とともに、心を落ち着けてお過ごしください。",
+    "date": "2025/11/22",
+    "startTime": "13:00",
+    "endTime": "17:00",
+    "locationId": "8",
+    "status": "ticket_supported",
+    "category": [
+      "対話"
+    ],
+    "eventUrl": "https://www.mindful-kamakura.city/courses/mindful-city-kamakura-week-%E5%AF%BE%E8%A9%B1%E4%BC%9A",
+    "highlighted": false
+  },
+  {
+    "id": "92",
+    "title": "神聖幾何学を描くダンス瞑想 in 観音堂【安国論寺】　support by 臨床身体ラボ",
+    "description": "ダンスの「ゆれ」「ゆらぎ」を使い瞑想的に踊るダンス瞑想を中心に、身体を大自然へと開いていき、内なる霊性を目覚めさせていきます。\n\n女性限定、よりディープで瞑想的で身体的なジャーニーへと誘います。\n\n女性向けのワークショップとして、ナシャールが長らくプラクティスしている「SHAKTI DANCE(シャクティダンス)」の手法を用いて、女性として生まれた身体を愛でるエネルギーを高めます。\n\n昨今日本でも広く知られるようになったベリーダンスは、エンターテイメント性が高く華やかな印象がありますが、元来は世界最古のダンスとして古代より女性の妊娠・出産と深い結びつきがあり、神聖幾何学を表現する動きがもりこまれています。\n\nそうした動きは、女性のバイタルエナジー（生命力）を発露させ、霊性を目覚めさせるエッセンスに溢れているのです。\n\nシャクティダンスは、ベリーダンスをマイルドにしたスタイルですので、ダンス経験の全くない方にもご参加いただけます。\n\nまた、お腹を出す必要はありません。\nダンス未体験の方でもダンス瞑想を気軽に体感いただける機会となっております。",
+    "date": "2025/11/19",
+    "startTime": "09:30",
+    "endTime": "11:30",
+    "locationId": "12",
+    "status": "ticket_supported",
+    "category": [
+      "体験"
+    ],
+    "eventUrl": "https://www.mindful-kamakura.city/courses/%E6%AF%8D%E3%81%AA%E3%82%8B%E5%A4%A7%E5%9C%B0%E3%81%A8%E5%86%85%E3%81%AA%E3%82%8B%E9%9C%8A%E6%80%A7%E3%82%92%E3%81%AF%E3%81%90%E3%81%8F%E3%82%80%E3%83%80%E3%83%B3%E3%82%B9%E7%9E%91%E6%83%B3",
     "highlighted": false
   }
 ]

@@ -98,3 +98,6 @@ dist/
 .DS_Store
 .vscode/
 *.tmp
+
+# Claude settings
+.claude/settings.local.json

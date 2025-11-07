@@ -201,6 +201,89 @@
   transform: none;
 }
 
+.multi-day-checkbox-label,
+.highlight-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.multi-day-checkbox-label input[type="checkbox"],
+.highlight-checkbox-label input[type="checkbox"] {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+.additional-dates-section {
+  margin-top: 15px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.additional-schedule-row {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+}
+
+.schedule-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.schedule-header h4 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.add-date-button {
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.add-date-button:hover {
+  background: #229954;
+  transform: translateY(-1px);
+}
+
+.remove-date-button {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  min-width: 40px;
+}
+
+.remove-date-button:hover {
+  background: #c0392b;
+  transform: scale(1.05);
+}
+
 @media (max-width: 768px) {
   .event-form {
     width: 95%;

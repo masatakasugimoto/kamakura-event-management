@@ -138,20 +138,23 @@ const EventManager: React.FC<EventManagerProps> = ({
     }
   };
 
-  const handleFormSubmit = async (eventData: Omit<Event, 'id'>) => {
+  const handleFormSubmit = async (eventData: Omit<Event, 'id'>, shouldClose: boolean = true) => {
     try {
       setIsLoading(true);
-      
+
       if (selectedEvent) {
         await eventApi.update(selectedEvent.id, eventData);
       } else {
         await eventApi.create(eventData);
       }
-      
+
       const updatedEvents = await eventApi.getAll();
       onEventsUpdate(updatedEvents);
-      setIsFormOpen(false);
-      setSelectedEvent(null);
+
+      if (shouldClose) {
+        setIsFormOpen(false);
+        setSelectedEvent(null);
+      }
     } catch (error) {
       alert('イベントの保存に失敗しました。');
       console.error('Save error:', error);

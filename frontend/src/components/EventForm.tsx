@@ -5,7 +5,7 @@ import './EventForm.css';
 interface EventFormProps {
   event: EventWithLocation | null;
   locations: Location[];
-  onSubmit: (eventData: Omit<Event, 'id'>) => void;
+  onSubmit: (eventData: Omit<Event, 'id'>, shouldClose?: boolean) => void | Promise<void>;
   onCancel: () => void;
   isLoading: boolean;
 }
@@ -31,6 +31,8 @@ const EventForm: React.FC<EventFormProps> = ({
   });
 
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [isMultiDay, setIsMultiDay] = useState(false);
+  const [additionalSchedules, setAdditionalSchedules] = useState<Array<{ date: string; startTime: string; endTime: string }>>([]);
 
   useEffect(() => {
     if (event) {
@@ -131,12 +133,56 @@ const EventForm: React.FC<EventFormProps> = ({
     return formData.category === category;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (validateForm()) {
-      onSubmit(formData);
+      if (isMultiDay && !event) {
+        // 複数日開催の場合、各日付と時間に対してイベントを作成
+        const allSchedules = [
+          { date: formData.date, startTime: formData.startTime, endTime: formData.endTime },
+          ...additionalSchedules
+        ];
+        // 最初のN-1個のイベントを作成（フォームを閉じない）
+        for (let i = 0; i < allSchedules.length - 1; i++) {
+          await onSubmit({
+            ...formData,
+            date: allSchedules[i].date,
+            startTime: allSchedules[i].startTime,
+            endTime: allSchedules[i].endTime
+          }, false);
+        }
+        // 最後のイベントを作成（フォームを閉じる）
+        const lastSchedule = allSchedules[allSchedules.length - 1];
+        await onSubmit({
+          ...formData,
+          date: lastSchedule.date,
+          startTime: lastSchedule.startTime,
+          endTime: lastSchedule.endTime
+        }, true);
+      } else {
+        // 単一日または編集の場合は通常通り
+        onSubmit(formData, true);
+      }
     }
+  };
+
+  const addScheduleField = () => {
+    setAdditionalSchedules([...additionalSchedules, {
+      date: '2025-11-16',
+      startTime: '10:00',
+      endTime: '17:30'
+    }]);
+  };
+
+  const removeScheduleField = (index: number) => {
+    setAdditionalSchedules(additionalSchedules.filter((_, i) => i !== index));
+  };
+
+  const updateScheduleField = (index: number, field: 'date' | 'startTime' | 'endTime', value: string) => {
+    const updated = [...additionalSchedules];
+    updated[index] = { ...updated[index], [field]: value };
+    setAdditionalSchedules(updated);
   };
 
   const getTodayDate = () => {
@@ -182,9 +228,30 @@ const EventForm: React.FC<EventFormProps> = ({
             {errors.description && <span className="error-message">{errors.description}</span>}
           </div>
 
+          {!event && (
+            <div className="form-group">
+              <label className="multi-day-checkbox-label">
+                <input
+                  type="checkbox"
+                  checked={isMultiDay}
+                  onChange={(e) => {
+                    setIsMultiDay(e.target.checked);
+                    if (!e.target.checked) {
+                      setAdditionalSchedules([]);
+                    }
+                  }}
+                />
+                <span>複数日開催</span>
+              </label>
+              <small style={{ color: '#7f8c8d', fontSize: '12px', marginTop: '4px', display: 'block' }}>
+                同じ内容のイベントを複数の日付で開催する場合にチェックしてください
+              </small>
+            </div>
+          )}
+
           <div className="form-row">
             <div className="form-group">
-              <label htmlFor="date">日付 *</label>
+              <label htmlFor="date">{isMultiDay ? '日付1 *' : '日付 *'}</label>
               <input
                 type="date"
                 id="date"
@@ -223,6 +290,63 @@ const EventForm: React.FC<EventFormProps> = ({
               {errors.endTime && <span className="error-message">{errors.endTime}</span>}
             </div>
           </div>
+
+          {isMultiDay && (
+            <div className="additional-dates-section">
+              {additionalSchedules.map((schedule, index) => (
+                <div key={index} className="additional-schedule-row">
+                  <div className="schedule-header">
+                    <h4>日付{index + 2}</h4>
+                    <button
+                      type="button"
+                      onClick={() => removeScheduleField(index)}
+                      className="remove-date-button"
+                      title="このスケジュールを削除"
+                    >
+                      ✕
+                    </button>
+                  </div>
+                  <div className="form-row">
+                    <div className="form-group">
+                      <label htmlFor={`additionalDate${index}`}>日付 *</label>
+                      <input
+                        type="date"
+                        id={`additionalDate${index}`}
+                        value={schedule.date}
+                        onChange={(e) => updateScheduleField(index, 'date', e.target.value)}
+                        min={getTodayDate()}
+                      />
+                    </div>
+                    <div className="form-group">
+                      <label htmlFor={`additionalStartTime${index}`}>開始時間 *</label>
+                      <input
+                        type="time"
+                        id={`additionalStartTime${index}`}
+                        value={schedule.startTime}
+                        onChange={(e) => updateScheduleField(index, 'startTime', e.target.value)}
+                      />
+                    </div>
+                    <div className="form-group">
+                      <label htmlFor={`additionalEndTime${index}`}>終了時間 *</label>
+                      <input
+                        type="time"
+                        id={`additionalEndTime${index}`}
+                        value={schedule.endTime}
+                        onChange={(e) => updateScheduleField(index, 'endTime', e.target.value)}
+                      />
+                    </div>
+                  </div>
+                </div>
+              ))}
+              <button
+                type="button"
+                onClick={addScheduleField}
+                className="add-date-button"
+              >
+                + 日付を追加
+              </button>
+            </div>
+          )}
 
           <div className="form-row">
             <div className="form-group">

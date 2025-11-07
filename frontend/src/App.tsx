@@ -104,13 +104,13 @@ function App() {
         <header className="app-header">
           <div className="header-title">
             <h1>
-              zen2.0-map <a
+              MCKW-map <a
                 href="https://www.mindful-kamakura.city/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="zen-link"
               >
-                zen2.0はこちら
+                MCKWはこちら
               </a>
             </h1>
           </div>
