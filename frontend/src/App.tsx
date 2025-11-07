@@ -117,7 +117,7 @@ function App() {
                 rel="noopener noreferrer"
                 className="zen-link"
               >
-                コース一覧
+                プログラム一覧
               </a>
             </h1>
           </div>
