@@ -104,7 +104,7 @@ function App() {
         <header className="app-header">
           <div className="header-title">
             <h1>
-              MCKW-map <a
+              <span className="app-title-text">MCKW-map </span><a
                 href="https://www.mindful-kamakura.city/"
                 target="_blank"
                 rel="noopener noreferrer"

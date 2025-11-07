@@ -246,23 +246,27 @@
     min-height: 100vh;
     height: auto;
   }
-  
+
   .app-header {
     flex-shrink: 0;
     flex-direction: row;
     gap: 10px;
     padding: 16px 20px;
   }
-  
+
   .header-title {
     gap: 12px;
   }
-  
+
   .app-header h1 {
     font-size: 18px;
     margin: 0;
   }
-  
+
+  .app-title-text {
+    display: none;
+  }
+
   .zen-link {
     font-size: 12px;
     padding: 4px 8px;
