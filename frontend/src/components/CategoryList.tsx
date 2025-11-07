@@ -101,7 +101,7 @@ const CategoryList: React.FC<CategoryListProps> = ({ events, selectedEventId, on
 
   return (
     <div className="category-list">
-      <h2>イベントカテゴリー一覧</h2>
+      <h2>カテゴリー一覧</h2>
 
       {Object.entries(groupedByCategory).map(([category, categoryEvents]) => (
         <div key={category} className="category-group">

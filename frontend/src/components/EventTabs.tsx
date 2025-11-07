@@ -40,19 +40,19 @@ const EventTabs: React.FC<EventTabsProps> = ({
           className={`tab-button ${activeTab === 'events' ? 'active' : ''}`}
           onClick={() => setActiveTab('events')}
         >
-          イベントスケジュール
+          スケジュール
         </button>
         <button
           className={`tab-button ${activeTab === 'venues' ? 'active' : ''}`}
           onClick={() => setActiveTab('venues')}
         >
-          イベント会場一覧
+          会場一覧
         </button>
         <button
           className={`tab-button ${activeTab === 'categories' ? 'active' : ''}`}
           onClick={() => setActiveTab('categories')}
         >
-          イベントカテゴリー一覧
+          カテゴリー一覧
         </button>
       </div>
 
