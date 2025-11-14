@@ -20,7 +20,7 @@
   {
     "id": "7",
     "title": "グランド・フィナーレ「鎌倉で繋がろうパーティー」",
-    "description": "\t•ナシャールさんによる献舞\n\n\t•グループ対話\n\n\t•スティーブン・マーフィー重松先生：ワーク\n\n\t•前野隆先生： Spirituality in Natureのお話＋たかしバンド演奏\n\n\t•横澤和夫先生：ヴォイスワーク＆石笛演奏 ＜終了の笛＞\n\n一週間にわたるMindful City Kamakura Week (MCKW)の特別な旅を締めくくる、グランド・フィナーレ「鎌倉で繋がろうパーティー」へようこそ。\n\n\n潮風を感じる海辺の会場で、格式張らない、カジュアルな雰囲気の中、仲間たちと集う特別な時間です。イベント期間中に心動かされた体験や、未来へのアイデア、そして内に秘めた熱い想いを、それぞれの立場や背景の垣根を越えて、自由に分かち合いましょう。\n\n\nこのパーティーは、新たな繋がりが生まれ、未来へのインスピレーションが湧き上がるような、創造的で心温まる時間となることを目指しています。皆様のご参加を心よりお待ちしております。",
+    "description": "\nI. 献舞「母なる大地の祈り」\n\n出演：ナシャール（ダンス瞑想家／ベリーダンサー）\n\n柔らかな光が差し込む午後、ナシャールさんによる舞が静かに始まります。\n「ゆれ」と「ゆらぎ」を通じて内なる女性性を目覚めさせる瞑想的なダンス。\n大地のリズムとともに心の奥深くへと導かれ、感情や思考がほどけていく時間。\n母なる大地への祈りを込めた舞は、7日間の旅を包み込むように、静謐な余韻を残します。\n\nII. グループ対話\n\n各自がMCKWでの体験した出来事を語り合う時間。\n\nIII. ワークセッション「癒しと再生のハートフルネス」\n\n講師：スティーブン・マーフィー重松博士（スタンフォード大学 医学部心理学者）\n\nスタンフォード大学でウェルビーイングと心理学を探求し続けるマーフィー博士による、\n心の奥底に静けさを取り戻すための実践的ワーク。\n仏教・神道・ケルト文化など、異なる叡智を融合した博士独自のアプローチで、\n「癒し」と「つながり」をテーマに、深い自己探求の体験へと導きます。\n\nIV. トーク＆合唱「Spirituality in Nature 〜生きとし生けるもの〜」\n\n登壇：前野隆司先生（武蔵野大学ウェルビーイング学部長）\n\n幸福学とスピリチュアリティ研究の第一人者、前野先生による特別講話。\n自然と人との関係性を、科学と哲学の両面から解き明かします。\n講話の後半では、前野先生作詞・作曲の楽曲『生きとし生けるもの』を全員で合唱。\n声と想いが一つになり、鎌倉の空に響くその歌声は、まるで新しい祈りのように広がります。\n\nV. ヴォイスワーク＆石笛演奏「命の響き」\n\n演奏：横澤和也氏（石笛奏者）\n\n奈良・天河弁才天社の修行を経て磨かれた横澤氏の声と笛の響きが、\n聴く者の心と呼吸をひとつにします。\n石笛・篠笛・御声が織りなす即興の音空間は、\n宗教や民族を越えて「生命そのものの音」として響き渡ります。\n最後に奏でられる「終了の笛」は、7日間の旅をそっと締めくくる祈りの音。\n\nVI. 閉会の言葉\n\n自然、心、仲間との結びを胸に、\nマインドフルシティ鎌倉の新たな物語が静かに幕を閉じます。",
     "date": "2025/11/22",
     "startTime": "13:30",
     "endTime": "16:30",
@@ -331,9 +331,9 @@
   {
     "id": "39",
     "title": "新月の会（石笛演奏）",
-    "description": "",
+    "description": "石笛、篠笛の演奏会",
     "date": "2025/11/21",
-    "startTime": "16:30",
+    "startTime": "16:50",
     "endTime": "18:30",
     "locationId": "7",
     "status": "ticket_supported",
@@ -341,7 +341,8 @@
       "体験",
       "パフォーマンス"
     ],
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%E7%9F%B3%E7%AC%9B%E6%BC%94%E5%A5%8F"
+    "eventUrl": "https://www.mindful-kamakura.city/courses/%E7%9F%B3%E7%AC%9B%E6%BC%94%E5%A5%8F",
+    "highlighted": false
   },
   {
     "id": "40",
@@ -357,15 +358,16 @@
   },
   {
     "id": "41",
-    "title": "〜おけの会〜「八雲はなぜ“霊性の発見者”になり得たのか」",
-    "description": "おけの会\n「小泉八雲からみた日本の霊性ースピリチュアリティーとは？」\n明治期に来日し、日本の自然と神話に深い共鳴を覚えた作家・小泉八雲（ラフカディオ・ハーン）。彼が見出した「日本的霊性＝Spirituality in Nature」は、現代の私たちにどのような示唆を与えてくれるのでしょうか。\n本企画では、小泉八雲研究の第一人者・池田雅之先生の講演を軸に、神話や自然観を通じて「日本的霊性＝Spirituality in Nature」へのを深めていきます。大野百合子さん（『日本の神様カード』作者）とのクロストーク、呼吸法を取り入れた神道技法の体験、参加者同士の小グループ対話など、知と体験が融合する日本型リベラルアーツの場を提供します。",
+    "title": " 〜おけの会〜 AI時代に必要な日本の精神文化 古神道の叡智",
+    "description": "〜おけの会〜\nAI時代に必要な日本の精神文化\n\n古神道の叡智\n\nAI時代に、本来の自己で生きるための古神道体験\n毎日が忙しく、ただ流され生きている。\n\nそんな日々の中で「本来の自己の可能性を開いていきたい」と感じていませんか?\nテクノロジーが加速する今だからこそ、私たちには太古から受け継がれてきた「和の叡智」が必要です。\n\nこのイベントでは、古神道の実践を通じて、あなたの内側にある神性に触れ、人間存在のあり方がわかる体験行います",
     "date": "2025/11/18",
     "startTime": "15:00",
     "endTime": "17:00",
     "locationId": "7",
     "status": "ticket_supported",
     "category": "対話",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/%EF%BC%9C%E4%BB%AE%EF%BC%9E%E5%B0%8F%E6%B3%89%E5%85%AB%E9%9B%B2%EF%BC%88%E3%83%A9%E3%83%95%E3%82%AB%E3%83%87%E3%82%A3%E3%82%AA%E3%83%BB%E3%83%8F%E3%83%BC%E3%83%B3%EF%BC%89%E3%81%8C%E8%A6%8B%E3%81%9F%E6%97%A5%E6%9C%AC%E3%81%AE%E7%BE%8E%E3%81%A8%E9%9C%8A%E6%80%A7"
+    "eventUrl": "https://www.mindful-kamakura.city/courses/%EF%BC%9C%E4%BB%AE%EF%BC%9E%E5%B0%8F%E6%B3%89%E5%85%AB%E9%9B%B2%EF%BC%88%E3%83%A9%E3%83%95%E3%82%AB%E3%83%87%E3%82%A3%E3%82%AA%E3%83%BB%E3%83%8F%E3%83%BC%E3%83%B3%EF%BC%89%E3%81%8C%E8%A6%8B%E3%81%9F%E6%97%A5%E6%9C%AC%E3%81%AE%E7%BE%8E%E3%81%A8%E9%9C%8A%E6%80%A7",
+    "highlighted": false
   },
   {
     "id": "46",
@@ -539,18 +541,6 @@
     "eventUrl": "https://www.mindful-kamakura.city/courses/ai%E6%99%82%E4%BB%A3%E3%81%A8%E7%A6%85%E3%81%AE%E7%B2%BE%E7%A5%9E-%E3%80%9C%E7%AD%94%E3%81%88%E3%81%AE%E3%81%AA%E3%81%84%E6%99%82%E4%BB%A3%E3%82%92%E3%80%81%E3%81%A9%E3%81%86%E7%94%9F%E3%81%8D%E3%82%8B%E3%81%8B%E3%80%82%E3%81%9D%E3%81%AE%E3%83%92%E3%83%B3%E3%83%88%E3%81%AF%E3%80%81%E5%8C%97%E9%8E%8C%E5%80%89%E3%81%AE%E9%9D%99%E5%AF%82%E3%81%AE%E4%B8%AD%E3%81%AB%E3%81%82%E3%81%A3%E3%81%9F%E3%80%9C"
   },
   {
-    "id": "62",
-    "title": "イタリア発 : 仏道を歩む心理療法家による心と身体と霊性をつなぐアプローチ",
-    "description": "【時間未確定】\nイタリア発 : 仏道を歩む心理療法家による心と身体と霊性をつなぐアプローチ",
-    "date": "2025/11/20",
-    "startTime": "10:00",
-    "endTime": "11:30",
-    "locationId": "7",
-    "status": "ticket_not_supported",
-    "category": "体験",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/healing-body-and-mind-%C2%A0~integrating-body-oriented-and-mindful-centered-approach"
-  },
-  {
     "id": "63",
     "title": "Biohacking with Plantsーホリスティックな感性で愉しむバイオハック_11/19",
     "description": "\n「体と意識のハイスペック化」として語られることの多いバイオハックを、自然界とのつながりやアート的な感性の中で再解釈し、女性的でしなやかなアプローチとして楽しむ時間です。\nアダプトゲンやヌートロピクスから、プラントメディスンの知恵まで──植物の叡智を通じて、あなたの心と体に新しい風を吹き込みます。",
@@ -660,15 +650,19 @@
   },
   {
     "id": "72",
-    "title": "The Dao of Flow ~ Taichi Experience 流の道：太極拳の体験",
+    "title": "プーアル茶会：熟成の時を味わう『The Dao of Flow』の一杯",
     "description": "プーアル茶会：熟成の時を味わう『The Dao of Flow』の一杯\n『The Dao of Flow』に描かれる「流れの道」の哲学を、お茶という静かな体験を通して味わう時間です。\n今回は、中国雲南省の名茶・プーアル茶（Pu’er Tea）の中でも「熟茶（Ripe Pu’er）」を中心に、３種類のヴィンテージを飲み比べながら、時間と発酵が育む“流れ”を体感します。\n古代から伝わる発酵の知恵と、自然の変化を受け入れる心。その両方が、まさに『The Dao of Flow』の精神と響き合います。",
     "date": "2025/11/18",
     "startTime": "15:00",
     "endTime": "17:00",
     "locationId": "8",
     "status": "ticket_not_supported",
-    "category": "体験",
-    "eventUrl": "https://www.mindful-kamakura.city/courses/the-dao-of-flow-~-taichi-experience-%E6%B5%81%E3%81%AE%E9%81%93%EF%BC%9A%E5%A4%AA%E6%A5%B5%E6%8B%B3%E3%81%AE%E4%BD%93%E9%A8%93"
+    "category": [
+      "体験",
+      "食"
+    ],
+    "eventUrl": "https://www.mindful-kamakura.city/courses/the-dao-of-flow-~-taichi-experience-%E6%B5%81%E3%81%AE%E9%81%93%EF%BC%9A%E5%A4%AA%E6%A5%B5%E6%8B%B3%E3%81%AE%E4%BD%93%E9%A8%93",
+    "highlighted": false
   },
   {
     "id": "73",
@@ -853,21 +847,6 @@
     "highlighted": false
   },
   {
-    "id": "86",
-    "title": "Mindful City Kamakura Week 対話会",
-    "description": "Mindful City Kamakura Weekでの体験を、ゆったりとした空間で分かち合いませんか?\n\nこのプログラムは、イベントに参加された皆さまが、心に残った瞬間や気づき、感じたことを自由に語り合える場所です。リラックスした雰囲気の中で、他の参加者の方々とつながり、体験を深めることができます。\n\n◎プログラムの特徴\n\n◎体験のシェアリング\nMCKWで体験したこと、感じたことを自由に話したり、聞いたりできる時間です。一人ひとりの気づきが、新たな視点や学びを生み出します。\n\n◎Zen2.0ファシリテーター在中\n経験豊富なファシリテーターが場を見守り、安心して対話できる空間を整えます。\n\n◎マインドフルな紅茶「Be Here Now」のご提供\n今この瞬間に意識を向けながら味わう、マインドフルネスに特化した特別な紅茶を「Be Here Now」をご用意。温かい一杯とともに、心を落ち着けてお過ごしください。",
-    "date": "2025/11/17",
-    "startTime": "13:00",
-    "endTime": "15:00",
-    "locationId": "8",
-    "status": "ticket_supported",
-    "category": [
-      "対話"
-    ],
-    "eventUrl": "https://www.mindful-kamakura.city/courses/mindful-city-kamakura-week-%E5%AF%BE%E8%A9%B1%E4%BC%9A",
-    "highlighted": false
-  },
-  {
     "id": "87",
     "title": "Mindful City Kamakura Week 対話会",
     "description": "Mindful City Kamakura Weekでの体験を、ゆったりとした空間で分かち合いませんか?\n\nこのプログラムは、イベントに参加された皆さまが、心に残った瞬間や気づき、感じたことを自由に語り合える場所です。リラックスした雰囲気の中で、他の参加者の方々とつながり、体験を深めることができます。\n\n◎プログラムの特徴\n\n◎体験のシェアリング\nMCKWで体験したこと、感じたことを自由に話したり、聞いたりできる時間です。一人ひとりの気づきが、新たな視点や学びを生み出します。\n\n◎Zen2.0ファシリテーター在中\n経験豊富なファシリテーターが場を見守り、安心して対話できる空間を整えます。\n\n◎マインドフルな紅茶「Be Here Now」のご提供\n今この瞬間に意識を向けながら味わう、マインドフルネスに特化した特別な紅茶を「Be Here Now」をご用意。温かい一杯とともに、心を落ち着けてお過ごしください。",
@@ -913,21 +892,6 @@
     "highlighted": false
   },
   {
-    "id": "90",
-    "title": "Mindful City Kamakura Week 対話会",
-    "description": "Mindful City Kamakura Weekでの体験を、ゆったりとした空間で分かち合いませんか?\n\nこのプログラムは、イベントに参加された皆さまが、心に残った瞬間や気づき、感じたことを自由に語り合える場所です。リラックスした雰囲気の中で、他の参加者の方々とつながり、体験を深めることができます。\n\n◎プログラムの特徴\n\n◎体験のシェアリング\nMCKWで体験したこと、感じたことを自由に話したり、聞いたりできる時間です。一人ひとりの気づきが、新たな視点や学びを生み出します。\n\n◎Zen2.0ファシリテーター在中\n経験豊富なファシリテーターが場を見守り、安心して対話できる空間を整えます。\n\n◎マインドフルな紅茶「Be Here Now」のご提供\n今この瞬間に意識を向けながら味わう、マインドフルネスに特化した特別な紅茶を「Be Here Now」をご用意。温かい一杯とともに、心を落ち着けてお過ごしください。",
-    "date": "2025/11/21",
-    "startTime": "13:00",
-    "endTime": "14:00",
-    "locationId": "8",
-    "status": "ticket_supported",
-    "category": [
-      "対話"
-    ],
-    "eventUrl": "https://www.mindful-kamakura.city/courses/mindful-city-kamakura-week-%E5%AF%BE%E8%A9%B1%E4%BC%9A",
-    "highlighted": false
-  },
-  {
     "id": "91",
     "title": "Mindful City Kamakura Week 対話会",
     "description": "Mindful City Kamakura Weekでの体験を、ゆったりとした空間で分かち合いませんか?\n\nこのプログラムは、イベントに参加された皆さまが、心に残った瞬間や気づき、感じたことを自由に語り合える場所です。リラックスした雰囲気の中で、他の参加者の方々とつながり、体験を深めることができます。\n\n◎プログラムの特徴\n\n◎体験のシェアリング\nMCKWで体験したこと、感じたことを自由に話したり、聞いたりできる時間です。一人ひとりの気づきが、新たな視点や学びを生み出します。\n\n◎Zen2.0ファシリテーター在中\n経験豊富なファシリテーターが場を見守り、安心して対話できる空間を整えます。\n\n◎マインドフルな紅茶「Be Here Now」のご提供\n今この瞬間に意識を向けながら味わう、マインドフルネスに特化した特別な紅茶を「Be Here Now」をご用意。温かい一杯とともに、心を落ち着けてお過ごしください。",
@@ -955,6 +919,157 @@
       "体験"
     ],
     "eventUrl": "https://www.mindful-kamakura.city/courses/%E6%AF%8D%E3%81%AA%E3%82%8B%E5%A4%A7%E5%9C%B0%E3%81%A8%E5%86%85%E3%81%AA%E3%82%8B%E9%9C%8A%E6%80%A7%E3%82%92%E3%81%AF%E3%81%90%E3%81%8F%E3%82%80%E3%83%80%E3%83%B3%E3%82%B9%E7%9E%91%E6%83%B3",
+    "highlighted": false
+  },
+  {
+    "id": "93",
+    "title": "萃点のことばワークショップ by Ecological Memes　〜生命の営みに根ざした在り方や価値観と向き合う〜",
+    "description": "萃点のことばカードを活用した対話型のワークショップを開催します。萃点のことばカードは、Ecological Memesの探求過程でみえてきた「自然や生態系に根ざして生きるための27の実践の知恵」を、個人の暮らしや組織づくりに活用できるカードにしたものです。\n\n本イベントでは、ファシリテーターに小林泰紘氏（一般社団法人Ecological Memes代表）を迎え、萃点のことばカードを活用しながら、それぞれの大切にしたい価値観や想い、在り方を紡ぐ対話型のワークショップを行います。\n\n萃点のことばってなんだろう。\n生命や自然の営みと深くつながる実践の知恵をじっくり味わってみたい。\n大切にしたい価値観や在り方を、自分の暮らしや仕事にどんな風につなげていけるか向き合ってみたい。\n\nどんな方でもご参加いただけますので、ぜひお気軽にご参加ください。\n",
+    "date": "2025/11/18",
+    "startTime": "18:00",
+    "endTime": "20:00",
+    "locationId": "8",
+    "status": "ticket_supported",
+    "category": [
+      "対話",
+      "体験"
+    ],
+    "eventUrl": "https://www.mindful-kamakura.city/courses/%E8%90%83%E7%82%B9%E3%81%AE%E3%81%93%E3%81%A8%E3%81%B0%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97-by-ecological-memes%E3%80%80%E3%80%9C%E7%94%9F%E5%91%BD%E3%81%AE%E5%96%B6%E3%81%BF%E3%81%AB%E6%A0%B9%E3%81%96%E3%81%97%E3%81%9F%E5%9C%A8%E3%82%8A%E6%96%B9%E3%82%84%E4%BE%A1%E5%80%A4%E8%A6%B3%E3%81%A8%E5%90%91%E3%81%8D%E5%90%88%E3%81%86%E3%80%9C",
+    "highlighted": false
+  },
+  {
+    "id": "94",
+    "title": "「マインド”フロ”ネス」を体感!　ー御成桑拿 ― Onari Sauna ―",
+    "description": "御成桑拿でマインド”フロ”ネスを体感ください！\n\n鎌倉に新しく誕生したサウナ専用施設「御成桑拿（おなりさうな）」で、鎌倉の空気を感じながら「マインド”フロ”ネス」を体感いただくプレミアム・ウェルネスイベントです。",
+    "date": "2025/11/16",
+    "startTime": "09:00",
+    "endTime": "23:00",
+    "locationId": "29",
+    "status": "ticket_not_supported",
+    "category": [
+      "体験"
+    ],
+    "eventUrl": "https://www.mindful-kamakura.city/courses/%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%89%E2%80%9D%E3%83%95%E3%83%AD%E2%80%9D%E3%83%8D%E3%82%B9%E3%80%8D%E3%82%92%E4%BD%93%E6%84%9F!%E3%80%80%E3%83%BC%E5%BE%A1%E6%88%90%E6%A1%91%E6%8B%BF-%E2%80%95-onari-sauna-%E2%80%95",
+    "highlighted": false
+  },
+  {
+    "id": "95",
+    "title": "「マインド”フロ”ネス」を体感!　ー御成桑拿 ― Onari Sauna ―",
+    "description": "御成桑拿でマインド”フロ”ネスを体感ください！\n\n鎌倉に新しく誕生したサウナ専用施設「御成桑拿（おなりさうな）」で、鎌倉の空気を感じながら「マインド”フロ”ネス」を体感いただくプレミアム・ウェルネスイベントです。",
+    "date": "2025/11/17",
+    "startTime": "12:00",
+    "endTime": "23:00",
+    "locationId": "29",
+    "status": "ticket_not_supported",
+    "category": [
+      "体験"
+    ],
+    "eventUrl": "https://www.mindful-kamakura.city/courses/%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%89%E2%80%9D%E3%83%95%E3%83%AD%E2%80%9D%E3%83%8D%E3%82%B9%E3%80%8D%E3%82%92%E4%BD%93%E6%84%9F!%E3%80%80%E3%83%BC%E5%BE%A1%E6%88%90%E6%A1%91%E6%8B%BF-%E2%80%95-onari-sauna-%E2%80%95",
+    "highlighted": false
+  },
+  {
+    "id": "96",
+    "title": "「マインド”フロ”ネス」を体感!　ー御成桑拿 ― Onari Sauna ―",
+    "description": "御成桑拿でマインド”フロ”ネスを体感ください！\n\n鎌倉に新しく誕生したサウナ専用施設「御成桑拿（おなりさうな）」で、鎌倉の空気を感じながら「マインド”フロ”ネス」を体感いただくプレミアム・ウェルネスイベントです。",
+    "date": "2025/11/18",
+    "startTime": "12:00",
+    "endTime": "23:00",
+    "locationId": "29",
+    "status": "ticket_not_supported",
+    "category": [
+      "体験"
+    ],
+    "eventUrl": "https://www.mindful-kamakura.city/courses/%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%89%E2%80%9D%E3%83%95%E3%83%AD%E2%80%9D%E3%83%8D%E3%82%B9%E3%80%8D%E3%82%92%E4%BD%93%E6%84%9F!%E3%80%80%E3%83%BC%E5%BE%A1%E6%88%90%E6%A1%91%E6%8B%BF-%E2%80%95-onari-sauna-%E2%80%95",
+    "highlighted": false
+  },
+  {
+    "id": "97",
+    "title": "「マインド”フロ”ネス」を体感!　ー御成桑拿 ― Onari Sauna ―",
+    "description": "御成桑拿でマインド”フロ”ネスを体感ください！\n\n鎌倉に新しく誕生したサウナ専用施設「御成桑拿（おなりさうな）」で、鎌倉の空気を感じながら「マインド”フロ”ネス」を体感いただくプレミアム・ウェルネスイベントです。",
+    "date": "2025/11/19",
+    "startTime": "12:00",
+    "endTime": "23:00",
+    "locationId": "29",
+    "status": "ticket_not_supported",
+    "category": [
+      "体験"
+    ],
+    "eventUrl": "https://www.mindful-kamakura.city/courses/%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%89%E2%80%9D%E3%83%95%E3%83%AD%E2%80%9D%E3%83%8D%E3%82%B9%E3%80%8D%E3%82%92%E4%BD%93%E6%84%9F!%E3%80%80%E3%83%BC%E5%BE%A1%E6%88%90%E6%A1%91%E6%8B%BF-%E2%80%95-onari-sauna-%E2%80%95",
+    "highlighted": false
+  },
+  {
+    "id": "98",
+    "title": "「マインド”フロ”ネス」を体感!　ー御成桑拿 ― Onari Sauna ―",
+    "description": "御成桑拿でマインド”フロ”ネスを体感ください！\n\n鎌倉に新しく誕生したサウナ専用施設「御成桑拿（おなりさうな）」で、鎌倉の空気を感じながら「マインド”フロ”ネス」を体感いただくプレミアム・ウェルネスイベントです。",
+    "date": "2025/11/20",
+    "startTime": "12:00",
+    "endTime": "23:00",
+    "locationId": "29",
+    "status": "ticket_not_supported",
+    "category": [
+      "体験"
+    ],
+    "eventUrl": "https://www.mindful-kamakura.city/courses/%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%89%E2%80%9D%E3%83%95%E3%83%AD%E2%80%9D%E3%83%8D%E3%82%B9%E3%80%8D%E3%82%92%E4%BD%93%E6%84%9F!%E3%80%80%E3%83%BC%E5%BE%A1%E6%88%90%E6%A1%91%E6%8B%BF-%E2%80%95-onari-sauna-%E2%80%95",
+    "highlighted": false
+  },
+  {
+    "id": "99",
+    "title": "「マインド”フロ”ネス」を体感!　ー御成桑拿 ― Onari Sauna ―",
+    "description": "御成桑拿でマインド”フロ”ネスを体感ください！\n\n鎌倉に新しく誕生したサウナ専用施設「御成桑拿（おなりさうな）」で、鎌倉の空気を感じながら「マインド”フロ”ネス」を体感いただくプレミアム・ウェルネスイベントです。",
+    "date": "2025/11/21",
+    "startTime": "12:00",
+    "endTime": "23:00",
+    "locationId": "29",
+    "status": "ticket_not_supported",
+    "category": [
+      "体験"
+    ],
+    "eventUrl": "https://www.mindful-kamakura.city/courses/%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%89%E2%80%9D%E3%83%95%E3%83%AD%E2%80%9D%E3%83%8D%E3%82%B9%E3%80%8D%E3%82%92%E4%BD%93%E6%84%9F!%E3%80%80%E3%83%BC%E5%BE%A1%E6%88%90%E6%A1%91%E6%8B%BF-%E2%80%95-onari-sauna-%E2%80%95",
+    "highlighted": false
+  },
+  {
+    "id": "100",
+    "title": "「マインド”フロ”ネス」を体感!　ー御成桑拿 ― Onari Sauna ―",
+    "description": "御成桑拿でマインド”フロ”ネスを体感ください！\n\n鎌倉に新しく誕生したサウナ専用施設「御成桑拿（おなりさうな）」で、鎌倉の空気を感じながら「マインド”フロ”ネス」を体感いただくプレミアム・ウェルネスイベントです。",
+    "date": "2025/11/22",
+    "startTime": "09:00",
+    "endTime": "23:00",
+    "locationId": "29",
+    "status": "ticket_not_supported",
+    "category": [
+      "体験"
+    ],
+    "eventUrl": "https://www.mindful-kamakura.city/courses/%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%89%E2%80%9D%E3%83%95%E3%83%AD%E2%80%9D%E3%83%8D%E3%82%B9%E3%80%8D%E3%82%92%E4%BD%93%E6%84%9F!%E3%80%80%E3%83%BC%E5%BE%A1%E6%88%90%E6%A1%91%E6%8B%BF-%E2%80%95-onari-sauna-%E2%80%95",
+    "highlighted": false
+  },
+  {
+    "id": "101",
+    "title": "Moving Meditation　（動く瞑想）",
+    "description": "瞑想と聞くと、静寂の中で座る姿を想像する人が多いでしょう——一人でもグループでも。座禅は心の平静と内なる集中を育む強力な方法ですが、その気づきの意識を動きへと持ち込むことを学ぶことは、マインドフルネスを行動や日常生活に根付かせるために不可欠です。\n\nこの90分間のワークショップでは、座った静けさからマインドフルな動きへと移行するための、シンプルでありながら効果的な技法を探求します。静かな歩行、全身を使った呼吸法、音楽に合わせた穏やかなリズミカルな動きを通じて、参加者は動きの中で身体・心・呼吸への意識を保つ練習を行います。\n\nこのセッションは全レベル対象で、身体を通した気づきによって実践を深めたいと考える全ての方を歓迎します。英語と日本語の両方で参加可能です。\n\nWhen we think of meditation, we often imagine sitting in silence—either alone or in a group. While seated meditation is a powerful way to cultivate calm and inner focus, learning to carry that mindful awareness into movement is essential for bringing mindfulness into action and everyday life.\n\nIn this 90-minute workshop, we’ll explore simple yet effective techniques for transitioning from seated stillness to mindful movement. Through silent walking, whole-body breathing exercises, and gentle rhythmic movement accompanied by music, participants will practice remaining conscious of body, mind, and breath while in motion.\n\nThis session is open to all levels and welcomes anyone curious about deepening their practice through embodied awareness. The session is open to both English and Japanese speakers.",
+    "date": "2025/11/18",
+    "startTime": "17:00",
+    "endTime": "19:00",
+    "locationId": "7",
+    "status": "ticket_not_supported",
+    "category": [
+      "体験"
+    ],
+    "eventUrl": "",
+    "highlighted": false
+  },
+  {
+    "id": "102",
+    "title": " Awakening Presence: Cacao Ceremony & Moving Meditation (目覚めの存在：カカオの儀式と動く瞑想)",
+    "description": "セッションはシンプルなカカオセレモニーから始まります。参加者は心温まるこの飲み物を囲んで集まります。ラテンアメリカの古代文化で尊ばれてきた儀式用カカオは、心を開き深い感情へのアクセスを促すことで知られています。つながりと感情の明晰さを育む助けとなります。\n\nカカオのサポートのもと、この2時間のワークショップでは感情・動き・心・呼吸を優しく統合します。単独の座禅からマインドフルな動きや共有の儀式へと移行するための実践的な手法を提供。これらの実践は日常生活に気づきをもたらす強力な手段です。\n\n参加者は、この体験のために特別に調製されたセレモニアルグレードのカカオを一杯（あるいは二杯…）お楽しみいただけます。また、静かな歩行、全身を使った呼吸法、音楽に合わせた穏やかなリズム運動にも取り組みます。各アクティビティは、動きの中での存在感と他者との繋がりを育むよう設計されています。\n\nこのセッションは全レベルの方を対象とし、感情と身体的な気づきを通じて実践を深めたいと考える全ての方を歓迎します。",
+    "date": "2025/11/19",
+    "startTime": "18:00",
+    "endTime": "19:30",
+    "locationId": "8",
+    "status": "ticket_not_supported",
+    "category": [
+      "体験"
+    ],
+    "eventUrl": "",
     "highlighted": false
   }
 ]
