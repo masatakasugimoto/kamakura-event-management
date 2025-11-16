@@ -7,13 +7,13 @@ interface EventListProps {
   events: EventWithLocation[];
   selectedEventId: string | null;
   onEventSelect: (eventId: string) => void;
+  selectedDateFromTab?: string;
 }
 
-const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventSelect }) => {
+const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventSelect, selectedDateFromTab = '' }) => {
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<EventCategory | ''>('');
-  const [selectedDate, setSelectedDate] = useState<string>('');
   const dateRefs = useRef<Map<string, HTMLDivElement>>(new Map());
   const hasScrolled = useRef(false);
 
@@ -105,12 +105,6 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
   // カテゴリーの一覧を取得
   const categories: EventCategory[] = ['伝統', 'ビジネス', '対話', '展示', '食', '自然', 'パフォーマンス', '体験'];
 
-  // イベントからユニークな日付リストを取得
-  const uniqueDates = useMemo(() => {
-    const dates = events.map(event => normalizeDate(event.date));
-    return Array.from(new Set(dates)).sort();
-  }, [events]);
-
   // 検索クエリ、カテゴリー、日付でイベントをフィルタリング
   const filteredEvents = useMemo(() => {
     let filtered = events;
@@ -137,12 +131,12 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
     }
 
     // 日付でフィルタリング
-    if (selectedDate) {
-      filtered = filtered.filter(event => normalizeDate(event.date) === selectedDate);
+    if (selectedDateFromTab) {
+      filtered = filtered.filter(event => normalizeDate(event.date) === selectedDateFromTab);
     }
 
     return filtered;
-  }, [events, searchQuery, selectedCategory, selectedDate]);
+  }, [events, searchQuery, selectedCategory, selectedDateFromTab]);
 
   const groupedEvents = filteredEvents.reduce((groups, event) => {
     // 日付を正規化してグループ化
@@ -157,7 +151,7 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
   // 初回レンダリング時に適切な日付までスクロール
   useEffect(() => {
     // フィルタが適用されている場合はスクロールしない
-    if (searchQuery || selectedCategory || selectedDate) {
+    if (searchQuery || selectedCategory || selectedDateFromTab) {
       return;
     }
 
@@ -195,7 +189,7 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
         }
       }
     }
-  }, [groupedEvents, searchQuery, selectedCategory, selectedDate]);
+  }, [groupedEvents, searchQuery, selectedCategory, selectedDateFromTab]);
 
   const handleShareClick = (e: React.MouseEvent, event: EventWithLocation) => {
     e.stopPropagation();
@@ -209,20 +203,6 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
   return (
     <div className="event-list">
       <div className="event-filters">
-        <div className="date-filter">
-          <select
-            value={selectedDate}
-            onChange={(e) => setSelectedDate(e.target.value)}
-            className="date-select"
-          >
-            <option value="">開催日</option>
-            {uniqueDates.map((date) => (
-              <option key={date} value={date}>
-                {formatDate(date)}
-              </option>
-            ))}
-          </select>
-        </div>
         <div className="category-filter">
           <select
             value={selectedCategory}
