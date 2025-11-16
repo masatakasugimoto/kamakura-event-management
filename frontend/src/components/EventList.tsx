@@ -16,6 +16,7 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
   const [selectedCategory, setSelectedCategory] = useState<EventCategory | ''>('');
   const dateRefs = useRef<Map<string, HTMLDivElement>>(new Map());
   const hasScrolled = useRef(false);
+  const eventListRef = useRef<HTMLDivElement>(null);
 
   // 現在時刻が18:00以降なら翌日の日付を返す関数
   const getDisplayStartDate = (): string => {
@@ -191,6 +192,13 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
     }
   }, [groupedEvents, searchQuery, selectedCategory, selectedDateFromTab]);
 
+  // 日付選択が変更されたときにスクロール位置をトップにリセット
+  useEffect(() => {
+    if (selectedDateFromTab && eventListRef.current) {
+      eventListRef.current.scrollTop = 0;
+    }
+  }, [selectedDateFromTab]);
+
   const handleShareClick = (e: React.MouseEvent, event: EventWithLocation) => {
     e.stopPropagation();
     if (event.eventUrl) {
@@ -201,7 +209,7 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
   };
 
   return (
-    <div className="event-list">
+    <div className="event-list" ref={eventListRef}>
       <div className="event-filters">
         <div className="category-filter">
           <select
