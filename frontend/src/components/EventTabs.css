@@ -73,26 +73,18 @@
 }
 
 @media (max-width: 768px) {
-  .tab-header {
-    flex-direction: column;
-  }
-
-  .tab-buttons {
-    border-bottom: 1px solid #e0e0e0;
-  }
-
   .tab-button {
-    padding: 12px 16px;
+    padding: 12px 12px;
     font-size: 13px;
   }
 
   .tab-date-filter {
-    padding: 8px;
-    justify-content: center;
+    padding: 8px 12px;
   }
 
   .tab-date-filter .date-select {
-    width: 100%;
-    min-width: unset;
+    min-width: 110px;
+    font-size: 13px;
+    padding: 6px 8px;
   }
 }
