@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import type { EventWithLocation, EventCategory } from '../types';
 import './EventList.css';
@@ -14,6 +14,30 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<EventCategory | ''>('');
   const [selectedDate, setSelectedDate] = useState<string>('');
+  const dateRefs = useRef<Map<string, HTMLDivElement>>(new Map());
+  const hasScrolled = useRef(false);
+
+  // 現在時刻が18:00以降なら翌日の日付を返す関数
+  const getDisplayStartDate = (): string => {
+    const now = new Date();
+    const currentHour = now.getHours();
+
+    // 18:00以降なら翌日の日付を取得
+    if (currentHour >= 18) {
+      const tomorrow = new Date(now);
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      const year = tomorrow.getFullYear();
+      const month = String(tomorrow.getMonth() + 1).padStart(2, '0');
+      const day = String(tomorrow.getDate()).padStart(2, '0');
+      return `${year}/${month}/${day}`;
+    }
+
+    // 18:00前なら今日の日付を取得
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, '0');
+    const day = String(now.getDate()).padStart(2, '0');
+    return `${year}/${month}/${day}`;
+  };
 
   const getCategoryIcon = (category?: EventCategory | EventCategory[]) => {
     if (!category) return null;
@@ -130,6 +154,49 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
     return groups;
   }, {} as Record<string, EventWithLocation[]>);
 
+  // 初回レンダリング時に適切な日付までスクロール
+  useEffect(() => {
+    // フィルタが適用されている場合はスクロールしない
+    if (searchQuery || selectedCategory || selectedDate) {
+      return;
+    }
+
+    // 既にスクロール済みの場合はスキップ
+    if (hasScrolled.current) {
+      return;
+    }
+
+    // イベントがない場合はスキップ
+    if (Object.keys(groupedEvents).length === 0) {
+      return;
+    }
+
+    const targetDate = getDisplayStartDate();
+    const targetElement = dateRefs.current.get(targetDate);
+
+    if (targetElement) {
+      // 対象の日付が見つかった場合、そこまでスクロール
+      setTimeout(() => {
+        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        hasScrolled.current = true;
+      }, 100);
+    } else {
+      // 対象の日付が見つからない場合、最も近い未来の日付を探す
+      const sortedDates = Object.keys(groupedEvents).sort();
+      const futureDate = sortedDates.find(date => date >= targetDate);
+
+      if (futureDate) {
+        const futureElement = dateRefs.current.get(futureDate);
+        if (futureElement) {
+          setTimeout(() => {
+            futureElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            hasScrolled.current = true;
+          }, 100);
+        }
+      }
+    }
+  }, [groupedEvents, searchQuery, selectedCategory, selectedDate]);
+
   const handleShareClick = (e: React.MouseEvent, event: EventWithLocation) => {
     e.stopPropagation();
     if (event.eventUrl) {
@@ -190,7 +257,17 @@ const EventList: React.FC<EventListProps> = ({ events, selectedEventId, onEventS
         </div>
       </div>
       {Object.entries(groupedEvents).map(([date, dateEvents]) => (
-        <div key={date} className="date-group">
+        <div
+          key={date}
+          className="date-group"
+          ref={(el) => {
+            if (el) {
+              dateRefs.current.set(date, el);
+            } else {
+              dateRefs.current.delete(date);
+            }
+          }}
+        >
           <h3 className="date-header">{formatDate(date)}</h3>
           {dateEvents.map((event) => (
             <div
